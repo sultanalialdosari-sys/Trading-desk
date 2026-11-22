@@ -1,0 +1,33 @@
+2026-11-22T21:29:41.584924+00:00
+SystemExit: ما وصلت بيانات SPY — ما أقدر أحدد أيام التداول.
+
+sip AAPL..AVGO: 71217 شمعة
+sip PLTR..INTC: 78254 شمعة
+sip QCOM..MDB: 80658 شمعة
+sip CRM..RBLX: 80447 شمعة
+sip DKNG..F: 71082 شمعة
+sip GM..HD: 78887 شمعة
+sip LOW..MA: 79626 شمعة
+sip AXP..NVO: 72588 شمعة
+sip UNH..VZ: 70940 شمعة
+sip TMUS..MCHP: 79292 شمعة
+sip ADI..RGTI: 74864 شمعة
+sip QBTS..SPOT: 81577 شمعة
+sip TTD..VST: 76166 شمعة
+sip CEG..SPY: 80571 شمعة
+sip QQQ..QQQ: 61536 شمعة
+iex AAPL..AVGO: 62527 شمعة
+iex PLTR..INTC: 71545 شمعة
+iex QCOM..MDB: 79580 شمعة
+iex CRM..RBLX: 72716 شمعة
+iex DKNG..F: 73261 شمعة
+iex GM..HD: 76200 شمعة
+iex LOW..MA: 69066 شمعة
+iex AXP..NVO: 72814 شمعة
+iex UNH..VZ: 69711 شمعة
+iex TMUS..MCHP: 64312 شمعة
+iex ADI..RGTI: 72895 شمعة
+iex QBTS..SPOT: 80724 شمعة
+iex TTD..VST: 74914 شمعة
+iex CEG..SPY: 72834 شمعة
+iex QQQ..QQQ: 29532 شمعة
