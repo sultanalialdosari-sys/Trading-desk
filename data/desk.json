@@ -1,0 +1,23 @@
+{
+ "tg_offset": 0,
+ "ideas": [],
+ "trades": [],
+ "runs": [
+  {
+   "utc": "2026-11-22T21:03:15.725738+00:00",
+   "market_open": false,
+   "final": false,
+   "scanned": 0,
+   "candidates": 0,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "api_calls": 1
+  }
+ ],
+ "daily": {},
+ "board": [],
+ "market": null,
+ "last_run": "2026-11-22T21:03:15.725738+00:00",
+ "last_open": false
+}
