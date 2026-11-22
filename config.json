@@ -74,7 +74,7 @@
   "finnhub_fresh_sec": 120,
   "price_diff_major_pct": 0.5,
   "price_diff_veto_pct": 1.5,
-  "profile": "v1",
+  "profile": "v2",
   "profiles": {
     "v2": {
       "_about": "النسخة 2: بدون مطاردة، تعادل عند +1R، الارتداد لازم يخترق، لا دخول بعد 2:30 نيويورك، ستوب لا يقل عن 0.3%، ستوب واسع مقبول لين 3 ATR",
@@ -84,6 +84,15 @@
       "no_entries_after_min": 870,
       "min_stop_pct": 0.3,
       "max_stop_atr": 3.0
+    },
+    "v2b": {
+      "no_chase_r": 0.25,
+      "breakeven_at_r": 1.0,
+      "require_breakout": true,
+      "no_entries_after_min": 870,
+      "min_stop_pct": 0.3,
+      "max_stop_atr": 1.5,
+      "_about": "النسخة 2 بدون «الستوب الواسع مقبول» (الاختبار الكبير بيّن إنه يضر لحاله)"
     }
   },
   "backtest_universe": [

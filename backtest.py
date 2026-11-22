@@ -38,9 +38,22 @@ def arg(name, default):
 
 def load_profiles():
     base = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
+    for k in [k for k, v in base.get("profiles", {}).items()]:
+        pass
     v2 = dict(base)
     v2.update({k: v for k, v in base.get("profiles", {}).get("v2", {}).items() if not k.startswith("_")})
     return base, v2
+
+
+def all_profiles():
+    """النسخة 1 + كل نسخة في profiles (v2، v2b، …)."""
+    base = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
+    out = {"v1": ("النسخة 1", base)}
+    for name, over in base.get("profiles", {}).items():
+        cfg = dict(base)
+        cfg.update({k: v for k, v in over.items() if not k.startswith("_")})
+        out[name] = (f"النسخة {name[1:]}", cfg)
+    return out
 
 
 def main():
@@ -95,20 +108,21 @@ def main():
     snaps = BT.collect(bars, items, [s for s in symbols if s in bars], days, v1, log=lambda m: print(m, flush=True))
     print(f"التحضير خلص في {time.time() - t1:.0f} ث", flush=True)
 
-    tr1, tr2 = BT.decide(snaps, v1), BT.decide(snaps, v2)
+    profs = all_profiles()
+    trades = {name: BT.decide(snaps, cfg) for name, (_, cfg) in profs.items()}
+    tr1, tr2 = trades["v1"], trades["v2"]
     ablation = {}
     base_stats = BT.r_stats([t["r"] for t in BT.done(tr1) if t["owner"] == "desk"])
     for name, over in ABLATIONS.items():
         st = BT.r_stats([t["r"] for t in BT.done(BT.decide(snaps, {**v1, **over})) if t["owner"] == "desk"])
         ablation[name] = {"label": NAMES[name], **st, "delta_total_r": round(st.get("total_r", 0) - base_stats.get("total_r", 0), 2)}
     print("walk-forward …", flush=True)
-    wf1 = BT.walk_forward(snaps, days, v1)
-    wf2 = BT.walk_forward(snaps, days, v2)
+    wfs = {name: BT.walk_forward(snaps, days, cfg) for name, (_, cfg) in profs.items()}
     out = {"generated_utc": datetime.now(UTC).isoformat(), "period": [str(days[0]), str(days[-1])], "days": len(days),
            "symbols": [s for s in symbols if s in bars], "feed": feed, "snaps": len(snaps),
-           "versions": {"v1": {"label": "النسخة 1 (الحالية)", "summary": BT.summarize(tr1), "walk_forward": wf1},
-                        "v2": {"label": "النسخة 2", "summary": BT.summarize(tr2), "walk_forward": wf2,
-                               "changes": {k: v for k, v in v2.get("profiles", {}).get("v2", {}).items()}}},
+           "versions": {name: {"label": lab, "summary": BT.summarize(trades[name]), "walk_forward": wfs[name],
+                               "about": v1.get("profiles", {}).get(name, {}).get("_about", "الإعدادات الأساسية")}
+                        for name, (lab, _) in profs.items()},
            "ablation": ablation, "grid": BT.GRID, "api_calls": c.calls, "seconds": round(time.time() - t0),
            "limits": ["Sentiment وFinnhub وSEC وReddit غير متوفرة تاريخياً — مستبعدة",
                       "قائمة ~140 سهم موجودة اليوم (تحيّز بقاء)، وScout يختار المتحركين منها لحظياً",
@@ -140,13 +154,13 @@ def report_md(o: dict) -> str:
     V = o["versions"]
     L = [f"# اختبار تاريخي — مكتب التداول", "",
          f"الفترة: {o['period'][0]} → {o['period'][1]} ({o['days']} يوم تداول) • الأسهم: {len(o['symbols'])} • البيانات: {o['feed']} • لحظات مرشّحة: {o['snaps']}", "",
-         "## النسخة 1 مقابل النسخة 2 (صفقات المكتب)", ""] + HEAD
-    for k in ("v1", "v2"):
+         "## مقارنة النسخ (صفقات المكتب)", ""] + HEAD
+    for k in V:
         L.append(_row(V[k]["label"], V[k]["summary"]["desk"]))
     L += ["", "## كل تعديل من النسخة 2 لحاله (فوق النسخة 1)", ""] + HEAD
     for k, a in o["ablation"].items():
         L.append(_row(f"{a['label']} ({a['delta_total_r']:+}R)", a))
-    for k in ("v1", "v2"):
+    for k in V:
         S, W = V[k]["summary"], V[k]["walk_forward"]
         mc = S["desk"].get("monte_carlo") or {}
         L += ["", f"## {V[k]['label']}", ""] + HEAD + [_row("🏛️ المكتب (شراء)", S["desk"]), _row("🟡 لو دخلنا «انتظار»", S["wait"]),
