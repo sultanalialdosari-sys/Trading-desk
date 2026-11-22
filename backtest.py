@@ -118,4 +118,13 @@ def report_md(o: dict) -> str:
 
 
 if __name__ == "__main__":
-    main()
+    import traceback
+    try:
+        main()
+    except BaseException as e:   # نحفظ السبب في المستودع عشان نقدر نقرأه
+        msg = traceback.format_exc() if not isinstance(e, SystemExit) else f"SystemExit: {e}"
+        os.makedirs(os.path.join(ROOT, "docs"), exist_ok=True)
+        open(os.path.join(ROOT, "docs", "backtest_error.txt"), "w", encoding="utf-8").write(
+            datetime.now(UTC).isoformat() + "\n" + msg)
+        print(msg)
+        raise
