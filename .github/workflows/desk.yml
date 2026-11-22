@@ -1,0 +1,69 @@
+name: trading-desk
+
+on:
+  schedule:
+    # كل 15 دقيقة أثناء الجلسة (UTC، صيفاً وشتاءً). السكربت يتأكد من ساعة السوق بنفسه.
+    - cron: "1,16,31,46 13-20 * * 1-5"
+    # بعد الإغلاق: إقفال الصفقات الافتراضية + ملخص اليوم على تيليجرام
+    - cron: "45 21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      final:
+        description: "تشغيل ما بعد الإغلاق؟"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: trading-desk
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Desk cycle
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_API_SECRET: ${{ secrets.ALPACA_API_SECRET }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ "${{ github.event.schedule }}" = "45 21 * * 1-5" ] || [ "${{ inputs.final }}" = "true" ]; then
+            python run.py --final
+          else
+            python run.py
+          fi
+      - name: Save results
+        run: |
+          git config user.name "trading-desk-bot"
+          git config user.email "trading-desk-bot@users.noreply.github.com"
+          git add data/desk.json docs/desk.json
+          git diff --cached --quiet || git commit -m "desk: $(date -u +'%F %H:%M') UTC"
+          git pull --rebase -X ours || true
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  site:
+    needs: run
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

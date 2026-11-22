@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مكتب التداول — Trading Desk</title>
+<style>
+  :root{--bg:#f5f4f0;--card:#fff;--ink:#16181d;--mute:#7b7f87;--line:#e7e5df;--green:#1fb35a;--red:#e0364f;--amber:#f2a900;--blue:#2f6fed}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;line-height:1.6}
+  .wrap{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+  h1{margin:0;font-size:28px;letter-spacing:-.5px}
+  h1 em{font-family:Georgia,serif;color:var(--blue);font-weight:400}
+  .sub{color:var(--mute);font-size:13px}
+  .pill{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--mute)}
+  .dot.on{background:var(--green);box-shadow:0 0 0 3px #1fb35a33}
+  h2{font-size:15px;margin:28px 0 10px;color:var(--mute);font-weight:600}
+  .team{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+  .bot{text-align:center;font-size:12px}
+  .av{width:42px;height:42px;border-radius:12px;margin:0 auto 4px;display:flex;align-items:center;justify-content:center;gap:6px;position:relative}
+  .av i{width:6px;height:11px;background:#fff;border-radius:3px;display:block}
+  .av.sm{width:30px;height:30px;border-radius:9px;gap:4px;flex:none;margin:0}
+  .av.sm i{width:4px;height:8px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+  .stat b{font-size:22px;display:block;direction:ltr;text-align:right}
+  .stat small{color:var(--mute);font-size:12px}
+  .pos{color:var(--green)} .neg{color:var(--red)}
+  .idea{background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:16px;overflow:hidden}
+  .ihead{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font-size:13px}
+  .ihead .sym{font-weight:700;font-size:16px;direction:ltr}
+  .msgs{padding:10px 14px}
+  .msg{display:flex;gap:10px;margin:8px 0;align-items:flex-start}
+  .bubble{background:#f3f3f1;border-radius:12px;padding:7px 11px;font-size:14px;flex:1}
+  .bubble{unicode-bidi:plaintext}
+  td.sk{min-width:170px;font-size:12px}
+  .bubble .who{font-size:11px;color:var(--mute);display:block}
+  .msg.skeptic .bubble{background:#fdeef0}
+  .msg.chief .bubble{background:#111;color:#fff}
+  .msg.chief .who{color:#aaa}
+  .ticket{margin:4px 14px 14px;border:1px solid var(--line);border-radius:14px;padding:12px;position:relative;font-size:13px}
+  .ticket .row{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dashed var(--line)}
+  .ticket .row:last-child{border:0}
+  .ticket .row span:last-child{direction:ltr;font-weight:600}
+  .stamp{position:absolute;top:38%;left:50%;transform:translate(-50%,-50%) rotate(-8deg);border:3px solid var(--red);color:var(--red);font-weight:800;padding:4px 12px;border-radius:8px;background:#fffffff0;font-family:Arial,sans-serif;letter-spacing:1px;white-space:nowrap}
+  .tag{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600}
+  .BUY{background:#e3f6eb;color:var(--green)} .WAIT{background:#fff5d6;color:#9a6c00} .SKIP{background:#fdeef0;color:var(--red)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:13px}
+  th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right}
+  th{color:var(--mute);font-weight:600;background:#fafaf8}
+  td.ltr{direction:ltr;text-align:right}
+  .empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:18px;text-align:center;color:var(--mute)}
+  .note{font-size:12px;color:var(--mute);margin-top:24px}
+  @media(max-width:560px){.team{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>مكتب <em>التداول</em></h1>
+      <div class="sub">6 بوتات في جروب واحد — تجربة على Paper، ليست توصية</div>
+    </div>
+    <div style="text-align:left">
+      <span class="pill"><span class="dot" id="dot"></span><span id="status">…</span></span>
+      <div class="sub" id="lastrun"></div>
+      <div class="sub" id="mkt"></div>
+    </div>
+  </header>
+
+  <h2>الفريق</h2>
+  <div class="team" id="team"></div>
+
+  <h2>النتائج الافتراضية (كل الفترة)</h2>
+  <div class="stats" id="stats"></div>
+
+  <h2>محادثات المكتب</h2>
+  <div id="ideas"></div>
+
+  <h2>آخر فحص — كل الأسهم اللي ناقشها الفريق</h2>
+  <div id="board"></div>
+
+  <h2>الصفقات الافتراضية</h2>
+  <div id="trades"></div>
+
+  <p class="note">البيانات: Alpaca IEX (بورصة واحدة، أحجام جزئية) • الأخبار: Alpaca/Benzinga • المزاج: StockTwits •
+  القرار بالقواعد فقط، وGemini يعيد صياغة الكلام بدون ما يضيف أرقام. المحاكاة متحفظة: لو شمعة لمست الستوب والهدف نحسبها خسارة.</p>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = v => v == null ? "—" : (v >= 1 ? "$" + Number(v).toFixed(2) : "$" + Number(v).toFixed(4));
+const ORDER = ["scout","news","sentiment","charts","skeptic","chief"];
+const DEC = {BUY:"شراء", WAIT:"انتظار", SKIP:"تخطّي"};
+const ST = {pending:"تنتظر الاختراق", open:"مفتوحة", won:"ربحت ✅", lost:"خسرت ❌", closed:"أُقفلت آخر اليوم", expired:"ما تفعّلت"};
+const OWN = {desk:"🏛️ المكتب", you:"👤 أنت", blocked:"🛡️ أوقفها Skeptic"};
+const riy = iso => iso ? new Date(iso).toLocaleString("ar-SA-u-nu-latn",{timeZone:"Asia/Riyadh",month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"}) : "—";
+const av = (b, sm) => `<div class="av ${sm?"sm":""}" style="background:${b.color}"><i></i><i></i></div>`;
+
+fetch("desk.json?" + Date.now()).then(r => r.json()).then(D => {
+  const B = D.bots;
+  $("dot").className = "dot" + (D.last_open ? " on" : "");
+  $("status").textContent = D.last_open ? "السوق مفتوح" : "السوق مقفل";
+  $("lastrun").textContent = "آخر تشغيل: " + riy(D.last_run) + " (الرياض)";
+  const m = D.market && D.market.detail;
+  if (m && m.SPY) $("mkt").textContent = Object.entries(m).map(([s,x]) => `${s} ${x.chg_open_pct>0?"+":""}${x.chg_open_pct}% ${x.close>x.vwap?"فوق":"تحت"} VWAP`).join(" • ");
+
+  $("team").innerHTML = ORDER.map(k => `<div class="bot">${av(B[k])}<b>${B[k].name}</b><br><span class="sub">${B[k].ar}</span></div>`).join("");
+
+  $("stats").innerHTML = ["desk","you","blocked"].map(o => {
+    const s = D.stats[o]; const cls = s.total_r > 0 ? "pos" : s.total_r < 0 ? "neg" : "";
+    return `<div class="stat"><small>${OWN[o]}</small><b class="${cls}">${s.total_r > 0 ? "+" : ""}${s.total_r}R</b>
+      <small>${s.closed} صفقة • فوز ${s.win_rate ?? "—"}% • ${s.pnl >= 0 ? "+" : ""}$${s.pnl} • مفتوحة ${s.open} • ما تفعّلت ${s.expired}</small></div>`;
+  }).join("");
+
+  const tradesBy = {};
+  (D.trades||[]).forEach(t => (tradesBy[t.idea_id] ||= []).push(t));
+  $("ideas").innerHTML = (D.ideas||[]).length ? D.ideas.map(i => {
+    const t = i.ticket, tr = tradesBy[i.id] || [];
+    const msgs = ORDER.map(k => `<div class="msg ${k}">${av(B[k], 1)}<div class="bubble"><span class="who">${B[k].name}</span>${esc(i.text[k])}</div></div>`).join("");
+    const tk = t ? `<div class="ticket"><div class="row"><b>🧾 تذكرة الأمر</b><span>${i.symbol} • Long</span></div>
+      <div class="row"><span>الدخول فوق</span><span>${money(t.entry)}</span></div>
+      <div class="row"><span>الستوب</span><span>${money(t.stop)}</span></div>
+      <div class="row"><span>الهدف</span><span>${money(t.target)}</span></div>
+      <div class="row"><span>الكمية</span><span>${t.qty} ≈ $${Math.round(t.position_usd).toLocaleString()}</span></div>
+      <div class="row"><span>المخاطرة : العائد</span><span>$${t.risk_usd} : $${t.reward_usd}</span></div>
+      ${tr.map(x => `<div class="row"><span>${OWN[x.owner]}</span><span>${ST[x.status]}${x.r!=null?` (${x.r>0?"+":""}${x.r}R)`:""}</span></div>`).join("")}
+      ${i.blocked ? `<div class="stamp">BLOCKED BY SKEPTIC</div>` : ""}</div>` : "";
+    return `<div class="idea"><div class="ihead"><span><span class="sym">${esc(i.symbol)}</span> &nbsp;<span class="tag ${i.decision}">${DEC[i.decision]}</span>
+      ${i.user_choice ? ` <span class="tag ${i.user_choice}">👤 ${DEC[i.user_choice]}</span>` : ""}</span>
+      <span class="sub">${riy(i.created_utc)} • ${i.score}/100${i.narrated_by ? " • ✨ Gemini" : ""}</span></div>${msgs}${tk}</div>`;
+  }).join("") : `<div class="empty">ما فيه محادثات بعد — أول فكرة تظهر هنا لما السوق يفتح ويلقى الفريق شي يستاهل.</div>`;
+
+  $("board").innerHTML = (D.board||[]).length ? `<table><tr><th>السهم</th><th>السعر</th><th>اليوم</th><th>القرار</th><th>الدرجة</th><th>Skeptic</th></tr>` +
+    D.board.map(b => `<tr><td class="ltr"><b>${esc(b.symbol)}</b></td><td class="ltr">${money(b.price)}</td>
+      <td class="ltr ${b.change_pct>0?"pos":"neg"}">${b.change_pct>0?"+":""}${b.change_pct}%</td>
+      <td><span class="tag ${b.decision}">${DEC[b.decision]}</span>${b.blocked?" 🛡️":""}</td><td>${b.score}</td><td class="sk">${esc(b.skeptic)}</td></tr>`).join("") + `</table>`
+    : `<div class="empty">ما فيه فحص أثناء الجلسة بعد.</div>`;
+
+  $("trades").innerHTML = (D.trades||[]).length ? `<table><tr><th>السهم</th><th>المحفظة</th><th>الحالة</th><th>دخول</th><th>خروج</th><th>R</th><th>$</th></tr>` +
+    D.trades.map(t => `<tr><td class="ltr"><b>${esc(t.symbol)}</b></td><td>${OWN[t.owner]}</td><td>${ST[t.status]}</td>
+      <td class="ltr">${money(t.fill_px ?? t.entry)}</td><td class="ltr">${money(t.exit_px)}</td>
+      <td class="ltr ${t.r>0?"pos":t.r<0?"neg":""}">${t.r ?? "—"}</td><td class="ltr">${t.pnl ?? "—"}</td></tr>`).join("") + `</table>`
+    : `<div class="empty">ما فيه صفقات بعد.</div>`;
+}).catch(() => { $("ideas").innerHTML = `<div class="empty">ما قدرت أقرأ desk.json — أول تشغيل ما صار بعد.</div>`; });
+</script>
+</body>
+</html>
