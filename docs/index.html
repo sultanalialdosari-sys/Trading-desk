@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0d10">
 <title>مكتب التداول — Trading Desk</title>
 <style>
-  :root{--bg:#f5f4f0;--card:#fff;--ink:#16181d;--mute:#7b7f87;--line:#e7e5df;--green:#1fb35a;--red:#e0364f;--amber:#f2a900;--blue:#2f6fed}
+  :root{--bg:#0b0d10;--card:#14171c;--card2:#1b1f26;--ink:#e9ecf1;--mute:#8a919c;--line:#252a33;--green:#2fd277;--red:#ff5a6e;--amber:#ffc23d;--blue:#6e9bff;
+    --bubble:#1d2129;--sk:#2a171c;--chief-bg:#eef1f5;--chief-ink:#0b0d10;--th:#181c22;--stamp-bg:#14171cee;
+    --buy-bg:#123222;--wait-bg:#33290d;--wait-ink:#ffc23d;--skip-bg:#36161c;--glow:0 0 0 1px #ffffff08,0 8px 24px #0006;color-scheme:dark}
+  :root[data-theme="light"]{--bg:#f5f4f0;--card:#fff;--card2:#fafaf8;--ink:#16181d;--mute:#7b7f87;--line:#e7e5df;--green:#1fb35a;--red:#e0364f;--amber:#f2a900;--blue:#2f6fed;
+    --bubble:#f3f3f1;--sk:#fdeef0;--chief-bg:#111;--chief-ink:#fff;--th:#fafaf8;--stamp-bg:#fffffff0;
+    --buy-bg:#e3f6eb;--wait-bg:#fff5d6;--wait-ink:#9a6c00;--skip-bg:#fdeef0;--glow:none;color-scheme:light}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;line-height:1.6}
   .wrap{max-width:860px;margin:0 auto;padding:20px 16px 60px}
@@ -15,7 +21,7 @@
   .sub{color:var(--mute);font-size:13px}
   .pill{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--mute)}
-  .dot.on{background:var(--green);box-shadow:0 0 0 3px #1fb35a33}
+  .dot.on{background:var(--green);box-shadow:0 0 0 3px #2fd27733,0 0 10px #2fd27788}
   h2{font-size:15px;margin:28px 0 10px;color:var(--mute);font-weight:600}
   .team{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
   .bot{text-align:center;font-size:12px}
@@ -33,28 +39,36 @@
   .ihead .sym{font-weight:700;font-size:16px;direction:ltr}
   .msgs{padding:10px 14px}
   .msg{display:flex;gap:10px;margin:8px 0;align-items:flex-start}
-  .bubble{background:#f3f3f1;border-radius:12px;padding:7px 11px;font-size:14px;flex:1}
+  .bubble{background:var(--bubble);border-radius:12px;padding:7px 11px;font-size:14px;flex:1}
   .bubble{unicode-bidi:plaintext}
   td.sk{min-width:170px;font-size:12px}
   .bubble .who{font-size:11px;color:var(--mute);display:block}
-  .msg.skeptic .bubble{background:#fdeef0}
-  .msg.chief .bubble{background:#111;color:#fff}
-  .msg.chief .who{color:#aaa}
+  .msg.skeptic .bubble{background:var(--sk)}
+  .msg.chief .bubble{background:var(--chief-bg);color:var(--chief-ink)}
+  .msg.chief .who{color:var(--mute)}
   .ticket{margin:4px 14px 14px;border:1px solid var(--line);border-radius:14px;padding:12px;position:relative;font-size:13px}
   .ticket .row{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dashed var(--line)}
   .ticket .row:last-child{border:0}
   .ticket .row span:last-child{direction:ltr;font-weight:600}
-  .stamp{position:absolute;top:38%;left:50%;transform:translate(-50%,-50%) rotate(-8deg);border:3px solid var(--red);color:var(--red);font-weight:800;padding:4px 12px;border-radius:8px;background:#fffffff0;font-family:Arial,sans-serif;letter-spacing:1px;white-space:nowrap}
+  .stamp{position:absolute;top:38%;left:50%;transform:translate(-50%,-50%) rotate(-8deg);border:3px solid var(--red);color:var(--red);font-weight:800;padding:4px 12px;border-radius:8px;background:var(--stamp-bg);font-family:Arial,sans-serif;letter-spacing:1px;white-space:nowrap}
   .tag{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600}
-  .BUY{background:#e3f6eb;color:var(--green)} .WAIT{background:#fff5d6;color:#9a6c00} .SKIP{background:#fdeef0;color:var(--red)}
+  .BUY{background:var(--buy-bg);color:var(--green)} .WAIT{background:var(--wait-bg);color:var(--wait-ink)} .SKIP{background:var(--skip-bg);color:var(--red)}
   table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:13px}
   th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right}
-  th{color:var(--mute);font-weight:600;background:#fafaf8}
+  th{color:var(--mute);font-weight:600;background:var(--th)}
   td.ltr{direction:ltr;text-align:right}
   .empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:18px;text-align:center;color:var(--mute)}
   .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
   .scroll table{min-width:520px}
   #board,#trades{overflow-x:auto}
+  .idea,.stat,.team,table,.ticket{box-shadow:var(--glow)}
+  .ticket{background:var(--card2)}
+  .av.chief{background:#111 !important;box-shadow:inset 0 0 0 1px #ffffff30}
+  :root:not([data-theme="light"]) .av.chief{background:#eef1f5 !important}
+  :root:not([data-theme="light"]) .av.chief i{background:#0b0d10}
+  .theme{cursor:pointer;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:13px;margin-inline-start:6px}
+  a{color:var(--blue)}
+  ::selection{background:#6e9bff55}
   .note{font-size:12px;color:var(--mute);margin-top:24px}
   @media(max-width:560px){.team{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:1fr}}
 </style>
@@ -67,7 +81,7 @@
       <div class="sub">6 بوتات في جروب واحد — تجربة على Paper، ليست توصية</div>
     </div>
     <div style="text-align:left">
-      <span class="pill"><span class="dot" id="dot"></span><span id="status">…</span></span>
+      <span class="pill"><span class="dot" id="dot"></span><span id="status">…</span></span><button class="theme" id="theme" title="تبديل الوضع">☀️</button>
       <div class="sub" id="lastrun"></div>
       <div class="sub" id="mkt"></div>
     </div>
@@ -95,6 +109,8 @@
   القرار بالقواعد فقط، وGemini يعيد صياغة الكلام بدون ما يضيف أرقام. المحاكاة متحفظة: لو شمعة لمست الستوب والهدف نحسبها خسارة.</p>
 </div>
 <script>
+(function(){ let t = "dark"; try { t = localStorage.getItem("desk-theme") || "dark"; } catch (e) {}
+  if (t === "light") document.documentElement.setAttribute("data-theme", "light"); })();
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money = v => v == null ? "—" : (v >= 1 ? "$" + Number(v).toFixed(2) : "$" + Number(v).toFixed(4));
@@ -103,8 +119,15 @@ const DEC = {BUY:"شراء", WAIT:"انتظار", SKIP:"تخطّي"};
 const ST = {pending:"تنتظر الاختراق", open:"مفتوحة", won:"ربحت ✅", lost:"خسرت ❌", closed:"أُقفلت آخر اليوم", expired:"ما تفعّلت"};
 const OWN = {desk:"🏛️ المكتب", you:"👤 أنت", blocked:"🛡️ أوقفها Skeptic"};
 const riy = iso => iso ? new Date(iso).toLocaleString("ar-SA-u-nu-latn",{timeZone:"Asia/Riyadh",month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"}) : "—";
-const av = (b, sm) => `<div class="av ${sm?"sm":""}" style="background:${b.color}"><i></i><i></i></div>`;
+const av = (b, sm) => `<div class="av ${sm?"sm":""} ${b.name==="Chief"?"chief":""}" style="background:${b.color}"><i></i><i></i></div>`;
 
+const tb = $("theme");
+const paint = () => tb.textContent = document.documentElement.getAttribute("data-theme") === "light" ? "🌙" : "☀️";
+paint();
+tb.onclick = () => { const light = document.documentElement.getAttribute("data-theme") !== "light";
+  if (light) document.documentElement.setAttribute("data-theme", "light"); else document.documentElement.removeAttribute("data-theme");
+  try { localStorage.setItem("desk-theme", light ? "light" : "dark"); } catch (e) {}
+  paint(); };
 fetch("desk.json?" + Date.now()).then(r => r.json()).then(D => {
   const B = D.bots;
   $("dot").className = "dot" + (D.last_open ? " on" : "");
