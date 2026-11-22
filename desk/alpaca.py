@@ -96,7 +96,7 @@ class Alpaca:
         if end:
             params["end"] = iso(end)
         merged: Dict[str, list] = {}
-        for _ in range(30):
+        for _ in range(3000):   # الصفحات أحياناً أصغر من limit — لا نقطع البيانات
             d = self.get(DATA, "/v2/stocks/bars", params)
             for sym, rows in (d.get("bars") or {}).items():
                 merged.setdefault(sym, []).extend(rows)

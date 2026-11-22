@@ -56,26 +56,26 @@ def main():
     start = end - timedelta(days=int(n_days * 1.47) + 25)
     print(f"جلب شموع 5 دقائق لـ {len(symbols)} سهم من {start:%Y-%m-%d} …", flush=True)
     feed, bars = "sip", {}
-    allsyms = symbols + ["SPY", "QQQ"]
+    allsyms = ["SPY", "QQQ"] + symbols
 
     def fetch(fd):
         out = {}
-        for i in range(0, len(allsyms), 10):
-            part = allsyms[i:i + 10]
+        for i in range(0, len(allsyms), 5):
+            part = allsyms[i:i + 5]
             got = c.bars(part, "5Min", start, end, feed=fd)
             for k, v in got.items():
                 if len(v):
                     s = ta.regular_session(v)          # نحتفظ بالجلسة النظامية بس (أخف على الذاكرة)
                     s.index = s.index.tz_convert(UTC)
                     out[k] = s
-            BT_DEBUG.append(f"{fd} {part[0]}..{part[-1]}: {sum(len(v) for v in got.values())} شمعة")
-            print(f"  {min(i + 10, len(allsyms))}/{len(allsyms)}", flush=True)
+            BT_DEBUG.append(f"{fd} " + ", ".join(f"{k}={len(v)}" for k, v in got.items()))
+            print(f"  {min(i + 5, len(allsyms))}/{len(allsyms)} ({c.calls} طلب)", flush=True)
         return out
     try:
         bars = fetch("sip")
     except Exception as e:
         BT_DEBUG.append(f"sip error: {e}")
-    if "SPY" not in bars:
+    if "SPY" not in bars or len(bars) < len(allsyms) * 0.7:
         feed, bars = "iex", fetch("iex")
     spy = bars.get("SPY")
     if spy is None or spy.empty:
