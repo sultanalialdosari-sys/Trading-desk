@@ -1,6 +1,9 @@
 name: trading-desk
 
 on:
+  # تعديل triggers/desk.txt يشغّله (عشان Claude يقدر يشغّله من المحادثة)
+  push:
+    paths: ["triggers/desk.txt"]
   schedule:
     # كل 15 دقيقة أثناء الجلسة (UTC، صيفاً وشتاءً). السكربت يتأكد من ساعة السوق بنفسه.
     - cron: "1,16,31,46 13-20 * * 1-5"

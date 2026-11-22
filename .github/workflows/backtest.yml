@@ -2,6 +2,9 @@ name: backtest
 
 # تشغيل يدوي: Actions → backtest → Run workflow
 on:
+  # تعديل triggers/backtest.txt يشغّله (عشان Claude يقدر يشغّله من المحادثة)
+  push:
+    paths: ["triggers/backtest.txt"]
   workflow_dispatch:
     inputs:
       days:
@@ -30,7 +33,7 @@ jobs:
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_API_SECRET: ${{ secrets.ALPACA_API_SECRET }}
-        run: python backtest.py --days "${{ inputs.days }}" | tee -a "$GITHUB_STEP_SUMMARY"
+        run: python backtest.py --days "${{ inputs.days || 60 }}" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Save results
         run: |
           git config user.name "trading-desk-bot"
