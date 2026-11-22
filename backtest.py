@@ -16,6 +16,7 @@ from desk import backtest as BT
 from desk.alpaca import ET, UTC, Alpaca, ApiError
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+BT_DEBUG = []
 DISCLOSURE = ("تنبيه: هذي محاكاة افتراضية على بيانات سابقة، ولا تمثّل أداء تداول فعلي ولا تضمن نتائج مستقبلية. "
               "النتائج تعتمد على جودة البيانات والانزلاق والسيولة وطريقة التنفيذ. للتعلّم والبحث فقط، وليست توصية.")
 
@@ -37,20 +38,27 @@ def main():
     end = datetime.now(UTC) - timedelta(minutes=20)          # البيانات الكاملة (SIP) مجانية إذا عمرها > 15 دقيقة
     start = end - timedelta(days=int(n_days * 1.5) + 20)       # + أيام تسخين للمؤشرات و RVOL
     print(f"جلب شموع 5 دقائق لـ {len(symbols)} سهم من {start:%Y-%m-%d} …")
-    feed = "sip"
-    bars = {}
+    feed, bars, debug = "sip", {}, []
+    allsyms = symbols + ["SPY", "QQQ"]
+
+    def fetch(fd):
+        out = {}
+        for i in range(0, len(allsyms), 10):
+            part = allsyms[i:i + 10]
+            got = c.bars(part, "5Min", start, end, feed=fd)
+            debug.append(f"{fd} {part[0]}..{part[-1]}: " + ", ".join(f"{k}={len(v)}" for k, v in got.items()) or "فاضي")
+            out.update({k: v for k, v in got.items() if len(v)})
+        return out
     try:
-        for i in range(0, len(symbols) + 2, 10):
-            part = (symbols + ["SPY", "QQQ"])[i:i + 10]
-            if part:
-                bars.update(c.bars(part, "5Min", start, end, feed="sip"))
-    except ApiError as e:
-        print(f"SIP رُفض ({e}) — أستخدم IEX")
-        feed, bars = "iex", {}
-        for i in range(0, len(symbols) + 2, 10):
-            part = (symbols + ["SPY", "QQQ"])[i:i + 10]
-            if part:
-                bars.update(c.bars(part, "5Min", start, end, feed="iex"))
+        bars = fetch("sip")
+    except Exception as e:
+        debug.append(f"sip error: {e}")
+    if "SPY" not in bars:
+        try:
+            feed, bars = "iex", fetch("iex")
+        except Exception as e:
+            debug.append(f"iex error: {e}")
+    BT_DEBUG.extend(debug)
     spy = bars.get("SPY")
     if spy is None or spy.empty:
         sys.exit("ما وصلت بيانات SPY — ما أقدر أحدد أيام التداول.")
@@ -125,6 +133,6 @@ if __name__ == "__main__":
         msg = traceback.format_exc() if not isinstance(e, SystemExit) else f"SystemExit: {e}"
         os.makedirs(os.path.join(ROOT, "docs"), exist_ok=True)
         open(os.path.join(ROOT, "docs", "backtest_error.txt"), "w", encoding="utf-8").write(
-            datetime.now(UTC).isoformat() + "\n" + msg)
+            datetime.now(UTC).isoformat() + "\n" + msg + "\n\n" + "\n".join(BT_DEBUG))
         print(msg)
         raise
