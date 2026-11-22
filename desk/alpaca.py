@@ -110,6 +110,18 @@ class Alpaca:
         d = self.get(DATA, "/v1beta1/news", {"symbols": ",".join(symbols), "start": iso(start), "limit": 50, "sort": "desc"})
         return d.get("news") or []
 
+    def news_range(self, symbols: List[str], start: datetime, end: datetime, max_pages: int = 200) -> list:
+        """كل الأخبار بين تاريخين (للاختبار التاريخي)."""
+        params = {"symbols": ",".join(symbols), "start": iso(start), "end": iso(end), "limit": 50, "sort": "asc"}
+        out = []
+        for _ in range(max_pages):
+            d = self.get(DATA, "/v1beta1/news", params)
+            out += d.get("news") or []
+            if not d.get("next_page_token"):
+                break
+            params["page_token"] = d["next_page_token"]
+        return out
+
     # ---------------- أوامر Paper (اختيارية) ----------------
     def paper_bracket(self, symbol: str, qty: int, entry: float, stop: float, target: float) -> dict:
         """أمر شراء stop-limit عند الاختراق مع وقف وهدف. paper-api فقط."""

@@ -52,6 +52,9 @@
   th{color:var(--mute);font-weight:600;background:#fafaf8}
   td.ltr{direction:ltr;text-align:right}
   .empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:18px;text-align:center;color:var(--mute)}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .scroll table{min-width:520px}
+  #board,#trades{overflow-x:auto}
   .note{font-size:12px;color:var(--mute);margin-top:24px}
   @media(max-width:560px){.team{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:1fr}}
 </style>
@@ -81,6 +84,9 @@
 
   <h2>آخر فحص — كل الأسهم اللي ناقشها الفريق</h2>
   <div id="board"></div>
+
+  <h2>الاختبار التاريخي</h2>
+  <div id="bt"></div>
 
   <h2>الصفقات الافتراضية</h2>
   <div id="trades"></div>
@@ -145,6 +151,20 @@ fetch("desk.json?" + Date.now()).then(r => r.json()).then(D => {
       <td class="ltr ${t.r>0?"pos":t.r<0?"neg":""}">${t.r ?? "—"}</td><td class="ltr">${t.pnl ?? "—"}</td></tr>`).join("") + `</table>`
     : `<div class="empty">ما فيه صفقات بعد.</div>`;
 }).catch(() => { $("ideas").innerHTML = `<div class="empty">ما قدرت أقرأ desk.json — أول تشغيل ما صار بعد.</div>`; });
+fetch("backtest.json?" + Date.now()).then(r => r.ok ? r.json() : null).then(B => {
+  if (!B) { $("bt").innerHTML = `<div class="empty">ما انشغّل بعد — Actions ← backtest ← Run workflow</div>`; return; }
+  const S = B.summary, W = B.walk_forward, row = (n, s) => `<tr><td>${n}</td><td>${s.trades||0}</td><td>${s.win_rate != null ? s.win_rate + "%" : "—"}</td>
+    <td class="ltr ${s.total_r>0?"pos":s.total_r<0?"neg":""}">${s.total_r ?? 0}R</td><td class="ltr">${s.avg_r ?? "—"}</td>
+    <td class="ltr">${s.profit_factor ?? "—"}</td><td class="ltr">${s.max_dd_r ?? "—"}</td></tr>`;
+  const mc = S.desk.monte_carlo || {};
+  $("bt").innerHTML = `<div class="sub" style="margin-bottom:6px">${B.period[0]} → ${B.period[1]} • ${B.days} يوم • ${B.symbols.length} سهم • بيانات ${B.feed}</div>
+    ${(S.desk.trades||0) < 30 ? `<div class="sub neg">⚠️ أقل من 30 صفقة للمكتب — النتيجة صدفة ولا يُعتمد عليها</div>` : ""}
+    <div class="scroll"><table><tr><th>المحفظة</th><th>صفقات</th><th>فوز</th><th>مجموع</th><th>متوسط R</th><th>PF</th><th>أقصى تراجع</th></tr>
+    ${row("🏛️ المكتب", S.desk)}${row("🟡 لو دخلنا الانتظار", S.wait)}${row("🛡️ اللي أوقفها Skeptic", S.blocked)}</table></div>
+    <p class="sub">Walk-forward خارج العيّنة: ${W.out_of_sample.trades||0} صفقة، ${W.out_of_sample.total_r ?? 0}R • الإعدادات ${W.params_stable ? "ثابتة ✅" : "تتغير كثير ⚠️"}
+    ${mc.prob_negative_total != null ? ` • Monte Carlo: احتمال مجموع سالب ${mc.prob_negative_total}%، أسوأ 5% تراجع ${mc.worst5pct_max_dd_r}R` : ""}</p>
+    <p class="note">${esc(B.disclosure)}<br>حدود: ${B.limits.map(esc).join(" • ")}</p>`;
+}).catch(() => {});
 </script>
 </body>
 </html>
