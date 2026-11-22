@@ -31,6 +31,15 @@ def export_site(L: Ledger, path: str):
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False)
 
 
+def load_cfg(profile: str = None) -> dict:
+    """الإعدادات الأساسية (النسخة 1) + فوقها النسخة المختارة من profiles."""
+    cfg = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
+    name = profile or cfg.get("profile", "v1")
+    cfg.update({k: v for k, v in cfg.get("profiles", {}).get(name, {}).items() if not k.startswith("_")})
+    cfg["active_profile"] = name
+    return cfg
+
+
 def self_check(desk, fh, sc) -> dict:
     """فحص سريع لكل مصدر — يُحفظ في desk.json عشان نعرف وش شغال بدون ما نفتح السجلات."""
     from datetime import datetime, timezone
@@ -63,7 +72,7 @@ def self_check(desk, fh, sc) -> dict:
 
 def main():
     final = "--final" in sys.argv
-    cfg = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
+    cfg = load_cfg()
     key, sec = os.environ.get("ALPACA_API_KEY"), os.environ.get("ALPACA_API_SECRET")
     if not key or not sec:
         sys.exit("ضيف ALPACA_API_KEY و ALPACA_API_SECRET في GitHub Secrets.")

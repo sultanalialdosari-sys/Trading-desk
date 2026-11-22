@@ -48,6 +48,11 @@ def review(sym: str, scout: Opinion, charts: Opinion, news: Opinion, senti: Opin
                 sev = "veto" if room < 1.0 else "major" if room < cfg["min_rr"] else None
                 if sev:
                     obj.append((sev, f"فيه مقاومة عند {px(nr)} قبل الهدف — العائد الحقيقي للمخاطرة {room:.1f} إلى 1 بس."))
+        if cfg.get("require_breakout") and c.get("setup") == "pullback":
+            obj.append(("veto", "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."))
+        mn = cfg.get("min_stop_pct")
+        if mn and entry > 0 and (entry - stop) / entry * 100 < mn:
+            obj.append(("veto", f"الستوب {((entry - stop) / entry * 100):.2f}% بس من السعر — أقل من {mn}%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."))
         if c.get("extension_atr", 0) > 2:
             obj.append(("major", f"السعر بعيد عن VWAP بـ{c['extension_atr']:.1f}× ATR — هذي مطاردة، مو دخول."))
         if c.get("rsi") and c["rsi"] > 75:

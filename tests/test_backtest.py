@@ -52,15 +52,16 @@ def test_backtest():
     t_collect = time.time() - t
     trades = BT.decide(snaps, CFG)
     s = BT.summarize(trades)
-    wf = BT.walk_forward(snaps, days, CFG)
+    wf = BT.walk_forward(snaps, days, CFG, train=15, test=5, min_trades=1)
     print(f"snaps={len(snaps)} trades={len(trades)} collect={t_collect:.1f}s")
     print(json.dumps({k: s[k] for k in ("desk", "wait", "blocked")}, ensure_ascii=False, indent=1))
     print(json.dumps(wf["out_of_sample"], ensure_ascii=False), wf["params_stable"], len(wf["windows"]))
 
     # 1) لا نظر للمستقبل: كل لحظة تشوف شموع انتهت قبلها فقط
-    for sn in snaps[:200]:
-        past = BT._upto(bars[sn.sym], sn.now)
-        assert past.index[-1] + pd.Timedelta(minutes=5) <= pd.Timestamp(sn.now)
+    for sn in snaps[:300]:
+        bt = sn.ch.facts.get("bar_time_et")      # آخر شمعة استخدمها Charts
+        last_bar = datetime.combine(sn.now.astimezone(ET).date(), datetime.strptime(bt, "%H:%M").time(), tzinfo=ET)
+        assert last_bar + timedelta(minutes=5) <= sn.now, (bt, sn.now)
     # 2) يوم خبر الطرح: لا صفقة «مكتب» على AAA في الـ24 ساعة بعده
     nt = datetime.fromisoformat(news_items[0]["created_at"].replace("Z", "+00:00"))
     bad = [x for x in trades if x["symbol"] == "AAA" and x["owner"] == "desk"
@@ -71,9 +72,15 @@ def test_backtest():
         if x.get("fill_utc"):
             assert x["fill_utc"] > x["created_utc"]
     import backtest as CLI
-    md = CLI.report_md({"period": [str(days[0]), str(days[-1])], "days": len(days), "symbols": syms, "feed": "fake",
-                        "summary": s, "walk_forward": wf, "limits": ["x"], "disclosure": CLI.DISCLOSURE})
-    print(md[:1500])
+    v1, v2 = CLI.load_profiles()
+    tr2 = BT.decide(snaps, v2)
+    abl = {k: {"label": CLI.NAMES[k], **BT.r_stats([t["r"] for t in BT.done(BT.decide(snaps, {**v1, **o})) if t["owner"] == "desk"]), "delta_total_r": 0}
+           for k, o in CLI.ABLATIONS.items()}
+    md = CLI.report_md({"period": [str(days[0]), str(days[-1])], "days": len(days), "symbols": syms, "feed": "fake", "snaps": len(snaps),
+                        "versions": {"v1": {"label": "v1", "summary": s, "walk_forward": wf},
+                                     "v2": {"label": "v2", "summary": BT.summarize(tr2), "walk_forward": wf}},
+                        "ablation": abl, "limits": ["x"], "disclosure": CLI.DISCLOSURE})
+    print(md[:2500])
 
 
 if __name__ == "__main__":

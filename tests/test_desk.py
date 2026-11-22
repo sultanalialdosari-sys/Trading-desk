@@ -147,7 +147,29 @@ def test_sec_and_merge():
     print("sec/merge OK")
 
 
+def test_v2_execution():
+    import pandas as pd
+    from desk.ledger import step_trade
+    idx = pd.date_range("2026-11-24 15:00", periods=5, freq="5min", tz="UTC")
+    base = {"entry": 10.0, "stop": 9.8, "target": 10.4, "qty": 100, "status": "pending",
+            "created_utc": "2026-11-24T14:59:00+00:00", "valid_until_utc": "2026-11-24T16:00:00+00:00", "fill_px": None}
+    # قفزة فوق الحد (10.05) ثم رجوع: v1 يشتري 10.3، v2 ينتظر ويشتري عند 10.05
+    bars = pd.DataFrame({"open": [10.3, 10.2, 10.06, 10.1, 10.3], "high": [10.35, 10.25, 10.1, 10.2, 10.45],
+                         "low": [10.25, 10.1, 10.03, 10.05, 10.2], "close": [10.3, 10.15, 10.08, 10.15, 10.42], "volume": [1] * 5}, index=idx)
+    v1, v2 = dict(base), dict(base)
+    step_trade(v1, bars, 0.0)
+    step_trade(v2, bars, 0.0, {"no_chase_r": 0.25})
+    assert v1["fill_px"] == 10.3 and v2["fill_px"] == 10.05, (v1, v2)
+    # تعادل: يرتفع +1R ثم يرجع للدخول = scratch بدل خسارة
+    bars2 = pd.DataFrame({"open": [10.0, 10.1, 10.15], "high": [10.05, 10.25, 10.16], "low": [9.95, 10.08, 9.9],
+                          "close": [10.02, 10.2, 9.95], "volume": [1] * 3}, index=idx[:3])
+    t = dict(base)
+    step_trade(t, bars2, 0.0, {"breakeven_at_r": 1.0})
+    assert t["status"] == "scratch" and abs(t["r"]) < 0.01, t
+    print("v2 execution OK")
+
+
 if __name__ == "__main__":
     test_step_trade(); test_gemini_guard(); test_cycle_and_buttons()
-    test_second_source(); test_stale_rescue(); test_sec_and_merge()
+    test_second_source(); test_stale_rescue(); test_sec_and_merge(); test_v2_execution()
     print("\nALL OK")

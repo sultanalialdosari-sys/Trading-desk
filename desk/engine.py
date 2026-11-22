@@ -247,7 +247,7 @@ class Desk:
             return
         for t in act:
             b = charts.drop_forming(bars.get(t["symbol"], pd.DataFrame()), now)
-            step_trade(t, b, self.cfg["slippage_pct"])
+            step_trade(t, b, self.cfg["slippage_pct"], self.cfg)
             if final and t["status"] in ("pending", "open"):
                 last = float(b["close"].iloc[-1]) if len(b) else None
                 close_eod(t, last, now, self.cfg["slippage_pct"])

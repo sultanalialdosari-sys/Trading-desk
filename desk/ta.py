@@ -78,3 +78,20 @@ def levels(d: pd.DataFrame) -> dict:
         y = d[d.index.date == days[-2]]
         out.update({"prev_high": float(y["high"].max()), "prev_low": float(y["low"].min()), "prev_close": float(y["close"].iloc[-1])})
     return out
+
+
+def rvol_series(sess: pd.DataFrame, lookback: int = 10) -> np.ndarray:
+    """RVOL لكل شمعة (سببي): الحجم التراكمي لليوم حتى الشمعة ÷ متوسط التراكمي لنفس التوقيت في الأيام السابقة (حتى 10، أقل شي 3)."""
+    if sess.empty:
+        return np.array([])
+    day = pd.Index(sess.index.date)
+    tod = sess.index.strftime("%H:%M")
+    cumv = sess["volume"].groupby(day).cumsum().values
+    piv = pd.DataFrame({"day": day, "tod": tod, "c": cumv}).pivot_table(index="day", columns="tod", values="c", aggfunc="last")
+    piv = piv.reindex(sorted(piv.columns), axis=1).ffill(axis=1)
+    base = piv.shift(1).rolling(lookback, min_periods=3).mean()
+    stacked = base.stack()
+    b = stacked.reindex(list(zip(day, tod))).values
+    with np.errstate(divide="ignore", invalid="ignore"):
+        out = np.where((b > 0) & ~np.isnan(b), cumv / b, np.nan)
+    return out

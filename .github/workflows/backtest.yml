@@ -9,19 +9,19 @@ on:
     inputs:
       days:
         description: "كم يوم تداول؟"
-        default: "60"
+        default: "300"
 
 permissions:
   contents: write
 
 concurrency:
-  group: trading-desk
+  group: backtest
   cancel-in-progress: false
 
 jobs:
   backtest:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,7 +36,7 @@ jobs:
         run: |
           set -o pipefail
           rm -f docs/backtest_error.txt
-          python backtest.py --days "${{ inputs.days || 60 }}" 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
+          python backtest.py --days "${{ inputs.days || 300 }}" 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Save results
         if: always()
         run: |

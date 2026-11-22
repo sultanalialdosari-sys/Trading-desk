@@ -64,32 +64,51 @@ class Ledger:
         return [t for t in self.d["trades"] if t["status"] in ("pending", "open")]
 
 
-def step_trade(tr: dict, bars: pd.DataFrame, slip_pct: float) -> None:
-    """يحدّث صفقة على شموع 5m (UTC index) بعد آخر وقت عولجت عنده."""
+def step_trade(tr: dict, bars: pd.DataFrame, slip_pct: float, cfg: Optional[dict] = None) -> None:
+    """يحدّث صفقة على شموع 5m (UTC index) بعد آخر وقت عولجت عنده.
+
+    cfg (اختياري، النسخة 2):
+      no_chase_r     — أمر الدخول stop-limit: ما نشتري أغلى من الدخول + هذا الكسر من R (وإلا ننتظر يرجع السعر)
+      breakeven_at_r — أول ما يربح هذا القدر من R، الستوب ينتقل لسعر الدخول
+    """
+    cfg = cfg or {}
     if bars is None or bars.empty:
         return
+    nc, be = cfg.get("no_chase_r"), cfg.get("breakeven_at_r")
     since = pd.Timestamp(tr.get("checked_utc") or tr["created_utc"])
     xs = bars[bars.index > since]
     for ts, b in xs.iterrows():
         tsi = ts.isoformat()
+        risk0 = tr["entry"] - tr.get("stop0", tr["stop"])
         if tr["status"] == "pending":
             if tsi > tr["valid_until_utc"]:
                 tr["status"] = "expired"
                 break
-            if b["high"] >= tr["entry"]:
-                fill = max(tr["entry"], b["open"]) * (1 + slip_pct / 100)
-                tr.update(status="open", fill_px=round(fill, 4), fill_utc=tsi)
+            if b["high"] >= tr["entry"] or tr.get("triggered"):
+                if nc is not None:
+                    limit = tr["entry"] + nc * risk0
+                    tr["triggered"] = True
+                    if b["low"] > limit:          # السعر قفز فوق حدّنا — ما نطارد
+                        tr["checked_utc"] = tsi
+                        continue
+                    fill = min(max(tr["entry"], b["open"]), limit)
+                else:
+                    fill = max(tr["entry"], b["open"])
+                fill *= (1 + slip_pct / 100)
+                tr.update(status="open", fill_px=round(fill, 4), fill_utc=tsi, stop0=tr["stop"])
                 if b["low"] <= tr["stop"]:
                     _close(tr, tr["stop"], tsi, slip_pct, "lost")
                     break
                 continue
         if tr["status"] == "open":
             if b["low"] <= tr["stop"]:
-                _close(tr, min(tr["stop"], b["open"]), tsi, slip_pct, "lost")
+                _close(tr, min(tr["stop"], b["open"]), tsi, slip_pct, "lost" if tr["stop"] < tr["entry"] else "scratch")
                 break
             if b["high"] >= tr["target"]:
                 _close(tr, tr["target"], tsi, slip_pct, "won")
                 break
+            if be is not None and not tr.get("be") and b["high"] >= tr["fill_px"] + be * risk0:
+                tr.update(stop=round(tr["fill_px"], 4), be=True)   # من الشمعة الجاية
         tr["checked_utc"] = tsi
     if len(xs):
         tr["checked_utc"] = xs.index[-1].isoformat()
@@ -97,7 +116,7 @@ def step_trade(tr: dict, bars: pd.DataFrame, slip_pct: float) -> None:
 
 def _close(tr, px, tsi, slip_pct, status):
     exit_px = px * (1 - slip_pct / 100)
-    risk = tr["entry"] - tr["stop"]
+    risk = tr["entry"] - tr.get("stop0", tr["stop"])
     tr.update(status=status, exit_px=round(exit_px, 4), exit_utc=tsi,
               r=round((exit_px - tr["fill_px"]) / risk, 2) if risk > 0 else None,
               pnl=round((exit_px - tr["fill_px"]) * tr["qty"], 2))
@@ -111,7 +130,7 @@ def close_eod(tr: dict, last_px: Optional[float], now: datetime, slip_pct: float
 
 
 def stats(trades: List[dict], owner: str) -> dict:
-    xs = [t for t in trades if t["owner"] == owner and t["status"] in ("won", "lost", "closed")]
+    xs = [t for t in trades if t["owner"] == owner and t["status"] in ("won", "lost", "closed", "scratch")]
     n = len(xs)
     wins = [t for t in xs if (t["r"] or 0) > 0]
     return {"owner": owner, "closed": n, "wins": len(wins), "win_rate": round(len(wins) / n * 100) if n else None,

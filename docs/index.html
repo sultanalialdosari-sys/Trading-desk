@@ -175,18 +175,25 @@ fetch("desk.json?" + Date.now()).then(r => r.json()).then(D => {
     : `<div class="empty">ما فيه صفقات بعد.</div>`;
 }).catch(() => { $("ideas").innerHTML = `<div class="empty">ما قدرت أقرأ desk.json — أول تشغيل ما صار بعد.</div>`; });
 fetch("backtest.json?" + Date.now()).then(r => r.ok ? r.json() : null).then(B => {
-  if (!B) { $("bt").innerHTML = `<div class="empty">ما انشغّل بعد — Actions ← backtest ← Run workflow</div>`; return; }
-  const S = B.summary, W = B.walk_forward, row = (n, s) => `<tr><td>${n}</td><td>${s.trades||0}</td><td>${s.win_rate != null ? s.win_rate + "%" : "—"}</td>
+  if (!B) { $("bt").innerHTML = `<div class="empty">ما انشغّل بعد</div>`; return; }
+  const row = (n, s) => `<tr><td>${n}</td><td>${s.trades||0}</td><td>${s.win_rate != null ? s.win_rate + "%" : "—"}</td>
     <td class="ltr ${s.total_r>0?"pos":s.total_r<0?"neg":""}">${s.total_r ?? 0}R</td><td class="ltr">${s.avg_r ?? "—"}</td>
     <td class="ltr">${s.profit_factor ?? "—"}</td><td class="ltr">${s.max_dd_r ?? "—"}</td></tr>`;
-  const mc = S.desk.monte_carlo || {};
-  $("bt").innerHTML = `<div class="sub" style="margin-bottom:6px">${B.period[0]} → ${B.period[1]} • ${B.days} يوم • ${B.symbols.length} سهم • بيانات ${B.feed}</div>
-    ${(S.desk.trades||0) < 30 ? `<div class="sub neg">⚠️ أقل من 30 صفقة للمكتب — النتيجة صدفة ولا يُعتمد عليها</div>` : ""}
-    <div class="scroll"><table><tr><th>المحفظة</th><th>صفقات</th><th>فوز</th><th>مجموع</th><th>متوسط R</th><th>PF</th><th>أقصى تراجع</th></tr>
-    ${row("🏛️ المكتب", S.desk)}${row("🟡 لو دخلنا الانتظار", S.wait)}${row("🛡️ اللي أوقفها Skeptic", S.blocked)}</table></div>
-    <p class="sub">Walk-forward خارج العيّنة: ${W.out_of_sample.trades||0} صفقة، ${W.out_of_sample.total_r ?? 0}R • الإعدادات ${W.params_stable ? "ثابتة ✅" : "تتغير كثير ⚠️"}
-    ${mc.prob_negative_total != null ? ` • Monte Carlo: احتمال مجموع سالب ${mc.prob_negative_total}%، أسوأ 5% تراجع ${mc.worst5pct_max_dd_r}R` : ""}</p>
-    <p class="note">${esc(B.disclosure)}<br>حدود: ${B.limits.map(esc).join(" • ")}</p>`;
+  const H = `<tr><th></th><th>صفقات</th><th>فوز</th><th>مجموع</th><th>متوسط R</th><th>PF</th><th>أقصى تراجع</th></tr>`;
+  const V = B.versions || {v1: {label: "النسخة 1", summary: B.summary, walk_forward: B.walk_forward}};
+  let html = `<div class="sub" style="margin-bottom:6px">${B.period[0]} → ${B.period[1]} • ${B.days} يوم • ${B.symbols.length} سهم • بيانات ${B.feed}</div>`;
+  html += `<div class="scroll"><table>${H}${Object.values(V).map(v => row(v.label, v.summary.desk)).join("")}</table></div>`;
+  if (B.ablation) html += `<p class="sub" style="margin:12px 0 6px">كل تعديل من النسخة 2 لحاله فوق النسخة 1:</p>
+    <div class="scroll"><table>${H}${Object.values(B.ablation).map(a => row(`${esc(a.label)} <span class="${a.delta_total_r>0?"pos":"neg"}">(${a.delta_total_r>0?"+":""}${a.delta_total_r}R)</span>`, a)).join("")}</table></div>`;
+  for (const v of Object.values(V)) {
+    const W = v.walk_forward, mc = v.summary.desk.monte_carlo || {};
+    html += `<p class="sub"><b>${esc(v.label)}</b> • walk-forward خارج العيّنة: ${W.out_of_sample.trades||0} صفقة، ${W.out_of_sample.total_r ?? 0}R`
+      + (W.n_windows != null ? ` • نوافذ رابحة ${W.positive_windows}/${W.n_windows}` : "")
+      + ` • الإعدادات ${W.params_stable ? "ثابتة ✅" : "تتغير كثير ⚠️"}`
+      + (mc.prob_negative_total != null ? ` • Monte Carlo: احتمال مجموع سالب ${mc.prob_negative_total}%` : "") + `</p>`;
+  }
+  html += `<p class="note">${esc(B.disclosure)}<br>حدود: ${B.limits.map(esc).join(" • ")} • <a href="https://github.com/sultanalialdosari-sys/Trading-desk/blob/main/docs/backtest.md">التقرير الكامل</a></p>`;
+  $("bt").innerHTML = html;
 }).catch(() => {});
 </script>
 </body>

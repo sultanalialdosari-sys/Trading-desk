@@ -35,12 +35,16 @@ def analyze(sym: str, raw5: pd.DataFrame, now: datetime, cfg: dict) -> Opinion:
     if d.index[-1].date() != now.astimezone(d.index.tz).date() or len(today) < 3:
         return Opinion("charts", "unavailable", None, "جلسة اليوم ما زالت في أولها — أنتظر 3 شموع على الأقل.", {"symbol": sym})
     d = ta.enrich(d)
+    return plan_at(sym, d, ta.rvol_now(d), cfg)
+
+
+def plan_at(sym: str, d: pd.DataFrame, rv: float, cfg: dict) -> Opinion:
+    """الجزء الحسابي من Charts على شموع جلسة «مُثرّاة» بالمؤشرات تنتهي عند آخر شمعة مقفلة (يستخدمه الاختبار التاريخي مباشرة)."""
     last = d.iloc[-1]
     a = float(last["atr"]) if not np.isnan(last["atr"]) else None
     if not a or a <= 0:
         return Opinion("charts", "unavailable", None, "ATR غير متوفر.", {"symbol": sym})
     lv = ta.levels(d)
-    rv = ta.rvol_now(d)
     close, vw, e9, e20, r = (float(last[k]) for k in ("close", "vwap", "ema9", "ema20", "rsi"))
     trend_up = close > vw and e9 > e20
     recent = d.tail(6)
@@ -100,3 +104,14 @@ def analyze(sym: str, raw5: pd.DataFrame, now: datetime, cfg: dict) -> Opinion:
     line = (f"{trend_txt}، {rv_txt}، RSI {facts['rsi']}. الإعداد: {kind_txt}. "
             f"دخول فوق {px(entry)}، ستوب {px(stop)}، هدف {px(target)}.")
     return Opinion("charts", "positive" if score >= 60 else "neutral", round(score, 1), line, facts)
+
+
+def retarget(f: dict, target_r: float) -> dict:
+    """نفس الخطة بهدف مختلف (لمقارنة إعدادات الهدف بدون إعادة الحساب)."""
+    if "entry" not in f:
+        return f
+    g = dict(f)
+    risk = g["entry"] - g["stop"]
+    g["target"] = _round(g["entry"] + target_r * risk)
+    g["rr"] = round(target_r, 2) if risk > 0 else None
+    return g
