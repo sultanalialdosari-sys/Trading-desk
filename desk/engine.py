@@ -8,7 +8,10 @@ import pandas as pd
 from desk import ta
 from desk.alpaca import ET, Alpaca, UTC
 from desk.bots import charts, chief, news, scout, sentiment, skeptic
-from desk.bots.base import Opinion
+from desk.bots.sentiment import Reddit
+from desk.bots.base import Opinion, px
+from desk.finnhub import Finnhub, merge_news
+from desk.sec import Sec
 from desk.ledger import Ledger, close_eod, stats, step_trade
 from desk.narrator import ORDER, narrate
 from desk.telegram import DEC_AR, Telegram, format_idea
@@ -18,8 +21,11 @@ DATA_NOTE = "أسعار IEX لحظية (بورصة واحدة) — الأحجا�
 
 class Desk:
     def __init__(self, client: Alpaca, ledger: Ledger, cfg: dict, tg: Optional[Telegram] = None,
-                 narrator: Callable = narrate, senti_fetch: Callable = sentiment.fetch, log=print):
+                 narrator: Callable = narrate, senti_fetch: Callable = sentiment.fetch, log=print,
+                 fh: Optional[Finnhub] = None, sec: Optional[Sec] = None):
         self.c, self.L, self.cfg, self.tg, self.narr, self.sf, self.log = client, ledger, cfg, tg, narrator, senti_fetch, log
+        self.fh, self.sec = fh, sec
+        self.reddit = Reddit() if senti_fetch is sentiment.fetch else None
         self.errors: List[str] = []
 
     # ------------------------------------------------------------ أزرار تيليجرام
@@ -145,9 +151,16 @@ class Desk:
         built = []
         for so, ch in deep:
             sym = so.facts["symbol"]
-            nw = news.analyze(sym, items, now)
-            se = sentiment.analyze(sym, self.sf(sym), now)
-            sk = skeptic.review(sym, so, ch, nw, se, mkt, now, cfg)
+            self.cross_check(so, now)
+            sym_items = items
+            if self.fh and self.fh.ok:
+                sym_items = merge_news([n for n in (items or []) if sym in (n.get("symbols") or [])] if items is not None else None,
+                                       self.fh.news(sym, now))
+            nw = news.analyze(sym, sym_items, now)
+            se = sentiment.analyze(sym, self.sf(sym), now, self.reddit.get(sym) if self.reddit else None)
+            extra = {"sec": self.sec.risks(sym, now) if self.sec else None,
+                     "earnings": self.fh.earnings(sym, now.astimezone(ET).date()) if self.fh and self.fh.ok else None}
+            sk = skeptic.review(sym, so, ch, nw, se, mkt, now, cfg, extra)
             ops = {"scout": so, "charts": ch, "news": nw, "sentiment": se, "skeptic": sk}
             cf = chief.decide(sym, ops, mkt, cfg)
             ops["chief"] = cf
@@ -203,6 +216,23 @@ class Desk:
                     summary["sent"] += 1
                 except Exception as e:
                     self.errors.append(f"تيليجرام إرسال: {str(e)[:80]}")
+
+    def cross_check(self, so: Opinion, now: datetime):
+        """يقارن سعر IEX بسعر Finnhub اللحظي، ويكتب النتيجة في حقائق Scout وكلامه."""
+        if not (self.fh and self.fh.ok):
+            so.facts["second_source"] = "غير مفعّل"
+            return
+        q = self.fh.quote(so.facts["symbol"])
+        if not q:
+            so.facts["second_source"] = "Finnhub ما ردّ"
+            so.line += " (Finnhub ما ردّ — السعر من IEX فقط)"
+            return
+        diff = (so.facts["price"] / q["price"] - 1) * 100
+        age = max(0, round((now - q["time"]).total_seconds()))
+        so.facts.update(finnhub_price=round(q["price"], 4), finnhub_age_sec=age, price_diff_pct=round(diff, 2),
+                        second_source="Finnhub")
+        ok = "✅" if abs(diff) <= self.cfg.get("price_diff_major_pct", 0.5) else "⚠️"
+        so.line += f" {ok} Finnhub: {px(q['price'])} (فرق {diff:+.2f}%، قبل {age} ث)."
 
     def _track(self, now: datetime, final: bool):
         act = self.L.active()

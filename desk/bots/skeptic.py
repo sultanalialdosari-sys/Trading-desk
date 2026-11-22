@@ -14,8 +14,10 @@ from desk.bots.base import Opinion, px
 
 
 def review(sym: str, scout: Opinion, charts: Opinion, news: Opinion, senti: Opinion, market: dict,
-           now: datetime, cfg: dict) -> Opinion:
+           now: datetime, cfg: dict, extra: dict = None) -> Opinion:
+    """extra (اختياري): {'sec': [..] أو None, 'earnings': {'date','hour'} أو None} — من SEC و Finnhub."""
     obj: List[Tuple[str, str]] = []
+    extra = extra or {}
     c = charts.facts
     et = now.astimezone(ET)
     hm = et.hour * 60 + et.minute
@@ -62,13 +64,39 @@ def review(sym: str, scout: Opinion, charts: Opinion, news: Opinion, senti: Opin
         obj.append(("minor", "طالع أكثر من 8% بدون أي خبر — ممكن ضخ مؤقت."))
     if senti.facts.get("bullish_pct", 0) >= 85:
         obj.append(("minor", f"{senti.facts['bullish_pct']}% متفائلين — لما الكل يشتري، مين بقي يشتري بعدك؟"))
+    if senti.facts.get("reddit_surge"):
+        obj.append(("minor", "ذكره في Reddit انفجر خلال 24 ساعة — ممكن ضخ مضاربين، والنزول يكون سريع."))
     if senti.stance == "negative":
         obj.append(("minor", "المزاج العام سلبي."))
     if market.get("spy_below_vwap") and market.get("qqq_below_vwap"):
         obj.append(("major", "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."))
+    # المصدر الثاني (Finnhub) يتحقق من السعر
+    diff, f_age = scout.facts.get("price_diff_pct"), scout.facts.get("finnhub_age_sec")
+    f_fresh = f_age is not None and f_age <= cfg.get("finnhub_fresh_sec", 120)
+    if diff is not None:
+        if abs(diff) > cfg.get("price_diff_veto_pct", 1.5):
+            obj.append(("veto", f"سعر IEX وسعر Finnhub مختلفين {diff:+.2f}% — وحدة من البيانات غلط، ما نقرّر عليها."))
+        elif abs(diff) > cfg.get("price_diff_major_pct", 0.5):
+            obj.append(("major", f"فرق {diff:+.2f}% بين سعر IEX وسعر Finnhub — السعر مو مؤكد."))
     age = scout.facts.get("last_trade_age_sec")
     if age is not None and age > cfg["max_price_age_sec"]:
-        obj.append(("veto", f"آخر سعر عمره {age // 60} دقيقة — البيانات قديمة، ما نقرّر عليها."))
+        if f_fresh and diff is not None and abs(diff) <= cfg.get("price_diff_major_pct", 0.5):
+            obj.append(("minor", f"آخر صفقة على IEX قبل {age // 60} دقيقة، بس Finnhub يأكد السعر قبل {f_age} ث."))
+        else:
+            obj.append(("veto", f"آخر سعر عمره {age // 60} دقيقة — البيانات قديمة، ما نقرّر عليها."))
+    # SEC: طرح أسهم / شطب
+    for r in (extra.get("sec") or []):
+        obj.append((r["severity"], "SEC: " + r["text"]))
+    # Finnhub: نتائج الشركة
+    er = extra.get("earnings")
+    today = now.astimezone(ET).date().isoformat()
+    if er and er.get("date"):
+        if er["date"] == today and er.get("hour") == "amc":
+            obj.append(("minor", "الشركة تعلن نتائجها اليوم بعد الإغلاق — لازم الصفقة تنقفل قبل الجرس."))
+        elif er["date"] == today and er.get("hour") != "bmo":
+            obj.append(("major", "الشركة عندها إعلان نتائج اليوم ووقته مو واضح — حركة مفاجئة محتملة."))
+        elif er["date"] > today:
+            obj.append(("minor", f"إعلان نتائج قريب ({er['date']}) — الاهتمام ممكن يكون مضاربة قبل النتائج."))
     if hm >= cfg["no_entries_after_min"]:
         obj.append(("veto", "متأخرين في الجلسة — ما فيه وقت كافي للصفقة تشتغل."))
     elif hm < 570 + cfg["skip_first_min"]:

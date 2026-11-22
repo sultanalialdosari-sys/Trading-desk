@@ -12,6 +12,46 @@ import requests
 from desk.bots.base import Opinion
 
 URL = "https://api.stocktwits.com/api/2/streams/symbol/{}.json"
+APE = "https://apewisdom.io/api/v1.0/filter/all-stocks/page/{}"
+
+
+class Reddit:
+    """ApeWisdom (مجاني بدون مفتاح): كم مرة انذكر السهم في Reddit آخر 24 ساعة، مقارنة بأمس."""
+
+    def __init__(self, session=None, pages: int = 3):
+        self.s, self.pages = session or requests, pages
+        self._map = None
+
+    def get(self, sym: str) -> Optional[dict]:
+        if self._map is None:
+            self._map = {}
+            for p in range(1, self.pages + 1):
+                try:
+                    r = self.s.get(APE.format(p), timeout=10, headers={"User-Agent": "Mozilla/5.0 trading-desk"})
+                    if r.status_code != 200:
+                        break
+                    for x in r.json().get("results", []):
+                        self._map[(x.get("ticker") or "").upper()] = x
+                except Exception:
+                    break
+            if not self._map:
+                self._map = None
+                return None
+        x = self._map.get(sym.upper())
+        if not x:
+            return {"mentions": 0}
+        return {"mentions": int(x.get("mentions") or 0), "mentions_24h_ago": int(x.get("mentions_24h_ago") or 0),
+                "rank": x.get("rank"), "rank_24h_ago": x.get("rank_24h_ago")}
+
+
+def reddit_txt(rd: Optional[dict]) -> str:
+    if rd is None:
+        return ""
+    if not rd.get("mentions"):
+        return " Reddit: ما انذكر."
+    prev = rd.get("mentions_24h_ago") or 0
+    jump = f"، {rd['mentions'] / prev:.1f}× أمس" if prev else ""
+    return f" Reddit: {rd['mentions']} ذكر (المركز {rd.get('rank')}{jump})."
 
 
 def fetch(sym: str, session: Optional[requests.Session] = None) -> Optional[dict]:
@@ -25,7 +65,21 @@ def fetch(sym: str, session: Optional[requests.Session] = None) -> Optional[dict
         return None
 
 
-def analyze(sym: str, data: Optional[dict], now: datetime) -> Opinion:
+def analyze(sym: str, data: Optional[dict], now: datetime, reddit: Optional[dict] = None) -> Opinion:
+    op = _analyze(sym, data, now)
+    if reddit is not None:
+        op.facts["reddit"] = reddit
+        prev = reddit.get("mentions_24h_ago") or 0
+        op.facts["reddit_surge"] = bool(reddit.get("mentions", 0) >= 20 and (prev == 0 or reddit["mentions"] >= 3 * prev))
+        if op.score is None:   # StockTwits ما ردّ — Reddit يعطي الاهتمام بس (مو الاتجاه)
+            m = reddit.get("mentions", 0)
+            op.stance, op.score = "neutral", 50.0 + min(10, m / 10)
+            op.line = "StockTwits ما ردّ."
+        op.line += reddit_txt(reddit)
+    return op
+
+
+def _analyze(sym: str, data: Optional[dict], now: datetime) -> Opinion:
     if not data or "messages" not in data:
         return Opinion("sentiment", "unavailable", None, "StockTwits ما ردّ — المزاج غير متوفر هالمرة.", {"symbol": sym})
     msgs = data["messages"]

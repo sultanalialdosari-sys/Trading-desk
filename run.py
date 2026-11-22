@@ -11,6 +11,8 @@ import sys
 from desk.alpaca import Alpaca
 from desk.bots.base import BOTS
 from desk.engine import Desk
+from desk.finnhub import Finnhub
+from desk.sec import Sec
 from desk.ledger import Ledger, stats
 from desk.telegram import Telegram
 
@@ -36,13 +38,20 @@ def main():
     if not key or not sec:
         sys.exit("ضيف ALPACA_API_KEY و ALPACA_API_SECRET في GitHub Secrets.")
     L = Ledger(os.path.join(ROOT, "data", "desk.json"))
-    desk = Desk(Alpaca(key, sec), L, cfg, Telegram())
+    fh, sc = Finnhub(), Sec()
+    desk = Desk(Alpaca(key, sec), L, cfg, Telegram(), fh=fh, sec=sc)
     s = desk.run(final=final)
     L.save()
     export_site(L, os.path.join(ROOT, "docs", "desk.json"))
     print(json.dumps({k: v for k, v in s.items() if k != "board"}, ensure_ascii=False, indent=1, default=str))
     if not Telegram().ok:
         print("ملاحظة: TELEGRAM_TOKEN/TELEGRAM_CHAT_ID غير مضبوطة — النتائج على الموقع فقط.")
+    if not fh.ok:
+        print("ملاحظة: FINNHUB_API_KEY غير مضبوط — ما فيه تحقق ثاني من السعر ولا أخبار Finnhub.")
+    if not sc.ok:
+        print("ملاحظة: SEC_USER_AGENT غير مضبوط (اسم + بريد) — فحص إفصاحات الطرح متوقف.")
+    for e in (fh.errors + sc.errors)[:5]:
+        print("تنبيه:", e)
     if not os.environ.get("GEMINI_API_KEY"):
         print("ملاحظة: GEMINI_API_KEY غير مضبوط — البوتات تتكلم بالقوالب الثابتة.")
 
