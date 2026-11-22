@@ -21,7 +21,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 def export_site(L: Ledger, path: str):
     d = L.d
-    out = {"last_run": d.get("last_run"), "last_open": d.get("last_open"), "market": d.get("market"),
+    out = {"setup": d.get("setup"), "last_run": d.get("last_run"), "last_open": d.get("last_open"), "market": d.get("market"),
            "board": d.get("board", []), "bots": BOTS,
            "ideas": list(reversed(d["ideas"]))[:40],
            "trades": list(reversed(d["trades"]))[:120],
@@ -29,6 +29,36 @@ def export_site(L: Ledger, path: str):
            "daily": d.get("daily", {}), "runs": d["runs"][-12:]}
     os.makedirs(os.path.dirname(path), exist_ok=True)
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False)
+
+
+def self_check(desk, fh, sc) -> dict:
+    """فحص سريع لكل مصدر — يُحفظ في desk.json عشان نعرف وش شغال بدون ما نفتح السجلات."""
+    from datetime import datetime, timezone
+    now = datetime.now(timezone.utc)
+    out = {"utc": now.isoformat(), "alpaca": "ok" if not any("clock" in e for e in desk.errors) else "fail"}
+    tg = desk.tg
+    if tg and tg.ok:
+        try:
+            me = tg.call("getMe")
+            out["telegram"] = "ok @" + me.get("username", "")
+            if not desk.L.d.get("tg_hello"):
+                tg.send("✅ مكتب التداول متصل. أول فكرة توصلك هنا لما يفتح السوق (5:30 العصر بتوقيت الرياض).")
+                desk.L.d["tg_hello"] = now.isoformat()
+        except Exception as e:
+            out["telegram"] = "fail: " + str(e)[:80]
+    else:
+        out["telegram"] = "missing"
+    if fh.ok:
+        q = fh.quote("SPY")
+        out["finnhub"] = f"ok SPY {q['price']}" if q else "fail: " + "; ".join(fh.errors[-2:])
+    else:
+        out["finnhub"] = "missing"
+    if sc.ok:
+        out["sec"] = "ok" if sc.cik("AAPL") else "fail: " + "; ".join(sc.errors[-2:])
+    else:
+        out["sec"] = "missing"
+    out["gemini"] = "set" if os.environ.get("GEMINI_API_KEY") else "missing"
+    return out
 
 
 def main():
@@ -41,6 +71,7 @@ def main():
     fh, sc = Finnhub(), Sec()
     desk = Desk(Alpaca(key, sec), L, cfg, Telegram(), fh=fh, sec=sc)
     s = desk.run(final=final)
+    L.d["setup"] = self_check(desk, fh, sc)
     L.save()
     export_site(L, os.path.join(ROOT, "docs", "desk.json"))
     print(json.dumps({k: v for k, v in s.items() if k != "board"}, ensure_ascii=False, indent=1, default=str))
