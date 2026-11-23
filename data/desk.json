@@ -1989,7 +1989,7 @@
    "idea_id": "11231136EEM",
    "symbol": "EEM",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 58.29,
    "stop": 58.11,
    "target": 58.65,
@@ -2002,14 +2002,14 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-23T17:30:00+00:00"
+   "checked_utc": "2026-11-23T18:30:00+00:00"
   },
   {
    "id": "11231136EWY-blocked",
    "idea_id": "11231136EWY",
    "symbol": "EWY",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 137.28,
    "stop": 136.69,
    "target": 138.46,
@@ -2022,14 +2022,14 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-23T17:30:00+00:00"
+   "checked_utc": "2026-11-23T18:30:00+00:00"
   },
   {
    "id": "11231136MU-blocked",
    "idea_id": "11231136MU",
    "symbol": "MU",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 720.95,
    "stop": 695.5,
    "target": 771.85,
@@ -2042,7 +2042,7 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-23T17:30:00+00:00"
+   "checked_utc": "2026-11-23T18:30:00+00:00"
   },
   {
    "id": "11231238ZS-blocked",
@@ -2061,7 +2061,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-23T18:30:00+00:00"
   },
   {
    "id": "11231238TSM-blocked",
@@ -2080,7 +2081,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-23T18:30:00+00:00"
   },
   {
    "id": "11231238NVDU-blocked",
@@ -2099,7 +2101,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-23T18:25:00+00:00"
   },
   {
    "id": "11231238DRAM-blocked",
@@ -2118,7 +2121,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-23T18:30:00+00:00"
   }
  ],
  "runs": [
@@ -2284,6 +2288,34 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-23T18:35:43.568083+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 97,
+   "candidates": 4,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 724.07,
+      "vwap": 721.73,
+      "chg_open_pct": -0.03
+     },
+     "QQQ": {
+      "close": 652.05,
+      "vwap": 650.09,
+      "chg_open_pct": -0.6
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {},
@@ -2291,74 +2323,38 @@
   {
    "symbol": "ZS",
    "decision": "SKIP",
-   "score": 88.7,
+   "score": 70.5,
    "blocked": true,
-   "price": 227.34,
-   "change_pct": 16.69,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "price": 225.52,
+   "change_pct": 15.75,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "NVDU",
    "decision": "SKIP",
-   "score": 51.4,
+   "score": 61.9,
    "blocked": true,
-   "price": 67.33,
-   "change_pct": 64.54,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "price": 66.59,
+   "change_pct": 62.73,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "DRAM",
    "decision": "SKIP",
-   "score": 29.3,
+   "score": 59.1,
    "blocked": true,
-   "price": 39.8,
-   "change_pct": 18.28,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "TSLA",
-   "decision": "SKIP",
-   "score": 62.5,
-   "blocked": true,
-   "price": 388.99,
-   "change_pct": 12.35,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "TSM",
-   "decision": "SKIP",
-   "score": 74.0,
-   "blocked": true,
-   "price": 369.035,
-   "change_pct": 15.62,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "NOK",
-   "decision": "SKIP",
-   "score": 68.0,
-   "blocked": true,
-   "price": 7.61,
-   "change_pct": 10.61,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "SNDK",
-   "decision": "SKIP",
-   "score": 60.2,
-   "blocked": true,
-   "price": 91.13,
-   "change_pct": 15.0,
+   "price": 39.7,
+   "change_pct": 17.98,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "MU",
    "decision": "SKIP",
-   "score": 24.3,
+   "score": 77.6,
    "blocked": true,
-   "price": 708.75,
-   "change_pct": 19.15,
-   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Can Micron Stock Jump 50%?» — هذا النوع يقتل الصعود."
+   "price": 704.63,
+   "change_pct": 18.46,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   }
  ],
  "market": {
@@ -2367,24 +2363,24 @@
   "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 723.73,
-    "vwap": 721.63,
-    "chg_open_pct": -0.08
+    "close": 724.07,
+    "vwap": 721.73,
+    "chg_open_pct": -0.03
    },
    "QQQ": {
-    "close": 652.36,
-    "vwap": 649.98,
-    "chg_open_pct": -0.55
+    "close": 652.05,
+    "vwap": 650.09,
+    "chg_open_pct": -0.6
    }
   }
  },
- "last_run": "2026-11-23T17:38:35.577590+00:00",
+ "last_run": "2026-11-23T18:35:43.568083+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-23T17:38:57.676560+00:00",
+  "utc": "2026-11-23T18:35:55.442267+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 723.7",
+  "finnhub": "ok SPY 724.07",
   "sec": "missing",
   "gemini": "set"
  }
