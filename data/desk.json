@@ -613,6 +613,555 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11231136EEM",
+   "symbol": "EEM",
+   "created_utc": "2026-11-23T16:36:00.534113+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 81.5,
+   "blocked": true,
+   "ticket": {
+    "entry": 58.29,
+    "stop": 58.11,
+    "target": 58.65,
+    "qty": 85,
+    "risk_usd": 15.3,
+    "reward_usd": 30.6,
+    "rr": 2.0,
+    "position_usd": 4954.65
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 73.3,
+     "line": "EEM عند $58.16 (+8.0% اليوم) وحجمه يمشي بوتيرة 1.8× أمس. ✅ Finnhub: $58.19 (فرق -0.05%، قبل 0 ث).",
+     "facts": {
+      "symbol": "EEM",
+      "price": 58.16,
+      "prev_close": 53.86,
+      "change_pct": 7.98,
+      "volume_pace_x": 1.77,
+      "iex_dollar_volume": 175254750,
+      "in_gainers": false,
+      "last_trade_age_sec": 2,
+      "day_high": 58.82,
+      "finnhub_price": 58.19,
+      "finnhub_age_sec": 0,
+      "price_diff_pct": -0.05,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "neutral",
+     "score": 52.0,
+     "line": "آخر خبر: «JPMorgan sees potential sharp rebound in Asian equities after positioning unwind» (قبل 9.7 ساعة) — ما يبيّن اتجاه واضح.",
+     "facts": {
+      "symbol": "EEM",
+      "count": 1,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "JPMorgan sees potential sharp rebound in Asian equities after positioning unwind",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 9.7,
+        "time_et": "11-23 01:53"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 65.0,
+     "line": "67% متفائلين (4 مقابل 2) والكلام عنه هادي. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "EEM",
+      "bullish": 4,
+      "bearish": 2,
+      "messages": 30,
+      "messages_last_hour": 0,
+      "watchers": 7202,
+      "bullish_pct": 67,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 100,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 3.1×، RSI 69.8. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $58.29، ستوب $58.11، هدف $58.65.",
+     "facts": {
+      "symbol": "EEM",
+      "close": 58.25,
+      "vwap": 58.24,
+      "ema9": 58.2,
+      "ema20": 57.87,
+      "rsi": 69.8,
+      "atr": 0.2238,
+      "rvol": 3.13,
+      "trend_up": true,
+      "extension_atr": 0.06,
+      "setup": "pullback",
+      "bar_time_et": "11:30",
+      "day_high": 58.82,
+      "day_low": 57.76,
+      "day_open": 58.81,
+      "prev_high": 56.06,
+      "prev_low": 53.66,
+      "prev_close": 53.86,
+      "entry": 58.29,
+      "stop": 58.11,
+      "target": 58.65,
+      "risk_per_share": 0.18,
+      "rr": 2.0,
+      "next_resistance": 58.82
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "EEM",
+      "objections": [
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       }
+      ],
+      "veto": true,
+      "penalty": 0
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 81.5,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "EEM",
+      "decision": "SKIP",
+      "base_score": 81.5,
+      "penalty": 0,
+      "parts": {
+       "charts": 100,
+       "scout": 73.3,
+       "news": 52.0,
+       "sentiment": 65.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 58.29,
+       "stop": 58.11,
+       "target": 58.65,
+       "qty": 85,
+       "risk_usd": 15.3,
+       "reward_usd": 30.6,
+       "rr": 2.0,
+       "position_usd": 4954.65
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "EEM عند $58.16 (+8.0% اليوم) وحجمه يمشي بوتيرة 1.8× أمس. ✅ Finnhub: $58.19 (فرق -0.05%، قبل 0 ث).",
+    "news": "آخر خبر: «JPMorgan sees potential sharp rebound in Asian equities after positioning unwind» (قبل 9.7 ساعة) — ما يبيّن اتجاه واضح.",
+    "sentiment": "67% متفائلين (4 مقابل 2) والكلام عنه هادي. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 3.1×، RSI 69.8. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $58.29، ستوب $58.11، هدف $58.65.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11231136EWY",
+   "symbol": "EWY",
+   "created_utc": "2026-11-23T16:36:00.534113+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 77.0,
+   "blocked": true,
+   "ticket": {
+    "entry": 137.28,
+    "stop": 136.69,
+    "target": 138.46,
+    "qty": 36,
+    "risk_usd": 21.24,
+    "reward_usd": 42.48,
+    "rr": 2.0,
+    "position_usd": 4942.08
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 69.9,
+     "line": "EWY عند $136.69 (+10.8% اليوم) وحجمه يمشي بوتيرة 1.4× أمس. ✅ Finnhub: $136.75 (فرق -0.04%، قبل 0 ث).",
+     "facts": {
+      "symbol": "EWY",
+      "price": 136.69,
+      "prev_close": 123.315,
+      "change_pct": 10.85,
+      "volume_pace_x": 1.41,
+      "iex_dollar_volume": 72557330,
+      "in_gainers": false,
+      "last_trade_age_sec": 9,
+      "day_high": 138.81,
+      "finnhub_price": 136.75,
+      "finnhub_age_sec": 0,
+      "price_diff_pct": -0.04,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "neutral",
+     "score": 52.0,
+     "line": "آخر خبر: «Chart Of The Day: About That Kospi Boom...» (قبل 10.5 ساعة) — ما يبيّن اتجاه واضح.",
+     "facts": {
+      "symbol": "EWY",
+      "count": 1,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Chart Of The Day: About That Kospi Boom...",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 10.5,
+        "time_et": "11-23 01:05"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "المزاج منقسم: 43% متفائلين (3 مقابل 4). Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "EWY",
+      "bullish": 3,
+      "bearish": 4,
+      "messages": 30,
+      "messages_last_hour": 0,
+      "watchers": 3266,
+      "bullish_pct": 43,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 95.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 2.4×، RSI 67.1. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $137.28، ستوب $136.69، هدف $138.46.",
+     "facts": {
+      "symbol": "EWY",
+      "close": 137.1,
+      "vwap": 136.87,
+      "ema9": 136.84,
+      "ema20": 135.85,
+      "rsi": 67.1,
+      "atr": 0.8399,
+      "rvol": 2.39,
+      "trend_up": true,
+      "extension_atr": 0.28,
+      "setup": "pullback",
+      "bar_time_et": "11:30",
+      "day_high": 138.81,
+      "day_low": 135.04,
+      "day_open": 138.81,
+      "prev_high": 132.81,
+      "prev_low": 122.25,
+      "prev_close": 123.31,
+      "entry": 137.28,
+      "stop": 136.69,
+      "target": 138.46,
+      "risk_per_share": 0.59,
+      "rr": 2.0,
+      "next_resistance": 138.81
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "EWY",
+      "objections": [
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       }
+      ],
+      "veto": true,
+      "penalty": 0
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 77.0,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "EWY",
+      "decision": "SKIP",
+      "base_score": 77.0,
+      "penalty": 0,
+      "parts": {
+       "charts": 95.0,
+       "scout": 69.9,
+       "news": 52.0,
+       "sentiment": 50.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 137.28,
+       "stop": 136.69,
+       "target": 138.46,
+       "qty": 36,
+       "risk_usd": 21.24,
+       "reward_usd": 42.48,
+       "rr": 2.0,
+       "position_usd": 4942.08
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "EWY عند $136.69 (+10.8% اليوم) وحجمه يمشي بوتيرة 1.4× أمس. ✅ Finnhub: $136.75 (فرق -0.04%، قبل 0 ث).",
+    "news": "آخر خبر: «Chart Of The Day: About That Kospi Boom...» (قبل 10.5 ساعة) — ما يبيّن اتجاه واضح.",
+    "sentiment": "المزاج منقسم: 43% متفائلين (3 مقابل 4). Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 2.4×، RSI 67.1. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $137.28، ستوب $136.69، هدف $138.46.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11231136MU",
+   "symbol": "MU",
+   "created_utc": "2026-11-23T16:36:00.534113+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 46.9,
+   "blocked": true,
+   "ticket": {
+    "entry": 720.95,
+    "stop": 695.5,
+    "target": 771.85,
+    "qty": 1,
+    "risk_usd": 25.45,
+    "reward_usd": 50.9,
+    "rr": 2.0,
+    "position_usd": 720.95
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 71.8,
+     "line": "MU عند $709.00 (+19.2% اليوم) وحجمه يمشي بوتيرة 1.6× أمس. ✅ Finnhub: $709.03 (فرق -0.00%، قبل 0 ث).",
+     "facts": {
+      "symbol": "MU",
+      "price": 709.0,
+      "prev_close": 594.84,
+      "change_pct": 19.19,
+      "volume_pace_x": 1.57,
+      "iex_dollar_volume": 473559786,
+      "in_gainers": false,
+      "last_trade_age_sec": -1,
+      "day_high": 720.56,
+      "finnhub_price": 709.03,
+      "finnhub_age_sec": 0,
+      "price_diff_pct": -0.0,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "negative",
+     "score": 10.0,
+     "line": "⚠️ خبر مخاطرة: «Can Micron Stock Jump 50%?» — هذا النوع يقتل الصعود.",
+     "facts": {
+      "symbol": "MU",
+      "count": 20,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Why Micron Stock Is Up Today",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 0.8,
+        "time_et": "11-23 10:47"
+       },
+       {
+        "kind": "bull",
+        "headline": "Jensen Huang back at Nvidia, stock soars; Anthropic slides",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 0.8,
+        "time_et": "11-23 10:46"
+       },
+       {
+        "kind": "bull",
+        "headline": "Micron Soars 20% as Citi Says Ending Nvidia’s Financing Would Cut DRAM Demand Only 12%",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.3,
+        "time_et": "11-23 10:20"
+       },
+       {
+        "kind": "bull",
+        "headline": "SanDisk Surges 22% as Jensen Huang’s Return to NVIDIA Sparks AI Chip Rebound; Seagate Jumps 18%, Micron Rallies 16%",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.5,
+        "time_et": "11-23 10:04"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 58.0,
+     "line": "94% متفائلين (17 مقابل 1) والكلام عنه نشط — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: 65 ذكر (المركز 6، 1.9× أمس).",
+     "facts": {
+      "symbol": "MU",
+      "bullish": 17,
+      "bearish": 1,
+      "messages": 30,
+      "messages_last_hour": 30,
+      "watchers": 223586,
+      "bullish_pct": 94,
+      "reddit": {
+       "mentions": 65,
+       "mentions_24h_ago": 34,
+       "rank": 6,
+       "rank_24h_ago": 9
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 95.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.8×، RSI 67.6. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $720.56. دخول فوق $720.95، ستوب $695.50، هدف $771.85.",
+     "facts": {
+      "symbol": "MU",
+      "close": 709.98,
+      "vwap": 696.28,
+      "ema9": 709.33,
+      "ema20": 698.61,
+      "rsi": 67.6,
+      "atr": 7.86,
+      "rvol": 1.78,
+      "trend_up": true,
+      "extension_atr": 1.74,
+      "setup": "pullback_breakout",
+      "bar_time_et": "11:30",
+      "day_high": 720.56,
+      "day_low": 666.86,
+      "day_open": 691.24,
+      "prev_high": 668.99,
+      "prev_low": 585.5,
+      "prev_close": 594.84,
+      "entry": 720.95,
+      "stop": 695.5,
+      "target": 771.85,
+      "risk_per_share": 25.45,
+      "rr": 2.0,
+      "next_resistance": null
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Can Micron Stock Jump 50%?» — هذا النوع يقتل الصعود.",
+     "facts": {
+      "symbol": "MU",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (3.2× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "minor",
+        "text": "ستوبك $695.50 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "الأخبار ضدنا: ⚠️ خبر مخاطرة: «Can Micron Stock Jump 50%?» — هذا النوع يقتل الصعود."
+       },
+       {
+        "severity": "minor",
+        "text": "94% متفائلين — لما الكل يشتري، مين بقي يشتري بعدك؟"
+       }
+      ],
+      "veto": true,
+      "penalty": 25
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 46.9,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "MU",
+      "decision": "SKIP",
+      "base_score": 71.9,
+      "penalty": 25,
+      "parts": {
+       "charts": 95.0,
+       "scout": 71.8,
+       "news": 10.0,
+       "sentiment": 58.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 720.95,
+       "stop": 695.5,
+       "target": 771.85,
+       "qty": 1,
+       "risk_usd": 25.45,
+       "reward_usd": 50.9,
+       "rr": 2.0,
+       "position_usd": 720.95
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "MU عند $709.00 (+19.2% اليوم) وحجمه يمشي بوتيرة 1.6× أمس. ✅ Finnhub: $709.03 (فرق -0.00%، قبل 0 ث).",
+    "news": "⚠️ خبر مخاطرة: «Can Micron Stock Jump 50%?» — هذا النوع يقتل الصعود.",
+    "sentiment": "94% متفائلين (17 مقابل 1) والكلام عنه نشط — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: 65 ذكر (المركز 6، 1.9× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.8×، RSI 67.6. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $720.56. دخول فوق $720.95، ستوب $695.50، هدف $771.85.",
+    "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Can Micron Stock Jump 50%?» — هذا النوع يقتل الصعود.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -633,7 +1182,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-23T16:30:00+00:00"
   },
   {
    "id": "11231035TSM-blocked",
@@ -652,7 +1202,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-23T16:30:00+00:00"
   },
   {
    "id": "11231035TSLA-blocked",
@@ -666,6 +1217,64 @@
    "qty": 7,
    "created_utc": "2026-11-23T15:35:00.238268+00:00",
    "valid_until_utc": "2026-11-23T16:35:00.238268+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-23T16:30:00+00:00"
+  },
+  {
+   "id": "11231136EEM-blocked",
+   "idea_id": "11231136EEM",
+   "symbol": "EEM",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 58.29,
+   "stop": 58.11,
+   "target": 58.65,
+   "qty": 85,
+   "created_utc": "2026-11-23T16:36:00.534113+00:00",
+   "valid_until_utc": "2026-11-23T17:36:00.534113+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11231136EWY-blocked",
+   "idea_id": "11231136EWY",
+   "symbol": "EWY",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 137.28,
+   "stop": 136.69,
+   "target": 138.46,
+   "qty": 36,
+   "created_utc": "2026-11-23T16:36:00.534113+00:00",
+   "valid_until_utc": "2026-11-23T17:36:00.534113+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11231136MU-blocked",
+   "idea_id": "11231136MU",
+   "symbol": "MU",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 720.95,
+   "stop": 695.5,
+   "target": 771.85,
+   "qty": 1,
+   "created_utc": "2026-11-23T16:36:00.534113+00:00",
+   "valid_until_utc": "2026-11-23T17:36:00.534113+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -772,80 +1381,112 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-23T16:36:00.534113+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 97,
+   "candidates": 8,
+   "ideas": [
+    "EEM:SKIP/blocked",
+    "EWY:SKIP/blocked",
+    "MU:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 723.96,
+      "vwap": 721.51,
+      "chg_open_pct": -0.05
+     },
+     "QQQ": {
+      "close": 652.18,
+      "vwap": 649.95,
+      "chg_open_pct": -0.58
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {},
  "board": [
   {
-   "symbol": "TSLA",
-   "decision": "SKIP",
-   "score": 41.5,
-   "blocked": true,
-   "price": 392.03,
-   "change_pct": 13.23,
-   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Tesla Bulls Banking on SpaceX “Don’t Get the Dilution Math,” Says Gary Black. Tesla Trades at 3.4x SpaceX’"
-  },
-  {
    "symbol": "ZS",
    "decision": "SKIP",
-   "score": 70.5,
+   "score": 70.8,
    "blocked": true,
-   "price": 225.81,
-   "change_pct": 15.9,
+   "price": 223.06,
+   "change_pct": 14.49,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "DRAM",
    "decision": "SKIP",
-   "score": 44.2,
+   "score": 50.0,
    "blocked": false,
-   "price": 40.29,
-   "change_pct": 19.73,
-   "skeptic": "ضد. RSI 80.7 — تشبّع شرائي."
+   "price": 39.82,
+   "change_pct": 18.34,
+   "skeptic": "ضد. RVOL 1.05× بس — ما فيه اهتمام كافي يدفع السعر."
   },
   {
-   "symbol": "TSM",
+   "symbol": "NVDU",
    "decision": "SKIP",
-   "score": 57.7,
+   "score": 51.9,
    "blocked": true,
-   "price": 369.31,
-   "change_pct": 15.71,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "SMCI",
-   "decision": "SKIP",
-   "score": 69.6,
-   "blocked": true,
-   "price": 25.955,
-   "change_pct": 19.69,
+   "price": 67.155,
+   "change_pct": 64.11,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "WULF",
+   "symbol": "TSLA",
    "decision": "SKIP",
-   "score": 55.5,
+   "score": 63.6,
    "blocked": true,
-   "price": 11.59,
-   "change_pct": 17.78,
+   "price": 390.22,
+   "change_pct": 12.71,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "EEM",
    "decision": "SKIP",
-   "score": 69.4,
+   "score": 81.5,
    "blocked": true,
-   "price": 58.37,
-   "change_pct": 8.37,
+   "price": 58.16,
+   "change_pct": 7.98,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+  },
+  {
+   "symbol": "SNDK",
+   "decision": "SKIP",
+   "score": 61.0,
+   "blocked": true,
+   "price": 91.92,
+   "change_pct": 15.99,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "MSTR",
+   "symbol": "MU",
    "decision": "SKIP",
-   "score": 63.1,
+   "score": 46.9,
    "blocked": true,
-   "price": 88.515,
-   "change_pct": 13.7,
+   "price": 709.0,
+   "change_pct": 19.19,
+   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Can Micron Stock Jump 50%?» — هذا النوع يقتل الصعود."
+  },
+  {
+   "symbol": "EWY",
+   "decision": "SKIP",
+   "score": 77.0,
+   "blocked": true,
+   "price": 136.69,
+   "change_pct": 10.85,
    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   }
  ],
@@ -855,24 +1496,24 @@
   "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 726.04,
-    "vwap": 720.46,
-    "chg_open_pct": 0.24
+    "close": 723.96,
+    "vwap": 721.51,
+    "chg_open_pct": -0.05
    },
    "QQQ": {
-    "close": 655.2,
-    "vwap": 649.06,
-    "chg_open_pct": -0.12
+    "close": 652.18,
+    "vwap": 649.95,
+    "chg_open_pct": -0.58
    }
   }
  },
- "last_run": "2026-11-23T15:35:00.238268+00:00",
+ "last_run": "2026-11-23T16:36:00.534113+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-23T15:35:22.067713+00:00",
+  "utc": "2026-11-23T16:36:22.190598+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 726.73",
+  "finnhub": "ok SPY 723.28",
   "sec": "missing",
   "gemini": "set"
  }
