@@ -2049,7 +2049,7 @@
    "idea_id": "11231238ZS",
    "symbol": "ZS",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 228.35,
    "stop": 225.57,
    "target": 233.91,
@@ -2062,14 +2062,14 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-23T18:30:00+00:00"
+   "checked_utc": "2026-11-23T19:40:00+00:00"
   },
   {
    "id": "11231238TSM-blocked",
    "idea_id": "11231238TSM",
    "symbol": "TSM",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 369.65,
    "stop": 367.68,
    "target": 373.59,
@@ -2082,14 +2082,14 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-23T18:30:00+00:00"
+   "checked_utc": "2026-11-23T19:40:00+00:00"
   },
   {
    "id": "11231238NVDU-blocked",
    "idea_id": "11231238NVDU",
    "symbol": "NVDU",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 67.37,
    "stop": 65.71,
    "target": 70.69,
@@ -2102,14 +2102,14 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-23T18:25:00+00:00"
+   "checked_utc": "2026-11-23T19:40:00+00:00"
   },
   {
    "id": "11231238DRAM-blocked",
    "idea_id": "11231238DRAM",
    "symbol": "DRAM",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 39.96,
    "stop": 39.52,
    "target": 40.84,
@@ -2122,7 +2122,7 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-23T18:30:00+00:00"
+   "checked_utc": "2026-11-23T19:40:00+00:00"
   }
  ],
  "runs": [
@@ -2316,71 +2316,62 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-23T19:45:24.149902+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 95,
+   "candidates": 0,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 25,
+    "spy_below_vwap": true,
+    "qqq_below_vwap": true,
+    "detail": {
+     "SPY": {
+      "close": 721.23,
+      "vwap": 721.85,
+      "chg_open_pct": -0.42
+     },
+     "QQQ": {
+      "close": 648.61,
+      "vwap": 650.12,
+      "chg_open_pct": -1.12
+     }
+    }
+   },
+   "api_calls": 13
   }
  ],
  "daily": {},
- "board": [
-  {
-   "symbol": "ZS",
-   "decision": "SKIP",
-   "score": 70.5,
-   "blocked": true,
-   "price": 225.52,
-   "change_pct": 15.75,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "NVDU",
-   "decision": "SKIP",
-   "score": 61.9,
-   "blocked": true,
-   "price": 66.59,
-   "change_pct": 62.73,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "DRAM",
-   "decision": "SKIP",
-   "score": 59.1,
-   "blocked": true,
-   "price": 39.7,
-   "change_pct": 17.98,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "MU",
-   "decision": "SKIP",
-   "score": 77.6,
-   "blocked": true,
-   "price": 704.63,
-   "change_pct": 18.46,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  }
- ],
+ "board": [],
  "market": {
-  "score": 75,
-  "spy_below_vwap": false,
-  "qqq_below_vwap": false,
+  "score": 25,
+  "spy_below_vwap": true,
+  "qqq_below_vwap": true,
   "detail": {
    "SPY": {
-    "close": 724.07,
-    "vwap": 721.73,
-    "chg_open_pct": -0.03
+    "close": 721.23,
+    "vwap": 721.85,
+    "chg_open_pct": -0.42
    },
    "QQQ": {
-    "close": 652.05,
-    "vwap": 650.09,
-    "chg_open_pct": -0.6
+    "close": 648.61,
+    "vwap": 650.12,
+    "chg_open_pct": -1.12
    }
   }
  },
- "last_run": "2026-11-23T18:35:43.568083+00:00",
+ "last_run": "2026-11-23T19:45:24.149902+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-23T18:35:55.442267+00:00",
+  "utc": "2026-11-23T19:45:26.671393+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 724.07",
+  "finnhub": "ok SPY 721.3",
   "sec": "missing",
   "gemini": "set"
  }
