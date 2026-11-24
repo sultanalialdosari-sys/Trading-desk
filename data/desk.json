@@ -4557,6 +4557,417 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11241335GOOG",
+   "symbol": "GOOG",
+   "created_utc": "2026-11-24T18:35:27.990634+00:00",
+   "time_et": "13:35",
+   "decision": "SKIP",
+   "score": 51.2,
+   "blocked": true,
+   "ticket": {
+    "entry": 277.09,
+    "stop": 276.35,
+    "target": 278.57,
+    "qty": 18,
+    "risk_usd": 13.32,
+    "reward_usd": 26.64,
+    "rr": 2.0,
+    "position_usd": 4987.62
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "negative",
+     "score": 38.0,
+     "line": "GOOG عند $276.53 (-1.1% اليوم) وحجمه يمشي بوتيرة 1.2× أمس. ✅ Finnhub: $276.68 (فرق -0.05%، قبل 0 ث).",
+     "facts": {
+      "symbol": "GOOG",
+      "price": 276.53,
+      "prev_close": 279.57,
+      "change_pct": -1.09,
+      "volume_pace_x": 1.2,
+      "iex_dollar_volume": 182979989,
+      "in_gainers": false,
+      "last_trade_age_sec": 18,
+      "day_high": 278.9,
+      "finnhub_price": 276.68,
+      "finnhub_age_sec": 0,
+      "price_diff_pct": -0.05,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Amazon’s $7.5 billion Decart tech deal makes Wedbush’s case for chip choice» (Yahoo (Finnhub)).",
+     "facts": {
+      "symbol": "GOOG",
+      "count": 23,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Nike Sells Shoes. Can It Stop Paying For AI?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 0.9,
+        "time_et": "11-24 12:39"
+       },
+       {
+        "kind": "plain",
+        "headline": "Why Did Alphabet Stock Move?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.2,
+        "time_et": "11-24 12:24"
+       },
+       {
+        "kind": "plain",
+        "headline": "Broadcom Stocks Fall 3.98% as Google TPU Order Report Clouds AI Outlook",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.7,
+        "time_et": "11-24 11:54"
+       },
+       {
+        "kind": "plain",
+        "headline": "Amazon Makes $7.5 Billion AI Move to Challenge Nvidia",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.9,
+        "time_et": "11-24 11:42"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 65.66666666666667,
+     "line": "69% متفائلين (11 مقابل 5) والكلام عنه هادي. Reddit: 29 ذكر (المركز 28، 0.8× أمس).",
+     "facts": {
+      "symbol": "GOOG",
+      "bullish": 11,
+      "bearish": 5,
+      "messages": 30,
+      "messages_last_hour": 2,
+      "watchers": 315377,
+      "bullish_pct": 69,
+      "reddit": {
+       "mentions": 29,
+       "mentions_24h_ago": 38,
+       "rank": 28,
+       "rank_24h_ago": 14
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.1×، RSI 51.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $277.09، ستوب $276.35، هدف $278.57.",
+     "facts": {
+      "symbol": "GOOG",
+      "close": 276.76,
+      "vwap": 276.42,
+      "ema9": 276.76,
+      "ema20": 276.61,
+      "rsi": 51.7,
+      "atr": 0.6403,
+      "rvol": 1.12,
+      "trend_up": true,
+      "extension_atr": 0.53,
+      "setup": "pullback",
+      "bar_time_et": "13:30",
+      "day_high": 278.9,
+      "day_low": 274.02,
+      "day_open": 278.7,
+      "prev_high": 282.59,
+      "prev_low": 273.01,
+      "prev_close": 279.57,
+      "entry": 277.09,
+      "stop": 276.35,
+      "target": 278.57,
+      "risk_per_share": 0.74,
+      "rr": 2.0,
+      "next_resistance": 278.9
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "GOOG",
+      "objections": [
+       {
+        "severity": "minor",
+        "text": "ستوبك $276.35 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "veto",
+        "text": "الستوب 0.27% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 1.12× بس — ما فيه اهتمام كافي يدفع السعر."
+       }
+      ],
+      "veto": true,
+      "penalty": 20
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 51.2,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "GOOG",
+      "decision": "SKIP",
+      "base_score": 71.2,
+      "penalty": 20,
+      "parts": {
+       "charts": 85.0,
+       "scout": 38.0,
+       "news": 75.0,
+       "sentiment": 65.7,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 277.09,
+       "stop": 276.35,
+       "target": 278.57,
+       "qty": 18,
+       "risk_usd": 13.32,
+       "reward_usd": 26.64,
+       "rr": 2.0,
+       "position_usd": 4987.62
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "GOOG عند $276.53 (-1.1% اليوم) وحجمه يمشي بوتيرة 1.2× أمس. ✅ Finnhub: $276.68 (فرق -0.05%، قبل 0 ث).",
+    "news": "فيه محفّز: «Amazon’s $7.5 billion Decart tech deal makes Wedbush’s case for chip choice» (Yahoo (Finnhub)).",
+    "sentiment": "69% متفائلين (11 مقابل 5) والكلام عنه هادي. Reddit: 29 ذكر (المركز 28، 0.8× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.1×، RSI 51.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $277.09، ستوب $276.35، هدف $278.57.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11241335NFLX",
+   "symbol": "NFLX",
+   "created_utc": "2026-11-24T18:35:27.990634+00:00",
+   "time_et": "13:35",
+   "decision": "SKIP",
+   "score": 43.0,
+   "blocked": true,
+   "ticket": {
+    "entry": 59.23,
+    "stop": 58.99,
+    "target": 59.71,
+    "qty": 84,
+    "risk_usd": 20.16,
+    "reward_usd": 40.32,
+    "rr": 2.0,
+    "position_usd": 4975.32
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 44.6,
+     "line": "NFLX عند $59.18 (+1.9% اليوم) وحجمه يمشي بوتيرة 0.9× أمس. ✅ Finnhub: $59.24 (فرق -0.10%، قبل 16 ث).",
+     "facts": {
+      "symbol": "NFLX",
+      "price": 59.18,
+      "prev_close": 58.09,
+      "change_pct": 1.88,
+      "volume_pace_x": 0.91,
+      "iex_dollar_volume": 93245170,
+      "in_gainers": false,
+      "last_trade_age_sec": 9,
+      "day_high": 59.72,
+      "finnhub_price": 59.24,
+      "finnhub_age_sec": 16,
+      "price_diff_pct": -0.1,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "negative",
+     "score": 10.0,
+     "line": "⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود.",
+     "facts": {
+      "symbol": "NFLX",
+      "count": 20,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "Stocks give back gains as Anthropic dips below IPO price",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 2.9,
+        "time_et": "11-24 10:44"
+       },
+       {
+        "kind": "plain",
+        "headline": "Banque Cantonale de Genève And 2 Top Undervalued Stocks",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 3.4,
+        "time_et": "11-24 10:13"
+       },
+       {
+        "kind": "plain",
+        "headline": "Trump Gave A Massive Clue Before Nvidia Rehired Huang. What Is The Next One?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 4.6,
+        "time_et": "11-24 09:01"
+       },
+       {
+        "kind": "plain",
+        "headline": "Should You Invest in Netflix (NFLX) Based on Bullish Wall Street Views?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 5.1,
+        "time_et": "11-24 08:30"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 68.0,
+     "line": "60% متفائلين (6 مقابل 4) والكلام عنه هادي. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "NFLX",
+      "bullish": 6,
+      "bearish": 4,
+      "messages": 30,
+      "messages_last_hour": 9,
+      "watchers": 523661,
+      "bullish_pct": 60,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.0×، RSI 58.0. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $59.23، ستوب $58.99، هدف $59.71.",
+     "facts": {
+      "symbol": "NFLX",
+      "close": 59.22,
+      "vwap": 59.06,
+      "ema9": 59.12,
+      "ema20": 59.09,
+      "rsi": 58.0,
+      "atr": 0.1322,
+      "rvol": 1.0,
+      "trend_up": true,
+      "extension_atr": 1.25,
+      "setup": "pullback",
+      "bar_time_et": "13:30",
+      "day_high": 59.72,
+      "day_low": 57.58,
+      "day_open": 57.88,
+      "prev_high": 58.6,
+      "prev_low": 57.24,
+      "prev_close": 58.09,
+      "entry": 59.23,
+      "stop": 58.99,
+      "target": 59.71,
+      "risk_per_share": 0.24,
+      "rr": 2.0,
+      "next_resistance": 59.72
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "NFLX",
+      "objections": [
+       {
+        "severity": "minor",
+        "text": "ستوبك $58.99 عند رقم دائري — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 1.0× بس — ما فيه اهتمام كافي يدفع السعر."
+       },
+       {
+        "severity": "veto",
+        "text": "الأخبار ضدنا: ⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود."
+       }
+      ],
+      "veto": true,
+      "penalty": 20
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 43.0,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "NFLX",
+      "decision": "SKIP",
+      "base_score": 63.0,
+      "penalty": 20,
+      "parts": {
+       "charts": 85.0,
+       "scout": 44.6,
+       "news": 10.0,
+       "sentiment": 68.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 59.23,
+       "stop": 58.99,
+       "target": 59.71,
+       "qty": 84,
+       "risk_usd": 20.16,
+       "reward_usd": 40.32,
+       "rr": 2.0,
+       "position_usd": 4975.32
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "NFLX عند $59.18 (+1.9% اليوم) وحجمه يمشي بوتيرة 0.9× أمس. ✅ Finnhub: $59.24 (فرق -0.10%، قبل 16 ث).",
+    "news": "⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود.",
+    "sentiment": "60% متفائلين (6 مقابل 4) والكلام عنه هادي. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.0×، RSI 58.0. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $59.23، ستوب $58.99، هدف $59.71.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -4913,7 +5324,7 @@
    "owner": "blocked",
    "status": "open",
    "entry": 161.06,
-   "stop": 159.54,
+   "stop": 161.1405,
    "target": 164.1,
    "qty": 31,
    "created_utc": "2026-11-24T16:36:19.799969+00:00",
@@ -4926,14 +5337,15 @@
    "pnl": null,
    "triggered": true,
    "stop0": 159.54,
-   "checked_utc": "2026-11-24T17:25:00+00:00"
+   "checked_utc": "2026-11-24T18:30:00+00:00",
+   "be": true
   },
   {
    "id": "11241136CRWD-blocked",
    "idea_id": "11241136CRWD",
    "symbol": "CRWD",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 210.9,
    "stop": 209.67,
    "target": 213.36,
@@ -4947,14 +5359,14 @@
    "r": null,
    "pnl": null,
    "triggered": true,
-   "checked_utc": "2026-11-24T17:25:00+00:00"
+   "checked_utc": "2026-11-24T18:30:00+00:00"
   },
   {
    "id": "11241136NFLX-blocked",
    "idea_id": "11241136NFLX",
    "symbol": "NFLX",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 59.23,
    "stop": 59.0,
    "target": 59.69,
@@ -4967,14 +5379,14 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-24T17:25:00+00:00"
+   "checked_utc": "2026-11-24T18:30:00+00:00"
   },
   {
    "id": "11241136UBER-blocked",
    "idea_id": "11241136UBER",
    "symbol": "UBER",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 65.73,
    "stop": 64.82,
    "target": 67.55,
@@ -4987,26 +5399,29 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-24T17:25:00+00:00"
+   "checked_utc": "2026-11-24T18:30:00+00:00"
   },
   {
    "id": "11241232HYG-blocked",
    "idea_id": "11241232HYG",
    "symbol": "HYG",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 76.42,
    "stop": 76.39,
    "target": 76.48,
    "qty": 65,
    "created_utc": "2026-11-24T17:32:47.918356+00:00",
    "valid_until_utc": "2026-11-24T18:32:47.918356+00:00",
-   "fill_px": null,
-   "fill_utc": null,
+   "fill_px": 76.4657,
+   "fill_utc": "2026-11-24T17:35:00+00:00",
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "triggered": true,
+   "stop0": 76.39,
+   "checked_utc": "2026-11-24T18:30:00+00:00"
   },
   {
    "id": "11241232AAPL-blocked",
@@ -5020,6 +5435,45 @@
    "qty": 14,
    "created_utc": "2026-11-24T17:32:47.918356+00:00",
    "valid_until_utc": "2026-11-24T18:32:47.918356+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-24T18:30:00+00:00"
+  },
+  {
+   "id": "11241335GOOG-blocked",
+   "idea_id": "11241335GOOG",
+   "symbol": "GOOG",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 277.09,
+   "stop": 276.35,
+   "target": 278.57,
+   "qty": 18,
+   "created_utc": "2026-11-24T18:35:27.990634+00:00",
+   "valid_until_utc": "2026-11-24T19:35:27.990634+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11241335NFLX-blocked",
+   "idea_id": "11241335NFLX",
+   "symbol": "NFLX",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 59.23,
+   "stop": 58.99,
+   "target": 59.71,
+   "qty": 84,
+   "created_utc": "2026-11-24T18:35:27.990634+00:00",
+   "valid_until_utc": "2026-11-24T19:35:27.990634+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -5409,6 +5863,37 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-24T18:35:27.990634+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 100,
+   "candidates": 8,
+   "ideas": [
+    "GOOG:SKIP/blocked",
+    "NFLX:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 719.31,
+      "vwap": 716.4,
+      "chg_open_pct": 0.56
+     },
+     "QQQ": {
+      "close": 639.52,
+      "vwap": 636.77,
+      "chg_open_pct": -0.12
+     }
+    }
+   },
+   "api_calls": 13
   }
  ],
  "daily": {
@@ -5456,67 +5941,76 @@
  },
  "board": [
   {
-   "symbol": "MSFT",
+   "symbol": "F",
    "decision": "SKIP",
-   "score": 0,
+   "score": 56.6,
    "blocked": true,
-   "price": 500.31,
-   "change_pct": 1.49,
-   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Asia-Pacific Digital Transformation Market: Size, Trends, and Forecast (2026-2034) Featuring Intelligence "
+   "price": 11.91,
+   "change_pct": 2.28,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "NFLX",
+   "decision": "SKIP",
+   "score": 43.0,
+   "blocked": true,
+   "price": 59.18,
+   "change_pct": 1.88,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   },
   {
    "symbol": "PLTR",
    "decision": "SKIP",
-   "score": 36.6,
+   "score": 14.9,
    "blocked": true,
-   "price": 162.09,
-   "change_pct": 1.69,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "HYG",
-   "decision": "SKIP",
-   "score": 51.9,
-   "blocked": true,
-   "price": 76.425,
-   "change_pct": -0.1,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "UBER",
-   "decision": "SKIP",
-   "score": 23.2,
-   "blocked": true,
-   "price": 65.46,
-   "change_pct": 2.17,
-   "skeptic": "ضد. فيه مقاومة عند $65.97 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس."
+   "price": 162.52,
+   "change_pct": 1.96,
+   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «AI-Enabled Battlefield Management and Decision Support Systems Global Market Report 2026 | Lockheed Martin"
   },
   {
    "symbol": "CRWD",
    "decision": "SKIP",
-   "score": 9.2,
+   "score": 24.0,
    "blocked": false,
-   "price": 214.73,
-   "change_pct": 2.79,
-   "skeptic": "ضد. الستوب بعيد (3.7× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+   "price": 214.43,
+   "change_pct": 2.64,
+   "skeptic": "ضد. الستوب بعيد (4.7× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+  },
+  {
+   "symbol": "HYG",
+   "decision": "SKIP",
+   "score": 46.5,
+   "blocked": true,
+   "price": 76.435,
+   "change_pct": -0.08,
+   "skeptic": "ضد. الستوب 0.10% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."
   },
   {
    "symbol": "AAPL",
    "decision": "SKIP",
-   "score": 15.9,
+   "score": 0,
+   "blocked": false,
+   "price": 353.155,
+   "change_pct": 1.07,
+   "skeptic": "ضد. الستوب بعيد (3.6× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+  },
+  {
+   "symbol": "GOOG",
+   "decision": "SKIP",
+   "score": 51.2,
    "blocked": true,
-   "price": 353.24,
-   "change_pct": 1.1,
-   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Global Neural Processor Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on 22.2"
+   "price": 276.53,
+   "change_pct": -1.09,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   },
   {
    "symbol": "VOO",
    "decision": "SKIP",
-   "score": 48.9,
+   "score": 11.7,
    "blocked": false,
-   "price": 661.205,
-   "change_pct": -0.42,
-   "skeptic": "ضد. فيه مقاومة عند $669.16 قبل الهدف — العائد الحقيقي للمخاطرة 1.7 إلى 1 بس."
+   "price": 660.87,
+   "change_pct": -0.47,
+   "skeptic": "ضد. الستوب بعيد (3.8× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
   }
  ],
  "market": {
@@ -5525,24 +6019,24 @@
   "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 718.69,
-    "vwap": 716.04,
-    "chg_open_pct": 0.47
+    "close": 719.31,
+    "vwap": 716.4,
+    "chg_open_pct": 0.56
    },
    "QQQ": {
-    "close": 638.91,
-    "vwap": 636.56,
-    "chg_open_pct": -0.21
+    "close": 639.52,
+    "vwap": 636.77,
+    "chg_open_pct": -0.12
    }
   }
  },
- "last_run": "2026-11-24T17:32:47.918356+00:00",
+ "last_run": "2026-11-24T18:35:27.990634+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-24T17:33:07.412131+00:00",
+  "utc": "2026-11-24T18:35:48.223533+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 719.34",
+  "finnhub": "ok SPY 719.1",
   "sec": "missing",
   "gemini": "set"
  }
