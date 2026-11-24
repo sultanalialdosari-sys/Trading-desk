@@ -3125,6 +3125,213 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11241022AAOI",
+   "symbol": "AAOI",
+   "created_utc": "2026-11-24T15:22:34.350983+00:00",
+   "time_et": "10:22",
+   "decision": "SKIP",
+   "score": 42.3,
+   "blocked": true,
+   "ticket": {
+    "entry": 41.65,
+    "stop": 39.15,
+    "target": 46.65,
+    "qty": 20,
+    "risk_usd": 50.0,
+    "reward_usd": 100.0,
+    "rr": 2.0,
+    "position_usd": 833.0
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 74.9,
+     "line": "AAOI عند $40.80 (+5.5% اليوم) وحجمه يمشي بوتيرة 2.5× أمس. ✅ Finnhub: $40.76 (فرق +0.10%، قبل 15 ث).",
+     "facts": {
+      "symbol": "AAOI",
+      "price": 40.8,
+      "prev_close": 38.68,
+      "change_pct": 5.48,
+      "volume_pace_x": 2.53,
+      "iex_dollar_volume": 6779598,
+      "in_gainers": false,
+      "last_trade_age_sec": 2,
+      "day_high": 41.615,
+      "finnhub_price": 40.76,
+      "finnhub_age_sec": 15,
+      "price_diff_pct": 0.1,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Applied Optoelectronics and Lumentum Soar 22% as Jensen Huang’s Return to NVIDIA Sparks AI Optics Rebound; Coherent Jumps 19%» (Yahoo (Finnhub)).",
+     "facts": {
+      "symbol": "AAOI",
+      "count": 5,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Applied Optoelectronics, Inc. Announces Multi-Year Supply Agreement with Hyperscale Data Center Customer",
+        "source": "fiscal.ai",
+        "hours_ago": 2.8,
+        "time_et": "11-24 07:33"
+       },
+       {
+        "kind": "plain",
+        "headline": "AOI Enters Multi-Year Long-Term Agreement With An Existing Hyperscale Datacenter Customer To Supply 800G Transceiver Products And Laser Diodes",
+        "source": "Benzinga (Finnhub)",
+        "hours_ago": 7.3,
+        "time_et": "11-24 03:02"
+       },
+       {
+        "kind": "plain",
+        "headline": "Applied Optoelectronics: The Market Got This Wrong",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 10.3,
+        "time_et": "11-24 00:07"
+       },
+       {
+        "kind": "bull",
+        "headline": "Applied Optoelectronics and Lumentum Soar 22% as Jensen Huang’s Return to NVIDIA Sparks AI Optics Rebound; Coherent Jumps 19%",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 23.4,
+        "time_et": "11-23 10:57"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 58.0,
+     "line": "88% متفائلين (14 مقابل 2) والكلام عنه نشط — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: 4 ذكر (المركز 144، 4.0× أمس).",
+     "facts": {
+      "symbol": "AAOI",
+      "bullish": 14,
+      "bearish": 2,
+      "messages": 30,
+      "messages_last_hour": 16,
+      "watchers": 27646,
+      "bullish_pct": 88,
+      "reddit": {
+       "mentions": 4,
+       "mentions_24h_ago": 1,
+       "rank": 144,
+       "rank_24h_ago": 700
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 95.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.9×، RSI 60.9. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $41.62. دخول فوق $41.65، ستوب $39.15، هدف $46.65.",
+     "facts": {
+      "symbol": "AAOI",
+      "close": 40.63,
+      "vwap": 40.42,
+      "ema9": 40.41,
+      "ema20": 39.83,
+      "rsi": 60.9,
+      "atr": 0.7574,
+      "rvol": 1.9,
+      "trend_up": true,
+      "extension_atr": 0.28,
+      "setup": "pullback_breakout",
+      "bar_time_et": "10:15",
+      "day_high": 41.62,
+      "day_low": 38.93,
+      "day_open": 39.92,
+      "prev_high": 42.27,
+      "prev_low": 38.0,
+      "prev_close": 38.68,
+      "entry": 41.65,
+      "stop": 39.15,
+      "target": 46.65,
+      "risk_per_share": 2.5,
+      "rr": 2.0,
+      "next_resistance": 42.27
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. فيه مقاومة عند $42.27 قبل الهدف — العائد الحقيقي للمخاطرة 0.2 إلى 1 بس.",
+     "facts": {
+      "symbol": "AAOI",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (3.3× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "veto",
+        "text": "فيه مقاومة عند $42.27 قبل الهدف — العائد الحقيقي للمخاطرة 0.2 إلى 1 بس."
+       },
+       {
+        "severity": "minor",
+        "text": "88% متفائلين — لما الكل يشتري، مين بقي يشتري بعدك؟"
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 35
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 42.3,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "AAOI",
+      "decision": "SKIP",
+      "base_score": 77.3,
+      "penalty": 35,
+      "parts": {
+       "charts": 95.0,
+       "scout": 74.9,
+       "news": 75.0,
+       "sentiment": 58.0,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 41.65,
+       "stop": 39.15,
+       "target": 46.65,
+       "qty": 20,
+       "risk_usd": 50.0,
+       "reward_usd": 100.0,
+       "rr": 2.0,
+       "position_usd": 833.0
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "AAOI عند $40.80 (+5.5% اليوم) وحجمه يمشي بوتيرة 2.5× أمس. ✅ Finnhub: $40.76 (فرق +0.10%، قبل 15 ث).",
+    "news": "فيه محفّز: «Applied Optoelectronics and Lumentum Soar 22% as Jensen Huang’s Return to NVIDIA Sparks AI Optics Rebound; Coherent Jumps 19%» (Yahoo (Finnhub)).",
+    "sentiment": "88% متفائلين (14 مقابل 2) والكلام عنه نشط — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: 4 ذكر (المركز 144، 4.0× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.9×، RSI 60.9. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $41.62. دخول فوق $41.65، ستوب $39.15، هدف $46.65.",
+    "skeptic": "ضد. فيه مقاومة عند $42.27 قبل الهدف — العائد الحقيقي للمخاطرة 0.2 إلى 1 بس.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -3453,6 +3660,25 @@
    "r": null,
    "pnl": null,
    "checked_utc": "2026-11-23T21:55:00+00:00"
+  },
+  {
+   "id": "11241022AAOI-blocked",
+   "idea_id": "11241022AAOI",
+   "symbol": "AAOI",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 41.65,
+   "stop": 39.15,
+   "target": 46.65,
+   "qty": 20,
+   "created_utc": "2026-11-24T15:22:34.350983+00:00",
+   "valid_until_utc": "2026-11-24T16:22:34.350983+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
   }
  ],
  "runs": [
@@ -3742,6 +3968,36 @@
    "sent": 0,
    "errors": [],
    "api_calls": 1
+  },
+  {
+   "utc": "2026-11-24T15:22:34.350983+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 93,
+   "candidates": 6,
+   "ideas": [
+    "AAOI:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 25,
+    "spy_below_vwap": true,
+    "qqq_below_vwap": true,
+    "detail": {
+     "SPY": {
+      "close": 716.74,
+      "vwap": 717.31,
+      "chg_open_pct": 0.2
+     },
+     "QQQ": {
+      "close": 637.14,
+      "vwap": 639.64,
+      "chg_open_pct": -0.49
+     }
+    }
+   },
+   "api_calls": 13
   }
  ],
  "daily": {
@@ -3787,15 +4043,86 @@
    }
   }
  },
- "board": [],
- "market": null,
- "last_run": "2026-11-24T14:15:22.013025+00:00",
- "last_open": false,
+ "board": [
+  {
+   "symbol": "ANF",
+   "decision": "SKIP",
+   "score": 40.3,
+   "blocked": false,
+   "price": 175.48,
+   "change_pct": 25.09,
+   "skeptic": "ضد. RSI 82.1 — تشبّع شرائي."
+  },
+  {
+   "symbol": "AAOI",
+   "decision": "SKIP",
+   "score": 42.3,
+   "blocked": true,
+   "price": 40.8,
+   "change_pct": 5.48,
+   "skeptic": "ضد. فيه مقاومة عند $42.27 قبل الهدف — العائد الحقيقي للمخاطرة 0.2 إلى 1 بس."
+  },
+  {
+   "symbol": "NFLX",
+   "decision": "SKIP",
+   "score": 4.9,
+   "blocked": true,
+   "price": 59.045,
+   "change_pct": 1.64,
+   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود."
+  },
+  {
+   "symbol": "AAPL",
+   "decision": "SKIP",
+   "score": 11.4,
+   "blocked": false,
+   "price": 352.38,
+   "change_pct": 0.85,
+   "skeptic": "ضد. RVOL 0.85× بس — ما فيه اهتمام كافي يدفع السعر."
+  },
+  {
+   "symbol": "PLTR",
+   "decision": "SKIP",
+   "score": 31.4,
+   "blocked": false,
+   "price": 161.1,
+   "change_pct": 1.07,
+   "skeptic": "ضد. RVOL 1.16× بس — ما فيه اهتمام كافي يدفع السعر."
+  },
+  {
+   "symbol": "UBER",
+   "decision": "SKIP",
+   "score": 39.7,
+   "blocked": true,
+   "price": 65.3,
+   "change_pct": 1.92,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  }
+ ],
+ "market": {
+  "score": 25,
+  "spy_below_vwap": true,
+  "qqq_below_vwap": true,
+  "detail": {
+   "SPY": {
+    "close": 716.74,
+    "vwap": 717.31,
+    "chg_open_pct": 0.2
+   },
+   "QQQ": {
+    "close": 637.14,
+    "vwap": 639.64,
+    "chg_open_pct": -0.49
+   }
+  }
+ },
+ "last_run": "2026-11-24T15:22:34.350983+00:00",
+ "last_open": true,
  "setup": {
-  "utc": "2026-11-24T14:15:22.042714+00:00",
+  "utc": "2026-11-24T15:22:51.102739+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 722.29",
+  "finnhub": "ok SPY 716.34",
   "sec": "missing",
   "gemini": "set"
  }
