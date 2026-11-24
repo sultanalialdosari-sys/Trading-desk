@@ -4161,6 +4161,402 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11241232HYG",
+   "symbol": "HYG",
+   "created_utc": "2026-11-24T17:32:47.918356+00:00",
+   "time_et": "12:32",
+   "decision": "SKIP",
+   "score": 51.9,
+   "blocked": true,
+   "ticket": {
+    "entry": 76.42,
+    "stop": 76.39,
+    "target": 76.48,
+    "qty": 65,
+    "risk_usd": 1.95,
+    "reward_usd": 3.9,
+    "rr": 2.0,
+    "position_usd": 4967.3
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 41.9,
+     "line": "HYG عند $76.42 (-0.1% اليوم) وحجمه يمشي بوتيرة 1.2× أمس. ✅ Finnhub: $76.44 (فرق -0.02%، قبل 9 ث).",
+     "facts": {
+      "symbol": "HYG",
+      "price": 76.425,
+      "prev_close": 76.5,
+      "change_pct": -0.1,
+      "volume_pace_x": 1.19,
+      "iex_dollar_volume": 149053111,
+      "in_gainers": false,
+      "last_trade_age_sec": 11,
+      "day_high": 76.475,
+      "finnhub_price": 76.44,
+      "finnhub_age_sec": 9,
+      "price_diff_pct": -0.02,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "neutral",
+     "score": 52.0,
+     "line": "آخر خبر: «The Credit Market Lens: Making Sense Of Diverging Signals In Investment Grade And High Yield Credit» (قبل 9.8 ساعة) — ما يبيّن اتجاه واضح.",
+     "facts": {
+      "symbol": "HYG",
+      "count": 2,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "The Credit Market Lens: Making Sense Of Diverging Signals In Investment Grade And High Yield Credit",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 9.8,
+        "time_et": "11-24 02:45"
+       },
+       {
+        "kind": "plain",
+        "headline": "Market Pessimism Meets Solid Fundamentals",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 24.4,
+        "time_et": "11-23 12:10"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "الكلام عنه قليل (30 رسالة، 0 منها آخر ساعة) — ما فيه مزاج واضح. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "HYG",
+      "bullish": 1,
+      "bearish": 3,
+      "messages": 30,
+      "messages_last_hour": 0,
+      "watchers": 3925,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.4×، RSI 51.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $76.42، ستوب $76.39، هدف $76.48.",
+     "facts": {
+      "symbol": "HYG",
+      "close": 76.41,
+      "vwap": 76.4,
+      "ema9": 76.4,
+      "ema20": 76.4,
+      "rsi": 51.7,
+      "atr": 0.0274,
+      "rvol": 1.36,
+      "trend_up": true,
+      "extension_atr": 0.53,
+      "setup": "pullback",
+      "bar_time_et": "12:25",
+      "day_high": 76.47,
+      "day_low": 76.32,
+      "day_open": 76.33,
+      "prev_high": 76.73,
+      "prev_low": 76.5,
+      "prev_close": 76.5,
+      "entry": 76.42,
+      "stop": 76.39,
+      "target": 76.48,
+      "risk_per_share": 0.03,
+      "rr": 2.0,
+      "next_resistance": 76.47
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "HYG",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "فيه مقاومة عند $76.47 قبل الهدف — العائد الحقيقي للمخاطرة 1.7 إلى 1 بس."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "veto",
+        "text": "الستوب 0.04% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."
+       }
+      ],
+      "veto": true,
+      "penalty": 15
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 51.9,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "HYG",
+      "decision": "SKIP",
+      "base_score": 66.9,
+      "penalty": 15,
+      "parts": {
+       "charts": 85.0,
+       "scout": 41.9,
+       "news": 52.0,
+       "sentiment": 50.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 76.42,
+       "stop": 76.39,
+       "target": 76.48,
+       "qty": 65,
+       "risk_usd": 1.95,
+       "reward_usd": 3.9,
+       "rr": 2.0,
+       "position_usd": 4967.3
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "HYG عند $76.42 (-0.1% اليوم) وحجمه يمشي بوتيرة 1.2× أمس. ✅ Finnhub: $76.44 (فرق -0.02%، قبل 9 ث).",
+    "news": "آخر خبر: «The Credit Market Lens: Making Sense Of Diverging Signals In Investment Grade And High Yield Credit» (قبل 9.8 ساعة) — ما يبيّن اتجاه واضح.",
+    "sentiment": "الكلام عنه قليل (30 رسالة، 0 منها آخر ساعة) — ما فيه مزاج واضح. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.4×، RSI 51.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $76.42، ستوب $76.39، هدف $76.48.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11241232AAPL",
+   "symbol": "AAPL",
+   "created_utc": "2026-11-24T17:32:47.918356+00:00",
+   "time_et": "12:32",
+   "decision": "SKIP",
+   "score": 15.9,
+   "blocked": true,
+   "ticket": {
+    "entry": 353.92,
+    "stop": 351.4,
+    "target": 358.96,
+    "qty": 14,
+    "risk_usd": 35.28,
+    "reward_usd": 70.56,
+    "rr": 2.0,
+    "position_usd": 4954.88
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 40.6,
+     "line": "AAPL عند $353.24 (+1.1% اليوم) وحجمه يمشي بوتيرة 0.8× أمس. ✅ Finnhub: $353.25 (فرق -0.00%، قبل 6 ث).",
+     "facts": {
+      "symbol": "AAPL",
+      "price": 353.24,
+      "prev_close": 349.4,
+      "change_pct": 1.1,
+      "volume_pace_x": 0.78,
+      "iex_dollar_volume": 242586078,
+      "in_gainers": false,
+      "last_trade_age_sec": 4,
+      "day_high": 353.88,
+      "finnhub_price": 353.25,
+      "finnhub_age_sec": 6,
+      "price_diff_pct": -0.0,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "negative",
+     "score": 10.0,
+     "line": "⚠️ خبر مخاطرة: «Global Neural Processor Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on 22.2% CAGR as NVIDIA, Apple, Alphabet, and Intel Accelerat» — هذا النوع يقتل الصعود.",
+     "facts": {
+      "symbol": "AAPL",
+      "count": 24,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "Stocks give back gains as Anthropic dips below IPO price",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.8,
+        "time_et": "11-24 10:44"
+       },
+       {
+        "kind": "plain",
+        "headline": "Who is holding Jensen Huang accountable? It sure looks like nobody",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.8,
+        "time_et": "11-24 10:42"
+       },
+       {
+        "kind": "plain",
+        "headline": "Despite Jensen's return, Nvidia still needs to address several management issues",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 2.0,
+        "time_et": "11-24 10:30"
+       },
+       {
+        "kind": "plain",
+        "headline": "Nvidia stock in focus: Why CEO comebacks are usually good for shares",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 2.3,
+        "time_et": "11-24 10:13"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "المزاج منقسم: 44% متفائلين (4 مقابل 5). Reddit: 55 ذكر (المركز 11، 5.5× أمس).",
+     "facts": {
+      "symbol": "AAPL",
+      "bullish": 4,
+      "bearish": 5,
+      "messages": 30,
+      "messages_last_hour": 17,
+      "watchers": 1003179,
+      "bullish_pct": 44,
+      "reddit": {
+       "mentions": 55,
+       "mentions_24h_ago": 10,
+       "rank": 11,
+       "rank_24h_ago": 47
+      },
+      "reddit_surge": true
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.9×، RSI 60.4. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $353.88. دخول فوق $353.92، ستوب $351.40، هدف $358.96.",
+     "facts": {
+      "symbol": "AAPL",
+      "close": 352.92,
+      "vwap": 351.48,
+      "ema9": 352.23,
+      "ema20": 351.9,
+      "rsi": 60.4,
+      "atr": 0.8018,
+      "rvol": 0.92,
+      "trend_up": true,
+      "extension_atr": 1.79,
+      "setup": "pullback_breakout",
+      "bar_time_et": "12:25",
+      "day_high": 353.88,
+      "day_low": 345.92,
+      "day_open": 348.13,
+      "prev_high": 352.6,
+      "prev_low": 345.52,
+      "prev_close": 349.4,
+      "entry": 353.92,
+      "stop": 351.4,
+      "target": 358.96,
+      "risk_per_share": 2.52,
+      "rr": 2.0,
+      "next_resistance": null
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Global Neural Processor Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on 22.2% CAGR as NVIDIA, Apple, Alphabet, and Intel Accelerat» — هذا النوع يقتل الصعود.",
+     "facts": {
+      "symbol": "AAPL",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (3.1× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "minor",
+        "text": "ستوبك $351.40 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 0.92× بس — ما فيه اهتمام كافي يدفع السعر."
+       },
+       {
+        "severity": "veto",
+        "text": "الأخبار ضدنا: ⚠️ خبر مخاطرة: «Global Neural Processor Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on 22.2% CAGR as NVIDIA, Apple, Alphabet, and Intel Accelerat» — هذا النوع يقتل الصعود."
+       },
+       {
+        "severity": "minor",
+        "text": "ذكره في Reddit انفجر خلال 24 ساعة — ممكن ضخ مضاربين، والنزول يكون سريع."
+       }
+      ],
+      "veto": true,
+      "penalty": 40
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 15.9,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "AAPL",
+      "decision": "SKIP",
+      "base_score": 55.9,
+      "penalty": 40,
+      "parts": {
+       "charts": 75.0,
+       "scout": 40.6,
+       "news": 10.0,
+       "sentiment": 50.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 353.92,
+       "stop": 351.4,
+       "target": 358.96,
+       "qty": 14,
+       "risk_usd": 35.28,
+       "reward_usd": 70.56,
+       "rr": 2.0,
+       "position_usd": 4954.88
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "AAPL عند $353.24 (+1.1% اليوم) وحجمه يمشي بوتيرة 0.8× أمس. ✅ Finnhub: $353.25 (فرق -0.00%، قبل 6 ث).",
+    "news": "⚠️ خبر مخاطرة: «Global Neural Processor Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on 22.2% CAGR as NVIDIA, Apple, Alphabet, and Intel Accelerat» — هذا النوع يقتل الصعود.",
+    "sentiment": "المزاج منقسم: 44% متفائلين (4 مقابل 5). Reddit: 55 ذكر (المركز 11، 5.5× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.9×، RSI 60.4. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $353.88. دخول فوق $353.92، ستوب $351.40، هدف $358.96.",
+    "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Global Neural Processor Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on 22.2% CAGR as NVIDIA, Apple, Alphabet, and Intel Accelerat» — هذا النوع يقتل الصعود.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -4515,19 +4911,22 @@
    "idea_id": "11241136PLTR",
    "symbol": "PLTR",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 161.06,
    "stop": 159.54,
    "target": 164.1,
    "qty": 31,
    "created_utc": "2026-11-24T16:36:19.799969+00:00",
    "valid_until_utc": "2026-11-24T17:36:19.799969+00:00",
-   "fill_px": null,
-   "fill_utc": null,
+   "fill_px": 161.1405,
+   "fill_utc": "2026-11-24T16:40:00+00:00",
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "triggered": true,
+   "stop0": 159.54,
+   "checked_utc": "2026-11-24T17:25:00+00:00"
   },
   {
    "id": "11241136CRWD-blocked",
@@ -4546,7 +4945,9 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "triggered": true,
+   "checked_utc": "2026-11-24T17:25:00+00:00"
   },
   {
    "id": "11241136NFLX-blocked",
@@ -4565,7 +4966,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-24T17:25:00+00:00"
   },
   {
    "id": "11241136UBER-blocked",
@@ -4579,6 +4981,45 @@
    "qty": 54,
    "created_utc": "2026-11-24T16:36:19.799969+00:00",
    "valid_until_utc": "2026-11-24T17:36:19.799969+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-24T17:25:00+00:00"
+  },
+  {
+   "id": "11241232HYG-blocked",
+   "idea_id": "11241232HYG",
+   "symbol": "HYG",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 76.42,
+   "stop": 76.39,
+   "target": 76.48,
+   "qty": 65,
+   "created_utc": "2026-11-24T17:32:47.918356+00:00",
+   "valid_until_utc": "2026-11-24T18:32:47.918356+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11241232AAPL-blocked",
+   "idea_id": "11241232AAPL",
+   "symbol": "AAPL",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 353.92,
+   "stop": 351.4,
+   "target": 358.96,
+   "qty": 14,
+   "created_utc": "2026-11-24T17:32:47.918356+00:00",
+   "valid_until_utc": "2026-11-24T18:32:47.918356+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -4937,6 +5378,37 @@
     }
    },
    "api_calls": 13
+  },
+  {
+   "utc": "2026-11-24T17:32:47.918356+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 101,
+   "candidates": 7,
+   "ideas": [
+    "HYG:SKIP/blocked",
+    "AAPL:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 718.69,
+      "vwap": 716.04,
+      "chg_open_pct": 0.47
+     },
+     "QQQ": {
+      "close": 638.91,
+      "vwap": 636.56,
+      "chg_open_pct": -0.21
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {
@@ -4984,93 +5456,93 @@
  },
  "board": [
   {
-   "symbol": "NFLX",
-   "decision": "SKIP",
-   "score": 23.4,
-   "blocked": true,
-   "price": 59.09,
-   "change_pct": 1.72,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "SPDN",
-   "decision": "SKIP",
-   "score": 7.8,
-   "blocked": false,
-   "price": 9.08,
-   "change_pct": 1.11,
-   "skeptic": "ضد. الستوب بعيد (3.3× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
-  },
-  {
-   "symbol": "PLTR",
-   "decision": "SKIP",
-   "score": 47.6,
-   "blocked": true,
-   "price": 160.735,
-   "change_pct": 0.84,
-   "skeptic": "ضد. فيه مقاومة عند $161.17 قبل الهدف — العائد الحقيقي للمخاطرة 0.1 إلى 1 بس."
-  },
-  {
    "symbol": "MSFT",
    "decision": "SKIP",
    "score": 0,
    "blocked": true,
-   "price": 496.1,
-   "change_pct": 0.64,
+   "price": 500.31,
+   "change_pct": 1.49,
    "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Asia-Pacific Digital Transformation Market: Size, Trends, and Forecast (2026-2034) Featuring Intelligence "
+  },
+  {
+   "symbol": "PLTR",
+   "decision": "SKIP",
+   "score": 36.6,
+   "blocked": true,
+   "price": 162.09,
+   "change_pct": 1.69,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+  },
+  {
+   "symbol": "HYG",
+   "decision": "SKIP",
+   "score": 51.9,
+   "blocked": true,
+   "price": 76.425,
+   "change_pct": -0.1,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   },
   {
    "symbol": "UBER",
    "decision": "SKIP",
-   "score": 14.1,
+   "score": 23.2,
    "blocked": true,
-   "price": 65.21,
-   "change_pct": 1.78,
-   "skeptic": "ضد. فيه مقاومة عند $65.97 قبل الهدف — العائد الحقيقي للمخاطرة 0.3 إلى 1 بس."
-  },
-  {
-   "symbol": "AAPL",
-   "decision": "SKIP",
-   "score": 9.4,
-   "blocked": true,
-   "price": 351.59,
-   "change_pct": 0.63,
-   "skeptic": "ضد. فيه مقاومة عند $352.60 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس."
+   "price": 65.46,
+   "change_pct": 2.17,
+   "skeptic": "ضد. فيه مقاومة عند $65.97 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس."
   },
   {
    "symbol": "CRWD",
    "decision": "SKIP",
-   "score": 29.9,
+   "score": 9.2,
+   "blocked": false,
+   "price": 214.73,
+   "change_pct": 2.79,
+   "skeptic": "ضد. الستوب بعيد (3.7× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+  },
+  {
+   "symbol": "AAPL",
+   "decision": "SKIP",
+   "score": 15.9,
    "blocked": true,
-   "price": 210.88,
-   "change_pct": 0.95,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "price": 353.24,
+   "change_pct": 1.1,
+   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Global Neural Processor Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on 22.2"
+  },
+  {
+   "symbol": "VOO",
+   "decision": "SKIP",
+   "score": 48.9,
+   "blocked": false,
+   "price": 661.205,
+   "change_pct": -0.42,
+   "skeptic": "ضد. فيه مقاومة عند $669.16 قبل الهدف — العائد الحقيقي للمخاطرة 1.7 إلى 1 بس."
   }
  ],
  "market": {
-  "score": 25,
-  "spy_below_vwap": true,
-  "qqq_below_vwap": true,
+  "score": 75,
+  "spy_below_vwap": false,
+  "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 715.08,
-    "vwap": 715.97,
-    "chg_open_pct": -0.03
+    "close": 718.69,
+    "vwap": 716.04,
+    "chg_open_pct": 0.47
    },
    "QQQ": {
-    "close": 633.73,
-    "vwap": 636.85,
-    "chg_open_pct": -1.02
+    "close": 638.91,
+    "vwap": 636.56,
+    "chg_open_pct": -0.21
    }
   }
  },
- "last_run": "2026-11-24T16:36:19.799969+00:00",
+ "last_run": "2026-11-24T17:32:47.918356+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-24T16:36:38.548185+00:00",
+  "utc": "2026-11-24T17:33:07.412131+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 714.27",
+  "finnhub": "ok SPY 719.34",
   "sec": "missing",
   "gemini": "set"
  }
