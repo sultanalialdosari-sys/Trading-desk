@@ -5898,7 +5898,7 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-24T20:30:00+00:00",
+   "checked_utc": "2026-11-24T20:55:00+00:00",
    "triggered": true,
    "stop0": 76.4
   },
@@ -5919,7 +5919,8 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-24T20:55:00+00:00"
   }
  ],
  "runs": [
@@ -6394,6 +6395,17 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-24T21:39:10.027485+00:00",
+   "market_open": false,
+   "final": false,
+   "scanned": 0,
+   "candidates": 0,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "api_calls": 2
   }
  ],
  "daily": {
@@ -6439,68 +6451,15 @@
    }
   }
  },
- "board": [
-  {
-   "symbol": "INSM",
-   "decision": "SKIP",
-   "score": 44.5,
-   "blocked": true,
-   "price": 170.255,
-   "change_pct": 14.2,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "EMBC",
-   "decision": "SKIP",
-   "score": 24.3,
-   "blocked": true,
-   "price": 8.09,
-   "change_pct": 40.7,
-   "skeptic": "ضد. متأخرين في الجلسة — ما فيه وقت كافي للصفقة تشتغل."
-  },
-  {
-   "symbol": "HYG",
-   "decision": "SKIP",
-   "score": 34.9,
-   "blocked": true,
-   "price": 76.485,
-   "change_pct": -0.02,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "SPDN",
-   "decision": "SKIP",
-   "score": 37.1,
-   "blocked": true,
-   "price": 9.05,
-   "change_pct": 0.78,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  }
- ],
- "market": {
-  "score": 25,
-  "spy_below_vwap": true,
-  "qqq_below_vwap": true,
-  "detail": {
-   "SPY": {
-    "close": 716.03,
-    "vwap": 716.55,
-    "chg_open_pct": 0.1
-   },
-   "QQQ": {
-    "close": 635.1,
-    "vwap": 636.78,
-    "chg_open_pct": -0.81
-   }
-  }
- },
- "last_run": "2026-11-24T20:35:55.057685+00:00",
- "last_open": true,
+ "board": [],
+ "market": null,
+ "last_run": "2026-11-24T21:39:10.027485+00:00",
+ "last_open": false,
  "setup": {
-  "utc": "2026-11-24T20:36:07.160007+00:00",
+  "utc": "2026-11-24T21:39:10.407134+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 715.94",
+  "finnhub": "ok SPY 718.78",
   "sec": "missing",
   "gemini": "set"
  }
