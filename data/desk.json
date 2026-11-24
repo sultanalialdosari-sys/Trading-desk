@@ -5885,7 +5885,7 @@
    "idea_id": "11241445HYG",
    "symbol": "HYG",
    "owner": "blocked",
-   "status": "open",
+   "status": "closed",
    "entry": 76.48,
    "stop": 76.4,
    "target": 76.64,
@@ -5894,10 +5894,10 @@
    "valid_until_utc": "2026-11-24T20:45:24.691266+00:00",
    "fill_px": 76.5182,
    "fill_utc": "2026-11-24T20:10:00+00:00",
-   "exit_px": null,
-   "exit_utc": null,
-   "r": null,
-   "pnl": null,
+   "exit_px": 76.4018,
+   "exit_utc": "2026-11-24T22:40:53.520747+00:00",
+   "r": -1.46,
+   "pnl": -7.57,
    "checked_utc": "2026-11-24T20:55:00+00:00",
    "triggered": true,
    "stop0": 76.4
@@ -5907,7 +5907,7 @@
    "idea_id": "11241535EMBC",
    "symbol": "EMBC",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 8.23,
    "stop": 7.79,
    "target": 9.11,
@@ -6406,6 +6406,17 @@
    "sent": 0,
    "errors": [],
    "api_calls": 2
+  },
+  {
+   "utc": "2026-11-24T22:40:53.520747+00:00",
+   "market_open": false,
+   "final": true,
+   "scanned": 0,
+   "candidates": 0,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "api_calls": 2
   }
  ],
  "daily": {
@@ -6449,14 +6460,55 @@
      "expired": 13
     }
    }
+  },
+  "2026-11-24": {
+   "ideas": 11,
+   "buy": 0,
+   "wait": 0,
+   "blocked": 11,
+   "stats": {
+    "desk": {
+     "owner": "desk",
+     "closed": 0,
+     "wins": 0,
+     "win_rate": null,
+     "total_r": 0,
+     "avg_r": null,
+     "pnl": 0,
+     "open": 0,
+     "expired": 0
+    },
+    "you": {
+     "owner": "you",
+     "closed": 0,
+     "wins": 0,
+     "win_rate": null,
+     "total_r": 0,
+     "avg_r": null,
+     "pnl": 0,
+     "open": 0,
+     "expired": 0
+    },
+    "blocked": {
+     "owner": "blocked",
+     "closed": 3,
+     "wins": 0,
+     "win_rate": 0,
+     "total_r": -2.31,
+     "avg_r": -0.77,
+     "pnl": -11.63,
+     "open": 0,
+     "expired": 8
+    }
+   }
   }
  },
  "board": [],
  "market": null,
- "last_run": "2026-11-24T21:39:10.027485+00:00",
+ "last_run": "2026-11-24T22:40:53.520747+00:00",
  "last_open": false,
  "setup": {
-  "utc": "2026-11-24T21:39:10.407134+00:00",
+  "utc": "2026-11-24T22:40:53.793815+00:00",
   "alpaca": "ok",
   "telegram": "missing",
   "finnhub": "ok SPY 718.78",
