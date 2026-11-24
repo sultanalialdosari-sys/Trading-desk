@@ -3731,6 +3731,17 @@
    "sent": 0,
    "errors": [],
    "api_calls": 2
+  },
+  {
+   "utc": "2026-11-24T14:15:22.013025+00:00",
+   "market_open": false,
+   "final": false,
+   "scanned": 0,
+   "candidates": 0,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "api_calls": 1
   }
  ],
  "daily": {
@@ -3778,10 +3789,10 @@
  },
  "board": [],
  "market": null,
- "last_run": "2026-11-23T22:35:34.865596+00:00",
+ "last_run": "2026-11-24T14:15:22.013025+00:00",
  "last_open": false,
  "setup": {
-  "utc": "2026-11-23T22:35:34.973759+00:00",
+  "utc": "2026-11-24T14:15:22.042714+00:00",
   "alpaca": "ok",
   "telegram": "missing",
   "finnhub": "ok SPY 722.29",
