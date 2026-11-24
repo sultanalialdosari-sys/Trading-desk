@@ -4968,6 +4968,195 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11241445HYG",
+   "symbol": "HYG",
+   "created_utc": "2026-11-24T19:45:24.691266+00:00",
+   "time_et": "14:45",
+   "decision": "SKIP",
+   "score": 29.4,
+   "blocked": true,
+   "ticket": {
+    "entry": 76.48,
+    "stop": 76.4,
+    "target": 76.64,
+    "qty": 65,
+    "risk_usd": 5.2,
+    "reward_usd": 10.4,
+    "rr": 2.0,
+    "position_usd": 4971.2
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "negative",
+     "score": 38.2,
+     "line": "HYG عند $76.45 (-0.1% اليوم) وحجمه يمشي بوتيرة 0.9× أمس. ✅ Finnhub: $76.47 (فرق -0.02%، قبل 5 ث).",
+     "facts": {
+      "symbol": "HYG",
+      "price": 76.455,
+      "prev_close": 76.5,
+      "change_pct": -0.06,
+      "volume_pace_x": 0.87,
+      "iex_dollar_volume": 188690869,
+      "in_gainers": false,
+      "last_trade_age_sec": 8,
+      "day_high": 76.475,
+      "finnhub_price": 76.47,
+      "finnhub_age_sec": 5,
+      "price_diff_pct": -0.02,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "neutral",
+     "score": 52.0,
+     "line": "آخر خبر: «The Credit Market Lens: Making Sense Of Diverging Signals In Investment Grade And High Yield Credit» (قبل 12.0 ساعة) — ما يبيّن اتجاه واضح.",
+     "facts": {
+      "symbol": "HYG",
+      "count": 2,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "The Credit Market Lens: Making Sense Of Diverging Signals In Investment Grade And High Yield Credit",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 12.0,
+        "time_et": "11-24 02:45"
+       },
+       {
+        "kind": "plain",
+        "headline": "Market Pessimism Meets Solid Fundamentals",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 26.6,
+        "time_et": "11-23 12:10"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "الكلام عنه قليل (30 رسالة، 2 منها آخر ساعة) — ما فيه مزاج واضح. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "HYG",
+      "bullish": 1,
+      "bearish": 3,
+      "messages": 30,
+      "messages_last_hour": 2,
+      "watchers": 3925,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 70.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.2×، RSI 55.7. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $76.47. دخول فوق $76.48، ستوب $76.40، هدف $76.64.",
+     "facts": {
+      "symbol": "HYG",
+      "close": 76.45,
+      "vwap": 76.41,
+      "ema9": 76.45,
+      "ema20": 76.44,
+      "rsi": 55.7,
+      "atr": 0.0149,
+      "rvol": 1.22,
+      "trend_up": true,
+      "extension_atr": 3.32,
+      "setup": "pullback_breakout",
+      "bar_time_et": "14:40",
+      "day_high": 76.47,
+      "day_low": 76.32,
+      "day_open": 76.33,
+      "prev_high": 76.73,
+      "prev_low": 76.5,
+      "prev_close": 76.5,
+      "entry": 76.48,
+      "stop": 76.4,
+      "target": 76.64,
+      "risk_per_share": 0.08,
+      "rr": 2.0,
+      "next_resistance": 76.73
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. الستوب 0.10% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة.",
+     "facts": {
+      "symbol": "HYG",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (5.4× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "veto",
+        "text": "الستوب 0.10% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."
+       },
+       {
+        "severity": "major",
+        "text": "السعر بعيد عن VWAP بـ3.3× ATR — هذي مطاردة، مو دخول."
+       },
+       {
+        "severity": "veto",
+        "text": "متأخرين في الجلسة — ما فيه وقت كافي للصفقة تشتغل."
+       }
+      ],
+      "veto": true,
+      "penalty": 30
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 29.4,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "HYG",
+      "decision": "SKIP",
+      "base_score": 59.4,
+      "penalty": 30,
+      "parts": {
+       "charts": 70.0,
+       "scout": 38.2,
+       "news": 52.0,
+       "sentiment": 50.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 76.48,
+       "stop": 76.4,
+       "target": 76.64,
+       "qty": 65,
+       "risk_usd": 5.2,
+       "reward_usd": 10.4,
+       "rr": 2.0,
+       "position_usd": 4971.2
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "HYG عند $76.45 (-0.1% اليوم) وحجمه يمشي بوتيرة 0.9× أمس. ✅ Finnhub: $76.47 (فرق -0.02%، قبل 5 ث).",
+    "news": "آخر خبر: «The Credit Market Lens: Making Sense Of Diverging Signals In Investment Grade And High Yield Credit» (قبل 12.0 ساعة) — ما يبيّن اتجاه واضح.",
+    "sentiment": "الكلام عنه قليل (30 رسالة، 2 منها آخر ساعة) — ما فيه مزاج واضح. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.2×، RSI 55.7. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $76.47. دخول فوق $76.48، ستوب $76.40، هدف $76.64.",
+    "skeptic": "ضد. الستوب 0.10% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -5322,7 +5511,7 @@
    "idea_id": "11241136PLTR",
    "symbol": "PLTR",
    "owner": "blocked",
-   "status": "open",
+   "status": "scratch",
    "entry": 161.06,
    "stop": 161.1405,
    "target": 164.1,
@@ -5331,13 +5520,13 @@
    "valid_until_utc": "2026-11-24T17:36:19.799969+00:00",
    "fill_px": 161.1405,
    "fill_utc": "2026-11-24T16:40:00+00:00",
-   "exit_px": null,
-   "exit_utc": null,
-   "r": null,
-   "pnl": null,
+   "exit_px": 161.0599,
+   "exit_utc": "2026-11-24T19:35:00+00:00",
+   "r": -0.05,
+   "pnl": -2.5,
    "triggered": true,
    "stop0": 159.54,
-   "checked_utc": "2026-11-24T18:30:00+00:00",
+   "checked_utc": "2026-11-24T19:40:00+00:00",
    "be": true
   },
   {
@@ -5421,14 +5610,14 @@
    "pnl": null,
    "triggered": true,
    "stop0": 76.39,
-   "checked_utc": "2026-11-24T18:30:00+00:00"
+   "checked_utc": "2026-11-24T19:40:00+00:00"
   },
   {
    "id": "11241232AAPL-blocked",
    "idea_id": "11241232AAPL",
    "symbol": "AAPL",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 353.92,
    "stop": 351.4,
    "target": 358.96,
@@ -5441,14 +5630,14 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-24T18:30:00+00:00"
+   "checked_utc": "2026-11-24T19:40:00+00:00"
   },
   {
    "id": "11241335GOOG-blocked",
    "idea_id": "11241335GOOG",
    "symbol": "GOOG",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 277.09,
    "stop": 276.35,
    "target": 278.57,
@@ -5460,20 +5649,41 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-24T19:40:00+00:00"
   },
   {
    "id": "11241335NFLX-blocked",
    "idea_id": "11241335NFLX",
    "symbol": "NFLX",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 59.23,
    "stop": 58.99,
    "target": 59.71,
    "qty": 84,
    "created_utc": "2026-11-24T18:35:27.990634+00:00",
    "valid_until_utc": "2026-11-24T19:35:27.990634+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-24T19:40:00+00:00"
+  },
+  {
+   "id": "11241445HYG-blocked",
+   "idea_id": "11241445HYG",
+   "symbol": "HYG",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 76.48,
+   "stop": 76.4,
+   "target": 76.64,
+   "qty": 65,
+   "created_utc": "2026-11-24T19:45:24.691266+00:00",
+   "valid_until_utc": "2026-11-24T20:45:24.691266+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -5894,6 +6104,36 @@
     }
    },
    "api_calls": 13
+  },
+  {
+   "utc": "2026-11-24T19:45:24.691266+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 101,
+   "candidates": 4,
+   "ideas": [
+    "HYG:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 717.78,
+      "vwap": 716.57,
+      "chg_open_pct": 0.35
+     },
+     "QQQ": {
+      "close": 637.56,
+      "vwap": 636.86,
+      "chg_open_pct": -0.42
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {
@@ -5943,10 +6183,10 @@
   {
    "symbol": "F",
    "decision": "SKIP",
-   "score": 56.6,
+   "score": 46.7,
    "blocked": true,
-   "price": 11.91,
-   "change_pct": 2.28,
+   "price": 11.93,
+   "change_pct": 2.45,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
@@ -5954,63 +6194,27 @@
    "decision": "SKIP",
    "score": 43.0,
    "blocked": true,
-   "price": 59.18,
-   "change_pct": 1.88,
+   "price": 59.22,
+   "change_pct": 1.95,
    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "PLTR",
-   "decision": "SKIP",
-   "score": 14.9,
-   "blocked": true,
-   "price": 162.52,
-   "change_pct": 1.96,
-   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «AI-Enabled Battlefield Management and Decision Support Systems Global Market Report 2026 | Lockheed Martin"
-  },
-  {
-   "symbol": "CRWD",
-   "decision": "SKIP",
-   "score": 24.0,
-   "blocked": false,
-   "price": 214.43,
-   "change_pct": 2.64,
-   "skeptic": "ضد. الستوب بعيد (4.7× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
   },
   {
    "symbol": "HYG",
    "decision": "SKIP",
-   "score": 46.5,
+   "score": 29.4,
    "blocked": true,
-   "price": 76.435,
-   "change_pct": -0.08,
+   "price": 76.455,
+   "change_pct": -0.06,
    "skeptic": "ضد. الستوب 0.10% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."
   },
   {
-   "symbol": "AAPL",
+   "symbol": "AAL",
    "decision": "SKIP",
-   "score": 0,
-   "blocked": false,
-   "price": 353.155,
-   "change_pct": 1.07,
-   "skeptic": "ضد. الستوب بعيد (3.6× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
-  },
-  {
-   "symbol": "GOOG",
-   "decision": "SKIP",
-   "score": 51.2,
+   "score": 43.7,
    "blocked": true,
-   "price": 276.53,
-   "change_pct": -1.09,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "VOO",
-   "decision": "SKIP",
-   "score": 11.7,
-   "blocked": false,
-   "price": 660.87,
-   "change_pct": -0.47,
-   "skeptic": "ضد. الستوب بعيد (3.8× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+   "price": 12.625,
+   "change_pct": -0.82,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   }
  ],
  "market": {
@@ -6019,24 +6223,24 @@
   "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 719.31,
-    "vwap": 716.4,
-    "chg_open_pct": 0.56
+    "close": 717.78,
+    "vwap": 716.57,
+    "chg_open_pct": 0.35
    },
    "QQQ": {
-    "close": 639.52,
-    "vwap": 636.77,
-    "chg_open_pct": -0.12
+    "close": 637.56,
+    "vwap": 636.86,
+    "chg_open_pct": -0.42
    }
   }
  },
- "last_run": "2026-11-24T18:35:27.990634+00:00",
+ "last_run": "2026-11-24T19:45:24.691266+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-24T18:35:48.223533+00:00",
+  "utc": "2026-11-24T19:45:36.025986+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 719.1",
+  "finnhub": "ok SPY 717.84",
   "sec": "missing",
   "gemini": "set"
  }
