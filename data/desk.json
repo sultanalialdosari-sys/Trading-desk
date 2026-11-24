@@ -5157,6 +5157,214 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11241535EMBC",
+   "symbol": "EMBC",
+   "created_utc": "2026-11-24T20:35:55.057685+00:00",
+   "time_et": "15:35",
+   "decision": "SKIP",
+   "score": 24.3,
+   "blocked": true,
+   "ticket": {
+    "entry": 8.23,
+    "stop": 7.79,
+    "target": 9.11,
+    "qty": 113,
+    "risk_usd": 49.72,
+    "reward_usd": 99.44,
+    "rr": 2.0,
+    "position_usd": 929.99
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 78.0,
+     "line": "EMBC عند $8.09 (+40.7% اليوم) وحجمه يمشي بوتيرة 6.6× أمس — ومن قائمة الأكثر ارتفاعاً. ✅ Finnhub: $8.08 (فرق +0.12%، قبل 20 ث).",
+     "facts": {
+      "symbol": "EMBC",
+      "price": 8.09,
+      "prev_close": 5.75,
+      "change_pct": 40.7,
+      "volume_pace_x": 6.57,
+      "iex_dollar_volume": 2178756,
+      "in_gainers": true,
+      "last_trade_age_sec": 4,
+      "day_high": 8.22,
+      "finnhub_price": 8.08,
+      "finnhub_age_sec": 20,
+      "price_diff_pct": 0.12,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Embecta Q4 Adj. EPS $0.72 Beats $0.29 Estimate, Sales $298.700M Beat $269.712M Estimate» (Benzinga (Finnhub)).",
+     "facts": {
+      "symbol": "EMBC",
+      "count": 5,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Embecta Reports Fiscal Fourth Quarter and Full Year 2026 Financial Results",
+        "source": "fiscal.ai",
+        "hours_ago": 6.5,
+        "time_et": "11-24 09:03"
+       },
+       {
+        "kind": "plain",
+        "headline": "Embecta Declares Quarterly Cash Dividend",
+        "source": "fiscal.ai",
+        "hours_ago": 6.5,
+        "time_et": "11-24 09:03"
+       },
+       {
+        "kind": "plain",
+        "headline": "Embecta Corp. (EMBC) Q4 2026 Earnings Call Transcript",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 8.1,
+        "time_et": "11-24 07:31"
+       },
+       {
+        "kind": "plain",
+        "headline": "Embecta Sees FY2027 Adj EPS $1.60-$1.90 vs $1.76 Est; Sees Sales $1.070B-$1.090B vs $1.082B Est",
+        "source": "Benzinga (Finnhub)",
+        "hours_ago": 12.6,
+        "time_et": "11-24 03:00"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 66.66666666666667,
+     "line": "61% متفائلين (11 مقابل 7) والكلام عنه هادي. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "EMBC",
+      "bullish": 11,
+      "bearish": 7,
+      "messages": 30,
+      "messages_last_hour": 5,
+      "watchers": 383,
+      "bullish_pct": 61,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 7.8×، RSI 57.4. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $8.22. دخول فوق $8.23، ستوب $7.79، هدف $9.11.",
+     "facts": {
+      "symbol": "EMBC",
+      "close": 8.06,
+      "vwap": 7.8,
+      "ema9": 7.99,
+      "ema20": 7.99,
+      "rsi": 57.4,
+      "atr": 0.0716,
+      "rvol": 7.83,
+      "trend_up": true,
+      "extension_atr": 3.7,
+      "setup": "pullback_breakout",
+      "bar_time_et": "15:30",
+      "day_high": 8.22,
+      "day_low": 6.59,
+      "day_open": 6.86,
+      "prev_high": 5.83,
+      "prev_low": 5.55,
+      "prev_close": 5.75,
+      "entry": 8.23,
+      "stop": 7.79,
+      "target": 9.11,
+      "risk_per_share": 0.44,
+      "rr": 2.0,
+      "next_resistance": null
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. متأخرين في الجلسة — ما فيه وقت كافي للصفقة تشتغل.",
+     "facts": {
+      "symbol": "EMBC",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (6.1× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "minor",
+        "text": "ستوبك $7.79 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "major",
+        "text": "السعر بعيد عن VWAP بـ3.7× ATR — هذي مطاردة، مو دخول."
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       },
+       {
+        "severity": "veto",
+        "text": "متأخرين في الجلسة — ما فيه وقت كافي للصفقة تشتغل."
+       }
+      ],
+      "veto": true,
+      "penalty": 50
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 24.3,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "EMBC",
+      "decision": "SKIP",
+      "base_score": 74.3,
+      "penalty": 50,
+      "parts": {
+       "charts": 85.0,
+       "scout": 78.0,
+       "news": 75.0,
+       "sentiment": 66.7,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 8.23,
+       "stop": 7.79,
+       "target": 9.11,
+       "qty": 113,
+       "risk_usd": 49.72,
+       "reward_usd": 99.44,
+       "rr": 2.0,
+       "position_usd": 929.99
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "EMBC عند $8.09 (+40.7% اليوم) وحجمه يمشي بوتيرة 6.6× أمس — ومن قائمة الأكثر ارتفاعاً. ✅ Finnhub: $8.08 (فرق +0.12%، قبل 20 ث).",
+    "news": "فيه محفّز: «Embecta Q4 Adj. EPS $0.72 Beats $0.29 Estimate, Sales $298.700M Beat $269.712M Estimate» (Benzinga (Finnhub)).",
+    "sentiment": "61% متفائلين (11 مقابل 7) والكلام عنه هادي. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 7.8×، RSI 57.4. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $8.22. دخول فوق $8.23، ستوب $7.79، هدف $9.11.",
+    "skeptic": "ضد. متأخرين في الجلسة — ما فيه وقت كافي للصفقة تشتغل.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -5595,7 +5803,7 @@
    "idea_id": "11241232HYG",
    "symbol": "HYG",
    "owner": "blocked",
-   "status": "open",
+   "status": "won",
    "entry": 76.42,
    "stop": 76.39,
    "target": 76.48,
@@ -5604,13 +5812,13 @@
    "valid_until_utc": "2026-11-24T18:32:47.918356+00:00",
    "fill_px": 76.4657,
    "fill_utc": "2026-11-24T17:35:00+00:00",
-   "exit_px": null,
-   "exit_utc": null,
-   "r": null,
-   "pnl": null,
+   "exit_px": 76.4418,
+   "exit_utc": "2026-11-24T20:10:00+00:00",
+   "r": -0.8,
+   "pnl": -1.56,
    "triggered": true,
    "stop0": 76.39,
-   "checked_utc": "2026-11-24T19:40:00+00:00"
+   "checked_utc": "2026-11-24T20:30:00+00:00"
   },
   {
    "id": "11241232AAPL-blocked",
@@ -5677,13 +5885,35 @@
    "idea_id": "11241445HYG",
    "symbol": "HYG",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 76.48,
    "stop": 76.4,
    "target": 76.64,
    "qty": 65,
    "created_utc": "2026-11-24T19:45:24.691266+00:00",
    "valid_until_utc": "2026-11-24T20:45:24.691266+00:00",
+   "fill_px": 76.5182,
+   "fill_utc": "2026-11-24T20:10:00+00:00",
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-24T20:30:00+00:00",
+   "triggered": true,
+   "stop0": 76.4
+  },
+  {
+   "id": "11241535EMBC-blocked",
+   "idea_id": "11241535EMBC",
+   "symbol": "EMBC",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 8.23,
+   "stop": 7.79,
+   "target": 9.11,
+   "qty": 113,
+   "created_utc": "2026-11-24T20:35:55.057685+00:00",
+   "valid_until_utc": "2026-11-24T21:35:55.057685+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -6134,6 +6364,36 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-24T20:35:55.057685+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 102,
+   "candidates": 4,
+   "ideas": [
+    "EMBC:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 25,
+    "spy_below_vwap": true,
+    "qqq_below_vwap": true,
+    "detail": {
+     "SPY": {
+      "close": 716.03,
+      "vwap": 716.55,
+      "chg_open_pct": 0.1
+     },
+     "QQQ": {
+      "close": 635.1,
+      "vwap": 636.78,
+      "chg_open_pct": -0.81
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {
@@ -6181,66 +6441,66 @@
  },
  "board": [
   {
-   "symbol": "F",
+   "symbol": "INSM",
    "decision": "SKIP",
-   "score": 46.7,
+   "score": 44.5,
    "blocked": true,
-   "price": 11.93,
-   "change_pct": 2.45,
+   "price": 170.255,
+   "change_pct": 14.2,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "NFLX",
+   "symbol": "EMBC",
    "decision": "SKIP",
-   "score": 43.0,
+   "score": 24.3,
    "blocked": true,
-   "price": 59.22,
-   "change_pct": 1.95,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "price": 8.09,
+   "change_pct": 40.7,
+   "skeptic": "ضد. متأخرين في الجلسة — ما فيه وقت كافي للصفقة تشتغل."
   },
   {
    "symbol": "HYG",
    "decision": "SKIP",
-   "score": 29.4,
+   "score": 34.9,
    "blocked": true,
-   "price": 76.455,
-   "change_pct": -0.06,
-   "skeptic": "ضد. الستوب 0.10% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."
+   "price": 76.485,
+   "change_pct": -0.02,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "AAL",
+   "symbol": "SPDN",
    "decision": "SKIP",
-   "score": 43.7,
+   "score": 37.1,
    "blocked": true,
-   "price": 12.625,
-   "change_pct": -0.82,
+   "price": 9.05,
+   "change_pct": 0.78,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   }
  ],
  "market": {
-  "score": 75,
-  "spy_below_vwap": false,
-  "qqq_below_vwap": false,
+  "score": 25,
+  "spy_below_vwap": true,
+  "qqq_below_vwap": true,
   "detail": {
    "SPY": {
-    "close": 717.78,
-    "vwap": 716.57,
-    "chg_open_pct": 0.35
+    "close": 716.03,
+    "vwap": 716.55,
+    "chg_open_pct": 0.1
    },
    "QQQ": {
-    "close": 637.56,
-    "vwap": 636.86,
-    "chg_open_pct": -0.42
+    "close": 635.1,
+    "vwap": 636.78,
+    "chg_open_pct": -0.81
    }
   }
  },
- "last_run": "2026-11-24T19:45:24.691266+00:00",
+ "last_run": "2026-11-24T20:35:55.057685+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-24T19:45:36.025986+00:00",
+  "utc": "2026-11-24T20:36:07.160007+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 717.84",
+  "finnhub": "ok SPY 715.94",
   "sec": "missing",
   "gemini": "set"
  }
