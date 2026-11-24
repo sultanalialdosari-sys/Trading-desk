@@ -3332,6 +3332,835 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11241136PLTR",
+   "symbol": "PLTR",
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 47.6,
+   "blocked": true,
+   "ticket": {
+    "entry": 161.06,
+    "stop": 159.54,
+    "target": 164.1,
+    "qty": 31,
+    "risk_usd": 47.12,
+    "reward_usd": 94.24,
+    "rr": 2.0,
+    "position_usd": 4992.86
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 42.7,
+     "line": "PLTR عند $160.74 (+0.8% اليوم) وحجمه يمشي بوتيرة 1.0× أمس. ✅ Finnhub: $160.71 (فرق +0.02%، قبل 19 ث).",
+     "facts": {
+      "symbol": "PLTR",
+      "price": 160.735,
+      "prev_close": 159.39,
+      "change_pct": 0.84,
+      "volume_pace_x": 1.01,
+      "iex_dollar_volume": 70959119,
+      "in_gainers": false,
+      "last_trade_age_sec": 1,
+      "day_high": 163.0,
+      "finnhub_price": 160.71,
+      "finnhub_age_sec": 19,
+      "price_diff_pct": 0.02,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "negative",
+     "score": 10.0,
+     "line": "⚠️ خبر مخاطرة: «AI-Enabled Battlefield Management and Decision Support Systems Global Market Report 2026 | Lockheed Martin, RTX, Palantir Capitalize on Edge AI as Market Hits $» — هذا النوع يقتل الصعود.",
+     "facts": {
+      "symbol": "PLTR",
+      "count": 21,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "How Did Cathie Wood Play The Market Crash And Snapback?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.8,
+        "time_et": "11-24 09:49"
+       },
+       {
+        "kind": "risk",
+        "headline": "AI-Enabled Battlefield Management and Decision Support Systems Global Market Report 2026 | Lockheed Martin, RTX, Palantir Capitalize on Edge AI as Market Hits $",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.9,
+        "time_et": "11-24 09:42"
+       },
+       {
+        "kind": "plain",
+        "headline": "Is Palantir Stock Priced Right Against Its Rivals?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 2.8,
+        "time_et": "11-24 08:48"
+       },
+       {
+        "kind": "plain",
+        "headline": "Insider Alert: Palantir CTO Dumps Nearly $48 Million in Stock",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 4.6,
+        "time_et": "11-24 06:57"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 73.33333333333333,
+     "line": "80% متفائلين (12 مقابل 3) والكلام عنه نشط. Reddit: 7 ذكر (المركز 87، 1.8× أمس).",
+     "facts": {
+      "symbol": "PLTR",
+      "bullish": 12,
+      "bearish": 3,
+      "messages": 30,
+      "messages_last_hour": 25,
+      "watchers": 326082,
+      "bullish_pct": 80,
+      "reddit": {
+       "mentions": 7,
+       "mentions_24h_ago": 4,
+       "rank": 87,
+       "rank_24h_ago": 138
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 95.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.5×، RSI 57.2. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $161.06، ستوب $159.54، هدف $164.10.",
+     "facts": {
+      "symbol": "PLTR",
+      "close": 161.01,
+      "vwap": 160.82,
+      "ema9": 160.4,
+      "ema20": 160.38,
+      "rsi": 57.2,
+      "atr": 0.9219,
+      "rvol": 1.52,
+      "trend_up": true,
+      "extension_atr": 0.2,
+      "setup": "pullback",
+      "bar_time_et": "11:30",
+      "day_high": 163.0,
+      "day_low": 157.8,
+      "day_open": 157.8,
+      "prev_high": 161.17,
+      "prev_low": 154.69,
+      "prev_close": 159.39,
+      "entry": 161.06,
+      "stop": 159.54,
+      "target": 164.1,
+      "risk_per_share": 1.52,
+      "rr": 2.0,
+      "next_resistance": 161.17
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. فيه مقاومة عند $161.17 قبل الهدف — العائد الحقيقي للمخاطرة 0.1 إلى 1 بس.",
+     "facts": {
+      "symbol": "PLTR",
+      "objections": [
+       {
+        "severity": "veto",
+        "text": "فيه مقاومة عند $161.17 قبل الهدف — العائد الحقيقي للمخاطرة 0.1 إلى 1 بس."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "veto",
+        "text": "الأخبار ضدنا: ⚠️ خبر مخاطرة: «AI-Enabled Battlefield Management and Decision Support Systems Global Market Report 2026 | Lockheed Martin, RTX, Palantir Capitalize on Edge AI as Market Hits $» — هذا النوع يقتل الصعود."
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 15
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 47.6,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "PLTR",
+      "decision": "SKIP",
+      "base_score": 62.6,
+      "penalty": 15,
+      "parts": {
+       "charts": 95.0,
+       "scout": 42.7,
+       "news": 10.0,
+       "sentiment": 73.3,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 161.06,
+       "stop": 159.54,
+       "target": 164.1,
+       "qty": 31,
+       "risk_usd": 47.12,
+       "reward_usd": 94.24,
+       "rr": 2.0,
+       "position_usd": 4992.86
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "PLTR عند $160.74 (+0.8% اليوم) وحجمه يمشي بوتيرة 1.0× أمس. ✅ Finnhub: $160.71 (فرق +0.02%، قبل 19 ث).",
+    "news": "⚠️ خبر مخاطرة: «AI-Enabled Battlefield Management and Decision Support Systems Global Market Report 2026 | Lockheed Martin, RTX, Palantir Capitalize on Edge AI as Market Hits $» — هذا النوع يقتل الصعود.",
+    "sentiment": "80% متفائلين (12 مقابل 3) والكلام عنه نشط. Reddit: 7 ذكر (المركز 87، 1.8× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.5×، RSI 57.2. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $161.06، ستوب $159.54، هدف $164.10.",
+    "skeptic": "ضد. فيه مقاومة عند $161.17 قبل الهدف — العائد الحقيقي للمخاطرة 0.1 إلى 1 بس.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11241136CRWD",
+   "symbol": "CRWD",
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 29.9,
+   "blocked": true,
+   "ticket": {
+    "entry": 210.9,
+    "stop": 209.67,
+    "target": 213.36,
+    "qty": 23,
+    "risk_usd": 28.29,
+    "reward_usd": 56.58,
+    "rr": 2.0,
+    "position_usd": 4850.7
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "negative",
+     "score": 35.5,
+     "line": "CRWD عند $210.88 (+0.9% اليوم) وحجمه يمشي بوتيرة 0.4× أمس. ✅ Finnhub: $210.92 (فرق -0.02%، قبل 0 ث).",
+     "facts": {
+      "symbol": "CRWD",
+      "price": 210.88,
+      "prev_close": 208.905,
+      "change_pct": 0.95,
+      "volume_pace_x": 0.39,
+      "iex_dollar_volume": 54285287,
+      "in_gainers": false,
+      "last_trade_age_sec": 4,
+      "day_high": 215.48,
+      "finnhub_price": 210.92,
+      "finnhub_age_sec": 0,
+      "price_diff_pct": -0.02,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Guggenheim lifts CrowdStrike to Buy, sees 34% upside» (Yahoo (Finnhub)).",
+     "facts": {
+      "symbol": "CRWD",
+      "count": 22,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "Guggenheim lifts CrowdStrike to Buy, sees 34% upside",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.2,
+        "time_et": "11-24 10:26"
+       },
+       {
+        "kind": "plain",
+        "headline": "Bernstein Sees Hidden Risk in CrowdStrike's Zscaler Deal",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.6,
+        "time_et": "11-24 10:00"
+       },
+       {
+        "kind": "plain",
+        "headline": "Multiple Analysts Adjust Price Targets for CrowdStrike Holdings",
+        "source": "fiscal.ai",
+        "hours_ago": 2.1,
+        "time_et": "11-24 09:32"
+       },
+       {
+        "kind": "plain",
+        "headline": "Don’t Panic, Buy These Instead: Jim Cramer’s Emergency 5-Stock Portfolio",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 2.2,
+        "time_et": "11-24 09:22"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 58.0,
+     "line": "100% متفائلين (14 مقابل 0) والكلام عنه نشط — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: 21 ذكر (المركز 32، 1.0× أمس).",
+     "facts": {
+      "symbol": "CRWD",
+      "bullish": 14,
+      "bearish": 0,
+      "messages": 30,
+      "messages_last_hour": 23,
+      "watchers": 65188,
+      "bullish_pct": 100,
+      "reddit": {
+       "mentions": 21,
+       "mentions_24h_ago": 21,
+       "rank": 32,
+       "rank_24h_ago": 35
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.2×، RSI 54.4. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $210.90، ستوب $209.67، هدف $213.36.",
+     "facts": {
+      "symbol": "CRWD",
+      "close": 210.83,
+      "vwap": 210.73,
+      "ema9": 210.58,
+      "ema20": 210.22,
+      "rsi": 54.4,
+      "atr": 1.41,
+      "rvol": 1.19,
+      "trend_up": true,
+      "extension_atr": 0.07,
+      "setup": "pullback",
+      "bar_time_et": "11:30",
+      "day_high": 215.48,
+      "day_low": 208.19,
+      "day_open": 211.14,
+      "prev_high": 224.36,
+      "prev_low": 200.53,
+      "prev_close": 208.91,
+      "entry": 210.9,
+      "stop": 209.67,
+      "target": 213.36,
+      "risk_per_share": 1.23,
+      "rr": 2.0,
+      "next_resistance": 215.48
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "CRWD",
+      "objections": [
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 1.19× بس — ما فيه اهتمام كافي يدفع السعر."
+       },
+       {
+        "severity": "minor",
+        "text": "100% متفائلين — لما الكل يشتري، مين بقي يشتري بعدك؟"
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 35
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 29.9,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "CRWD",
+      "decision": "SKIP",
+      "base_score": 64.9,
+      "penalty": 35,
+      "parts": {
+       "charts": 85.0,
+       "scout": 35.5,
+       "news": 75.0,
+       "sentiment": 58.0,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 210.9,
+       "stop": 209.67,
+       "target": 213.36,
+       "qty": 23,
+       "risk_usd": 28.29,
+       "reward_usd": 56.58,
+       "rr": 2.0,
+       "position_usd": 4850.7
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "CRWD عند $210.88 (+0.9% اليوم) وحجمه يمشي بوتيرة 0.4× أمس. ✅ Finnhub: $210.92 (فرق -0.02%، قبل 0 ث).",
+    "news": "فيه محفّز: «Guggenheim lifts CrowdStrike to Buy, sees 34% upside» (Yahoo (Finnhub)).",
+    "sentiment": "100% متفائلين (14 مقابل 0) والكلام عنه نشط — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: 21 ذكر (المركز 32، 1.0× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.2×، RSI 54.4. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $210.90، ستوب $209.67، هدف $213.36.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11241136NFLX",
+   "symbol": "NFLX",
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 23.4,
+   "blocked": true,
+   "ticket": {
+    "entry": 59.23,
+    "stop": 59.0,
+    "target": 59.69,
+    "qty": 84,
+    "risk_usd": 19.32,
+    "reward_usd": 38.64,
+    "rr": 2.0,
+    "position_usd": 4975.32
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 46.8,
+     "line": "NFLX عند $59.09 (+1.7% اليوم) وحجمه يمشي بوتيرة 1.1× أمس. ✅ Finnhub: $59.09 (فرق +0.00%، قبل 17 ث).",
+     "facts": {
+      "symbol": "NFLX",
+      "price": 59.09,
+      "prev_close": 58.09,
+      "change_pct": 1.72,
+      "volume_pace_x": 1.13,
+      "iex_dollar_volume": 59741397,
+      "in_gainers": false,
+      "last_trade_age_sec": 7,
+      "day_high": 59.72,
+      "finnhub_price": 59.09,
+      "finnhub_age_sec": 17,
+      "price_diff_pct": 0.0,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "negative",
+     "score": 10.0,
+     "line": "⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود.",
+     "facts": {
+      "symbol": "NFLX",
+      "count": 20,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "Stocks give back gains as Anthropic dips below IPO price",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 0.9,
+        "time_et": "11-24 10:44"
+       },
+       {
+        "kind": "plain",
+        "headline": "Banque Cantonale de Genève And 2 Top Undervalued Stocks",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.4,
+        "time_et": "11-24 10:13"
+       },
+       {
+        "kind": "plain",
+        "headline": "Trump Gave A Massive Clue Before Nvidia Rehired Huang. What Is The Next One?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 2.6,
+        "time_et": "11-24 09:01"
+       },
+       {
+        "kind": "plain",
+        "headline": "Should You Invest in Netflix (NFLX) Based on Bullish Wall Street Views?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 3.1,
+        "time_et": "11-24 08:30"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 68.33333333333333,
+     "line": "78% متفائلين (7 مقابل 2) والكلام عنه نشط. Reddit: 7 ذكر (المركز 93، 1.4× أمس).",
+     "facts": {
+      "symbol": "NFLX",
+      "bullish": 7,
+      "bearish": 2,
+      "messages": 30,
+      "messages_last_hour": 10,
+      "watchers": 523654,
+      "bullish_pct": 78,
+      "reddit": {
+       "mentions": 7,
+       "mentions_24h_ago": 5,
+       "rank": 93,
+       "rank_24h_ago": 169
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.0×، RSI 55.6. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $59.23، ستوب $59.00، هدف $59.69.",
+     "facts": {
+      "symbol": "NFLX",
+      "close": 59.12,
+      "vwap": 59.06,
+      "ema9": 59.09,
+      "ema20": 59.01,
+      "rsi": 55.6,
+      "atr": 0.2095,
+      "rvol": 1.04,
+      "trend_up": true,
+      "extension_atr": 0.26,
+      "setup": "pullback",
+      "bar_time_et": "11:30",
+      "day_high": 59.72,
+      "day_low": 57.58,
+      "day_open": 57.88,
+      "prev_high": 58.6,
+      "prev_low": 57.24,
+      "prev_close": 58.09,
+      "entry": 59.23,
+      "stop": 59.0,
+      "target": 59.69,
+      "risk_per_share": 0.23,
+      "rr": 2.0,
+      "next_resistance": 59.72
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "NFLX",
+      "objections": [
+       {
+        "severity": "minor",
+        "text": "ستوبك $59.00 عند رقم دائري — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 1.04× بس — ما فيه اهتمام كافي يدفع السعر."
+       },
+       {
+        "severity": "veto",
+        "text": "الأخبار ضدنا: ⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود."
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 35
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 23.4,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "NFLX",
+      "decision": "SKIP",
+      "base_score": 58.4,
+      "penalty": 35,
+      "parts": {
+       "charts": 85.0,
+       "scout": 46.8,
+       "news": 10.0,
+       "sentiment": 68.3,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 59.23,
+       "stop": 59.0,
+       "target": 59.69,
+       "qty": 84,
+       "risk_usd": 19.32,
+       "reward_usd": 38.64,
+       "rr": 2.0,
+       "position_usd": 4975.32
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "NFLX عند $59.09 (+1.7% اليوم) وحجمه يمشي بوتيرة 1.1× أمس. ✅ Finnhub: $59.09 (فرق +0.00%، قبل 17 ث).",
+    "news": "⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود.",
+    "sentiment": "78% متفائلين (7 مقابل 2) والكلام عنه نشط. Reddit: 7 ذكر (المركز 93، 1.4× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.0×، RSI 55.6. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $59.23، ستوب $59.00، هدف $59.69.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11241136UBER",
+   "symbol": "UBER",
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 14.1,
+   "blocked": true,
+   "ticket": {
+    "entry": 65.73,
+    "stop": 64.82,
+    "target": 67.55,
+    "qty": 54,
+    "risk_usd": 49.14,
+    "reward_usd": 98.28,
+    "rr": 2.0,
+    "position_usd": 3549.42
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 41.6,
+     "line": "UBER عند $65.21 (+1.8% اليوم) وحجمه يمشي بوتيرة 0.7× أمس. ✅ Finnhub: $65.24 (فرق -0.05%، قبل 17 ث).",
+     "facts": {
+      "symbol": "UBER",
+      "price": 65.21,
+      "prev_close": 64.07,
+      "change_pct": 1.78,
+      "volume_pace_x": 0.69,
+      "iex_dollar_volume": 13647157,
+      "in_gainers": false,
+      "last_trade_age_sec": 1,
+      "day_high": 65.72,
+      "finnhub_price": 65.24,
+      "finnhub_age_sec": 17,
+      "price_diff_pct": -0.05,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "neutral",
+     "score": 52.0,
+     "line": "آخر خبر: «Uber Expands Platform to Include Train Ticket Sales in France» (قبل 0.6 ساعة) — ما يبيّن اتجاه واضح.",
+     "facts": {
+      "symbol": "UBER",
+      "count": 23,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Uber Expands Platform to Include Train Ticket Sales in France",
+        "source": "fiscal.ai",
+        "hours_ago": 0.6,
+        "time_et": "11-24 11:01"
+       },
+       {
+        "kind": "plain",
+        "headline": "Lucid, Uber Edge Closer To Taking On Tesla’s Robotaxis – Public Launch Targeted For Q1 2027",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.4,
+        "time_et": "11-24 10:10"
+       },
+       {
+        "kind": "plain",
+        "headline": "Uber Freight makes a very public break with Gartner’s Quadrant",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.8,
+        "time_et": "11-24 09:50"
+       },
+       {
+        "kind": "plain",
+        "headline": "Uber, Lucid, and Nuro Begin Driverless Robotaxi Testing in San Francisco Bay Area",
+        "source": "fiscal.ai",
+        "hours_ago": 2.1,
+        "time_et": "11-24 09:31"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 67.0,
+     "line": "83% متفائلين (10 مقابل 2) والكلام عنه هادي. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "UBER",
+      "bullish": 10,
+      "bearish": 2,
+      "messages": 30,
+      "messages_last_hour": 6,
+      "watchers": 132265,
+      "bullish_pct": 83,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.7×، RSI 57.0. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $65.72. دخول فوق $65.73، ستوب $64.82، هدف $67.55.",
+     "facts": {
+      "symbol": "UBER",
+      "close": 65.28,
+      "vwap": 65.04,
+      "ema9": 65.08,
+      "ema20": 65.03,
+      "rsi": 57.0,
+      "atr": 0.248,
+      "rvol": 0.7,
+      "trend_up": true,
+      "extension_atr": 0.98,
+      "setup": "pullback_breakout",
+      "bar_time_et": "11:30",
+      "day_high": 65.72,
+      "day_low": 63.52,
+      "day_open": 63.55,
+      "prev_high": 65.97,
+      "prev_low": 63.88,
+      "prev_close": 64.07,
+      "entry": 65.73,
+      "stop": 64.82,
+      "target": 67.55,
+      "risk_per_share": 0.91,
+      "rr": 2.0,
+      "next_resistance": 65.97
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. فيه مقاومة عند $65.97 قبل الهدف — العائد الحقيقي للمخاطرة 0.3 إلى 1 بس.",
+     "facts": {
+      "symbol": "UBER",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (3.7× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "veto",
+        "text": "فيه مقاومة عند $65.97 قبل الهدف — العائد الحقيقي للمخاطرة 0.3 إلى 1 بس."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 0.7× بس — ما فيه اهتمام كافي يدفع السعر."
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 45
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 14.1,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "UBER",
+      "decision": "SKIP",
+      "base_score": 59.1,
+      "penalty": 45,
+      "parts": {
+       "charts": 75.0,
+       "scout": 41.6,
+       "news": 52.0,
+       "sentiment": 67.0,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 65.73,
+       "stop": 64.82,
+       "target": 67.55,
+       "qty": 54,
+       "risk_usd": 49.14,
+       "reward_usd": 98.28,
+       "rr": 2.0,
+       "position_usd": 3549.42
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "UBER عند $65.21 (+1.8% اليوم) وحجمه يمشي بوتيرة 0.7× أمس. ✅ Finnhub: $65.24 (فرق -0.05%، قبل 17 ث).",
+    "news": "آخر خبر: «Uber Expands Platform to Include Train Ticket Sales in France» (قبل 0.6 ساعة) — ما يبيّن اتجاه واضح.",
+    "sentiment": "83% متفائلين (10 مقابل 2) والكلام عنه هادي. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.7×، RSI 57.0. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $65.72. دخول فوق $65.73، ستوب $64.82، هدف $67.55.",
+    "skeptic": "ضد. فيه مقاومة عند $65.97 قبل الهدف — العائد الحقيقي للمخاطرة 0.3 إلى 1 بس.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -3666,13 +4495,90 @@
    "idea_id": "11241022AAOI",
    "symbol": "AAOI",
    "owner": "blocked",
-   "status": "pending",
+   "status": "expired",
    "entry": 41.65,
    "stop": 39.15,
    "target": 46.65,
    "qty": 20,
    "created_utc": "2026-11-24T15:22:34.350983+00:00",
    "valid_until_utc": "2026-11-24T16:22:34.350983+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-24T16:30:00+00:00"
+  },
+  {
+   "id": "11241136PLTR-blocked",
+   "idea_id": "11241136PLTR",
+   "symbol": "PLTR",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 161.06,
+   "stop": 159.54,
+   "target": 164.1,
+   "qty": 31,
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "valid_until_utc": "2026-11-24T17:36:19.799969+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11241136CRWD-blocked",
+   "idea_id": "11241136CRWD",
+   "symbol": "CRWD",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 210.9,
+   "stop": 209.67,
+   "target": 213.36,
+   "qty": 23,
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "valid_until_utc": "2026-11-24T17:36:19.799969+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11241136NFLX-blocked",
+   "idea_id": "11241136NFLX",
+   "symbol": "NFLX",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 59.23,
+   "stop": 59.0,
+   "target": 59.69,
+   "qty": 84,
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "valid_until_utc": "2026-11-24T17:36:19.799969+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11241136UBER-blocked",
+   "idea_id": "11241136UBER",
+   "symbol": "UBER",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 65.73,
+   "stop": 64.82,
+   "target": 67.55,
+   "qty": 54,
+   "created_utc": "2026-11-24T16:36:19.799969+00:00",
+   "valid_until_utc": "2026-11-24T17:36:19.799969+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -3998,6 +4904,39 @@
     }
    },
    "api_calls": 13
+  },
+  {
+   "utc": "2026-11-24T16:36:19.799969+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 99,
+   "candidates": 7,
+   "ideas": [
+    "PLTR:SKIP/blocked",
+    "CRWD:SKIP/blocked",
+    "NFLX:SKIP/blocked",
+    "UBER:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 25,
+    "spy_below_vwap": true,
+    "qqq_below_vwap": true,
+    "detail": {
+     "SPY": {
+      "close": 715.08,
+      "vwap": 715.97,
+      "chg_open_pct": -0.03
+     },
+     "QQQ": {
+      "close": 633.73,
+      "vwap": 636.85,
+      "chg_open_pct": -1.02
+     }
+    }
+   },
+   "api_calls": 13
   }
  ],
  "daily": {
@@ -4045,58 +4984,67 @@
  },
  "board": [
   {
-   "symbol": "ANF",
-   "decision": "SKIP",
-   "score": 40.3,
-   "blocked": false,
-   "price": 175.48,
-   "change_pct": 25.09,
-   "skeptic": "ضد. RSI 82.1 — تشبّع شرائي."
-  },
-  {
-   "symbol": "AAOI",
-   "decision": "SKIP",
-   "score": 42.3,
-   "blocked": true,
-   "price": 40.8,
-   "change_pct": 5.48,
-   "skeptic": "ضد. فيه مقاومة عند $42.27 قبل الهدف — العائد الحقيقي للمخاطرة 0.2 إلى 1 بس."
-  },
-  {
    "symbol": "NFLX",
    "decision": "SKIP",
-   "score": 4.9,
+   "score": 23.4,
    "blocked": true,
-   "price": 59.045,
-   "change_pct": 1.64,
-   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Disney Stops Reporting Streaming Profit. Should You Worry?» — هذا النوع يقتل الصعود."
+   "price": 59.09,
+   "change_pct": 1.72,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   },
   {
-   "symbol": "AAPL",
+   "symbol": "SPDN",
    "decision": "SKIP",
-   "score": 11.4,
+   "score": 7.8,
    "blocked": false,
-   "price": 352.38,
-   "change_pct": 0.85,
-   "skeptic": "ضد. RVOL 0.85× بس — ما فيه اهتمام كافي يدفع السعر."
+   "price": 9.08,
+   "change_pct": 1.11,
+   "skeptic": "ضد. الستوب بعيد (3.3× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
   },
   {
    "symbol": "PLTR",
    "decision": "SKIP",
-   "score": 31.4,
-   "blocked": false,
-   "price": 161.1,
-   "change_pct": 1.07,
-   "skeptic": "ضد. RVOL 1.16× بس — ما فيه اهتمام كافي يدفع السعر."
+   "score": 47.6,
+   "blocked": true,
+   "price": 160.735,
+   "change_pct": 0.84,
+   "skeptic": "ضد. فيه مقاومة عند $161.17 قبل الهدف — العائد الحقيقي للمخاطرة 0.1 إلى 1 بس."
+  },
+  {
+   "symbol": "MSFT",
+   "decision": "SKIP",
+   "score": 0,
+   "blocked": true,
+   "price": 496.1,
+   "change_pct": 0.64,
+   "skeptic": "ضد. الأخبار ضدنا: ⚠️ خبر مخاطرة: «Asia-Pacific Digital Transformation Market: Size, Trends, and Forecast (2026-2034) Featuring Intelligence "
   },
   {
    "symbol": "UBER",
    "decision": "SKIP",
-   "score": 39.7,
+   "score": 14.1,
    "blocked": true,
-   "price": 65.3,
-   "change_pct": 1.92,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+   "price": 65.21,
+   "change_pct": 1.78,
+   "skeptic": "ضد. فيه مقاومة عند $65.97 قبل الهدف — العائد الحقيقي للمخاطرة 0.3 إلى 1 بس."
+  },
+  {
+   "symbol": "AAPL",
+   "decision": "SKIP",
+   "score": 9.4,
+   "blocked": true,
+   "price": 351.59,
+   "change_pct": 0.63,
+   "skeptic": "ضد. فيه مقاومة عند $352.60 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس."
+  },
+  {
+   "symbol": "CRWD",
+   "decision": "SKIP",
+   "score": 29.9,
+   "blocked": true,
+   "price": 210.88,
+   "change_pct": 0.95,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   }
  ],
  "market": {
@@ -4105,24 +5053,24 @@
   "qqq_below_vwap": true,
   "detail": {
    "SPY": {
-    "close": 716.74,
-    "vwap": 717.31,
-    "chg_open_pct": 0.2
+    "close": 715.08,
+    "vwap": 715.97,
+    "chg_open_pct": -0.03
    },
    "QQQ": {
-    "close": 637.14,
-    "vwap": 639.64,
-    "chg_open_pct": -0.49
+    "close": 633.73,
+    "vwap": 636.85,
+    "chg_open_pct": -1.02
    }
   }
  },
- "last_run": "2026-11-24T15:22:34.350983+00:00",
+ "last_run": "2026-11-24T16:36:19.799969+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-24T15:22:51.102739+00:00",
+  "utc": "2026-11-24T16:36:38.548185+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 716.34",
+  "finnhub": "ok SPY 714.27",
   "sec": "missing",
   "gemini": "set"
  }
