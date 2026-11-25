@@ -6166,6 +6166,217 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11251229KO",
+   "symbol": "KO",
+   "created_utc": "2026-11-25T17:29:40.294986+00:00",
+   "time_et": "12:29",
+   "decision": "SKIP",
+   "score": 12.7,
+   "blocked": true,
+   "ticket": {
+    "entry": 98.35,
+    "stop": 97.93,
+    "target": 99.19,
+    "qty": 50,
+    "risk_usd": 21.0,
+    "reward_usd": 42.0,
+    "rr": 2.0,
+    "position_usd": 4917.5
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 52.0,
+     "line": "KO عند $98.31 (+0.6% اليوم) وحجمه يمشي بوتيرة 1.9× أمس. ✅ Finnhub: $98.34 (فرق -0.03%، قبل 21 ث).",
+     "facts": {
+      "symbol": "KO",
+      "price": 98.31,
+      "prev_close": 97.73,
+      "change_pct": 0.59,
+      "volume_pace_x": 1.85,
+      "iex_dollar_volume": 57890562,
+      "in_gainers": false,
+      "last_trade_age_sec": 37,
+      "day_high": 98.35,
+      "finnhub_price": 98.34,
+      "finnhub_age_sec": 21,
+      "price_diff_pct": -0.03,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Coca-Cola Renews Sponsorship Partnership with Confederation of African Football» (fiscal.ai).",
+     "facts": {
+      "symbol": "KO",
+      "count": 22,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "Coca-Cola Renews Sponsorship Partnership with Confederation of African Football",
+        "source": "fiscal.ai",
+        "hours_ago": 1.5,
+        "time_et": "11-25 11:01"
+       },
+       {
+        "kind": "plain",
+        "headline": "Warren Buffett and Greg Abel Collect Billions From These Untouchable Berkshire Hathaway Dividend Stocks",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 3.2,
+        "time_et": "11-25 09:19"
+       },
+       {
+        "kind": "plain",
+        "headline": "Prediction: Coca-Cola Stock Will Close 2026 Over $100 per Share. Here’s Why It’s a No-Brainer Buy for 2027.",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 3.6,
+        "time_et": "11-25 08:51"
+       },
+       {
+        "kind": "plain",
+        "headline": "Coca-Cola (KO) Just Reclaimed the 20-Day Moving Average",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 3.9,
+        "time_et": "11-25 08:35"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 65.66666666666667,
+     "line": "60% متفائلين (6 مقابل 4) والكلام عنه هادي. Reddit: 17 ذكر (المركز 47، 1.9× أمس).",
+     "facts": {
+      "symbol": "KO",
+      "bullish": 6,
+      "bearish": 4,
+      "messages": 30,
+      "messages_last_hour": 2,
+      "watchers": 54112,
+      "bullish_pct": 60,
+      "reddit": {
+       "mentions": 17,
+       "mentions_24h_ago": 9,
+       "rank": 47,
+       "rank_24h_ago": 84
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 60.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.9×، RSI 64.2. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $98.35، ستوب $97.93، هدف $99.19.",
+     "facts": {
+      "symbol": "KO",
+      "close": 98.34,
+      "vwap": 97.94,
+      "ema9": 98.21,
+      "ema20": 98.13,
+      "rsi": 64.2,
+      "atr": 0.1357,
+      "rvol": 0.93,
+      "trend_up": true,
+      "extension_atr": 2.95,
+      "setup": "pullback",
+      "bar_time_et": "12:20",
+      "day_high": 98.34,
+      "day_low": 97.5,
+      "day_open": 98.16,
+      "prev_high": 98.3,
+      "prev_low": 95.69,
+      "prev_close": 97.73,
+      "entry": 98.35,
+      "stop": 97.93,
+      "target": 99.19,
+      "risk_per_share": 0.42,
+      "rr": 2.0,
+      "next_resistance": null
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "KO",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (3.1× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "minor",
+        "text": "ستوبك $97.93 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "السعر بعيد عن VWAP بـ3.0× ATR — هذي مطاردة، مو دخول."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 0.93× بس — ما فيه اهتمام كافي يدفع السعر."
+       }
+      ],
+      "veto": true,
+      "penalty": 50
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 12.7,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "KO",
+      "decision": "SKIP",
+      "base_score": 62.7,
+      "penalty": 50,
+      "parts": {
+       "charts": 60.0,
+       "scout": 52.0,
+       "news": 75.0,
+       "sentiment": 65.7,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 98.35,
+       "stop": 97.93,
+       "target": 99.19,
+       "qty": 50,
+       "risk_usd": 21.0,
+       "reward_usd": 42.0,
+       "rr": 2.0,
+       "position_usd": 4917.5
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "KO عند $98.31 (+0.6% اليوم) وحجمه يمشي بوتيرة 1.9× أمس. ✅ Finnhub: $98.34 (فرق -0.03%، قبل 21 ث).",
+    "news": "فيه محفّز: «Coca-Cola Renews Sponsorship Partnership with Confederation of African Football» (fiscal.ai).",
+    "sentiment": "60% متفائلين (6 مقابل 4) والكلام عنه هادي. Reddit: 17 ذكر (المركز 47، 1.9× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.9×، RSI 64.2. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $98.35، ستوب $97.93، هدف $99.19.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -6763,39 +6974,65 @@
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "checked_utc": "2026-11-25T17:20:00+00:00"
   },
   {
    "id": "11251136SPDN-blocked",
    "idea_id": "11251136SPDN",
    "symbol": "SPDN",
    "owner": "blocked",
-   "status": "pending",
+   "status": "lost",
    "entry": 9.27,
    "stop": 9.25,
    "target": 9.31,
    "qty": 539,
    "created_utc": "2026-11-25T16:36:24.895186+00:00",
    "valid_until_utc": "2026-11-25T17:36:24.895186+00:00",
-   "fill_px": null,
-   "fill_utc": null,
-   "exit_px": null,
-   "exit_utc": null,
-   "r": null,
-   "pnl": null
+   "fill_px": 9.2796,
+   "fill_utc": "2026-11-25T16:45:00+00:00",
+   "exit_px": 9.2454,
+   "exit_utc": "2026-11-25T16:55:00+00:00",
+   "r": -1.71,
+   "pnl": -18.45,
+   "triggered": true,
+   "checked_utc": "2026-11-25T17:20:00+00:00",
+   "stop0": 9.25
   },
   {
    "id": "11251136VALE-blocked",
    "idea_id": "11251136VALE",
    "symbol": "VALE",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 9.62,
    "stop": 9.47,
    "target": 9.92,
    "qty": 333,
    "created_utc": "2026-11-25T16:36:24.895186+00:00",
    "valid_until_utc": "2026-11-25T17:36:24.895186+00:00",
+   "fill_px": 9.6248,
+   "fill_utc": "2026-11-25T16:55:00+00:00",
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-25T17:20:00+00:00",
+   "triggered": true,
+   "stop0": 9.47
+  },
+  {
+   "id": "11251229KO-blocked",
+   "idea_id": "11251229KO",
+   "symbol": "KO",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 98.35,
+   "stop": 97.93,
+   "target": 99.19,
+   "qty": 50,
+   "created_utc": "2026-11-25T17:29:40.294986+00:00",
+   "valid_until_utc": "2026-11-25T18:29:40.294986+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -7371,6 +7608,36 @@
     }
    },
    "api_calls": 13
+  },
+  {
+   "utc": "2026-11-25T17:29:40.294986+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 100,
+   "candidates": 8,
+   "ideas": [
+    "KO:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 707.04,
+      "vwap": 700.89,
+      "chg_open_pct": 0.55
+     },
+     "QQQ": {
+      "close": 619.86,
+      "vwap": 613.2,
+      "chg_open_pct": 0.45
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {
@@ -7461,100 +7728,100 @@
   {
    "symbol": "HPQ",
    "decision": "SKIP",
-   "score": 59.7,
+   "score": 81.0,
    "blocked": true,
-   "price": 31.015,
-   "change_pct": 11.05,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "price": 30.96,
+   "change_pct": 10.85,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "SPDN",
+   "symbol": "META",
    "decision": "SKIP",
-   "score": 53.1,
+   "score": 64.1,
    "blocked": true,
-   "price": 9.28,
-   "change_pct": 2.83,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "price": 594.64,
+   "change_pct": 0.8,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "NVD",
+   "symbol": "AAPL",
    "decision": "SKIP",
-   "score": 15.4,
-   "blocked": false,
-   "price": 5.11,
-   "change_pct": 17.61,
-   "skeptic": "ضد. RVOL 0.43× بس — ما فيه اهتمام كافي يدفع السعر."
-  },
-  {
-   "symbol": "TLT",
-   "decision": "SKIP",
-   "score": 50.9,
+   "score": 59.2,
    "blocked": true,
-   "price": 82.615,
-   "change_pct": 1.39,
+   "price": 351.39,
+   "change_pct": -0.8,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "KO",
    "decision": "SKIP",
-   "score": 45.6,
+   "score": 12.7,
    "blocked": true,
-   "price": 98.01,
-   "change_pct": 0.29,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "SNDQ",
-   "decision": "SKIP",
-   "score": 0,
-   "blocked": false,
-   "price": 58.18,
-   "change_pct": 27.36,
-   "skeptic": "ضد. الستوب بعيد (4.4× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+   "price": 98.31,
+   "change_pct": 0.59,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   },
   {
    "symbol": "HYG",
    "decision": "SKIP",
-   "score": 39.1,
+   "score": 56.6,
    "blocked": true,
-   "price": 76.28,
-   "change_pct": -0.21,
+   "price": 76.42,
+   "change_pct": -0.03,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "VALE",
+   "symbol": "AMZN",
    "decision": "SKIP",
-   "score": 31.3,
+   "score": 56.8,
    "blocked": true,
-   "price": 9.53,
-   "change_pct": 1.71,
-   "skeptic": "ضد. فيه مقاومة عند $9.75 قبل الهدف — العائد الحقيقي للمخاطرة 0.9 إلى 1 بس."
+   "price": 242.93,
+   "change_pct": -3.69,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "HOOD",
+   "decision": "SKIP",
+   "score": 67.5,
+   "blocked": true,
+   "price": 62.985,
+   "change_pct": -4.07,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "MSTR",
+   "decision": "SKIP",
+   "score": 59.7,
+   "blocked": true,
+   "price": 74.36,
+   "change_pct": -4.18,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   }
  ],
  "market": {
-  "score": 25,
-  "spy_below_vwap": true,
-  "qqq_below_vwap": true,
+  "score": 75,
+  "spy_below_vwap": false,
+  "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 698.59,
-    "vwap": 700.08,
-    "chg_open_pct": -0.65
+    "close": 707.04,
+    "vwap": 700.89,
+    "chg_open_pct": 0.55
    },
    "QQQ": {
-    "close": 610.12,
-    "vwap": 612.3,
-    "chg_open_pct": -1.13
+    "close": 619.86,
+    "vwap": 613.2,
+    "chg_open_pct": 0.45
    }
   }
  },
- "last_run": "2026-11-25T16:36:24.895186+00:00",
+ "last_run": "2026-11-25T17:29:40.294986+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-25T16:36:46.327292+00:00",
+  "utc": "2026-11-25T17:30:01.894314+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 698.18",
+  "finnhub": "ok SPY 707.24",
   "sec": "missing",
   "gemini": "set"
  }
