@@ -5569,6 +5569,603 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11251136HPQ",
+   "symbol": "HPQ",
+   "created_utc": "2026-11-25T16:36:24.895186+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 59.7,
+   "blocked": true,
+   "ticket": {
+    "entry": 31.2,
+    "stop": 30.85,
+    "target": 31.9,
+    "qty": 142,
+    "risk_usd": 49.7,
+    "reward_usd": 99.4,
+    "rr": 2.0,
+    "position_usd": 4430.4
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 79.7,
+     "line": "HPQ عند $31.02 (+11.0% اليوم) وحجمه يمشي بوتيرة 2.2× أمس. ✅ Finnhub: $31.03 (فرق -0.05%، قبل 15 ث).",
+     "facts": {
+      "symbol": "HPQ",
+      "price": 31.015,
+      "prev_close": 27.93,
+      "change_pct": 11.05,
+      "volume_pace_x": 2.22,
+      "iex_dollar_volume": 41050885,
+      "in_gainers": false,
+      "last_trade_age_sec": 5,
+      "day_high": 32.035,
+      "finnhub_price": 31.03,
+      "finnhub_age_sec": 15,
+      "price_diff_pct": -0.05,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «HP (HPQ) Q4 2026 Earnings Call Transcript» (Yahoo (Finnhub)).",
+     "facts": {
+      "symbol": "HPQ",
+      "count": 21,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "HP (HPQ) Q4 2026 Earnings Call Transcript",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 0.9,
+        "time_et": "11-25 10:43"
+       },
+       {
+        "kind": "bull",
+        "headline": "HP (HPQ) Stock Is Up 10.4% Today: Barclays Raises Price Target to $24",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.6,
+        "time_et": "11-25 10:00"
+       },
+       {
+        "kind": "plain",
+        "headline": "Invest in the Laptops, Mainframes and Network Switches for Passive Income: $90,000 Across These 3 Tech Hardware Stocks Pays More Than $2,600 a Year",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.8,
+        "time_et": "11-25 09:46"
+       },
+       {
+        "kind": "plain",
+        "headline": "Is Micron's Record Margin Squeezing Apple And HP?",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 5.0,
+        "time_et": "11-25 06:38"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "المزاج منقسم: 50% متفائلين (5 مقابل 5). Reddit: 3 ذكر (المركز 135، 3.0× أمس).",
+     "facts": {
+      "symbol": "HPQ",
+      "bullish": 5,
+      "bearish": 5,
+      "messages": 30,
+      "messages_last_hour": 9,
+      "watchers": 12558,
+      "bullish_pct": 50,
+      "reddit": {
+       "mentions": 3,
+       "mentions_24h_ago": 1,
+       "rank": 135,
+       "rank_24h_ago": 279
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 100,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 4.4×، RSI 60.6. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $31.20، ستوب $30.85، هدف $31.90.",
+     "facts": {
+      "symbol": "HPQ",
+      "close": 31.05,
+      "vwap": 30.88,
+      "ema9": 31.02,
+      "ema20": 30.75,
+      "rsi": 60.6,
+      "atr": 0.3126,
+      "rvol": 4.39,
+      "trend_up": true,
+      "extension_atr": 0.54,
+      "setup": "pullback",
+      "bar_time_et": "11:30",
+      "day_high": 32.03,
+      "day_low": 29.75,
+      "day_open": 30.0,
+      "prev_high": 28.88,
+      "prev_low": 27.7,
+      "prev_close": 27.93,
+      "entry": 31.2,
+      "stop": 30.85,
+      "target": 31.9,
+      "risk_per_share": 0.35,
+      "rr": 2.0,
+      "next_resistance": 32.03
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "HPQ",
+      "objections": [
+       {
+        "severity": "minor",
+        "text": "ستوبك $30.85 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 20
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 59.7,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "HPQ",
+      "decision": "SKIP",
+      "base_score": 79.7,
+      "penalty": 20,
+      "parts": {
+       "charts": 100,
+       "scout": 79.7,
+       "news": 75.0,
+       "sentiment": 50.0,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 31.2,
+       "stop": 30.85,
+       "target": 31.9,
+       "qty": 142,
+       "risk_usd": 49.7,
+       "reward_usd": 99.4,
+       "rr": 2.0,
+       "position_usd": 4430.4
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "HPQ عند $31.02 (+11.0% اليوم) وحجمه يمشي بوتيرة 2.2× أمس. ✅ Finnhub: $31.03 (فرق -0.05%، قبل 15 ث).",
+    "news": "فيه محفّز: «HP (HPQ) Q4 2026 Earnings Call Transcript» (Yahoo (Finnhub)).",
+    "sentiment": "المزاج منقسم: 50% متفائلين (5 مقابل 5). Reddit: 3 ذكر (المركز 135، 3.0× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 4.4×، RSI 60.6. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $31.20، ستوب $30.85، هدف $31.90.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11251136SPDN",
+   "symbol": "SPDN",
+   "created_utc": "2026-11-25T16:36:24.895186+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 53.1,
+   "blocked": true,
+   "ticket": {
+    "entry": 9.27,
+    "stop": 9.25,
+    "target": 9.31,
+    "qty": 539,
+    "risk_usd": 10.78,
+    "reward_usd": 21.56,
+    "rr": 2.0,
+    "position_usd": 4996.53
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 72.7,
+     "line": "SPDN عند $9.28 (+2.8% اليوم) وحجمه يمشي بوتيرة 3.0× أمس. ✅ Finnhub: $9.29 (فرق -0.11%، قبل 26 ث).",
+     "facts": {
+      "symbol": "SPDN",
+      "price": 9.28,
+      "prev_close": 9.025,
+      "change_pct": 2.83,
+      "volume_pace_x": 3.02,
+      "iex_dollar_volume": 73385090,
+      "in_gainers": false,
+      "last_trade_age_sec": 63,
+      "day_high": 9.31,
+      "finnhub_price": 9.29,
+      "finnhub_age_sec": 26,
+      "price_diff_pct": -0.11,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "neutral",
+     "score": 52.0,
+     "line": "آخر خبر: «How Much More Downside Risk Does The S&P 500 Face?» (قبل 54.5 ساعة) — ما يبيّن اتجاه واضح.",
+     "facts": {
+      "symbol": "SPDN",
+      "count": 2,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "How Much More Downside Risk Does The S&P 500 Face?",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 54.5,
+        "time_et": "11-23 05:04"
+       },
+       {
+        "kind": "plain",
+        "headline": "S&P 500 Investors Take Cover After AI Bubble Pops In Response To Anthropic IPO",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 56.8,
+        "time_et": "11-23 02:46"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "المزاج منقسم: 50% متفائلين (3 مقابل 3). Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "SPDN",
+      "bullish": 3,
+      "bearish": 3,
+      "messages": 30,
+      "messages_last_hour": 0,
+      "watchers": 406,
+      "bullish_pct": 50,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.4×، RSI 60.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $9.27، ستوب $9.25، هدف $9.31.",
+     "facts": {
+      "symbol": "SPDN",
+      "close": 9.27,
+      "vwap": 9.26,
+      "ema9": 9.27,
+      "ema20": 9.25,
+      "rsi": 60.7,
+      "atr": 0.0179,
+      "rvol": 1.41,
+      "trend_up": true,
+      "extension_atr": 0.49,
+      "setup": "pullback",
+      "bar_time_et": "11:30",
+      "day_high": 9.31,
+      "day_low": 9.21,
+      "day_open": 9.23,
+      "prev_high": 9.1,
+      "prev_low": 9.0,
+      "prev_close": 9.03,
+      "entry": 9.27,
+      "stop": 9.25,
+      "target": 9.31,
+      "risk_per_share": 0.02,
+      "rr": 2.0,
+      "next_resistance": 9.31
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "SPDN",
+      "objections": [
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "veto",
+        "text": "الستوب 0.22% بس من السعر — أقل من 0.3%، أي ذبذبة تطلّعنا والتكاليف تاكل الصفقة."
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 15
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 53.1,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "SPDN",
+      "decision": "SKIP",
+      "base_score": 68.1,
+      "penalty": 15,
+      "parts": {
+       "charts": 85.0,
+       "scout": 72.7,
+       "news": 52.0,
+       "sentiment": 50.0,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 9.27,
+       "stop": 9.25,
+       "target": 9.31,
+       "qty": 539,
+       "risk_usd": 10.78,
+       "reward_usd": 21.56,
+       "rr": 2.0,
+       "position_usd": 4996.53
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "SPDN عند $9.28 (+2.8% اليوم) وحجمه يمشي بوتيرة 3.0× أمس. ✅ Finnhub: $9.29 (فرق -0.11%، قبل 26 ث).",
+    "news": "آخر خبر: «How Much More Downside Risk Does The S&P 500 Face?» (قبل 54.5 ساعة) — ما يبيّن اتجاه واضح.",
+    "sentiment": "المزاج منقسم: 50% متفائلين (3 مقابل 3). Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.4×، RSI 60.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $9.27، ستوب $9.25، هدف $9.31.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11251136VALE",
+   "symbol": "VALE",
+   "created_utc": "2026-11-25T16:36:24.895186+00:00",
+   "time_et": "11:36",
+   "decision": "SKIP",
+   "score": 31.3,
+   "blocked": true,
+   "ticket": {
+    "entry": 9.62,
+    "stop": 9.47,
+    "target": 9.92,
+    "qty": 333,
+    "risk_usd": 49.95,
+    "reward_usd": 99.9,
+    "rr": 2.0,
+    "position_usd": 3203.46
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 45.0,
+     "line": "VALE عند $9.53 (+1.7% اليوم) وحجمه يمشي بوتيرة 1.0× أمس. ✅ Finnhub: $9.54 (فرق -0.10%، قبل 0 ث).",
+     "facts": {
+      "symbol": "VALE",
+      "price": 9.53,
+      "prev_close": 9.37,
+      "change_pct": 1.71,
+      "volume_pace_x": 0.99,
+      "iex_dollar_volume": 18817938,
+      "in_gainers": false,
+      "last_trade_age_sec": 19,
+      "day_high": 9.615,
+      "finnhub_price": 9.54,
+      "finnhub_age_sec": 0,
+      "price_diff_pct": -0.1,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Deutsche Bank cuts price targets on 13 miners and upgrades Norsk Hydro to 'buy'» (Yahoo (Finnhub)).",
+     "facts": {
+      "symbol": "VALE",
+      "count": 6,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Vale S.A. informs about Vale Day 2026",
+        "source": "Fintel (Finnhub)",
+        "hours_ago": 12.6,
+        "time_et": "11-24 22:58"
+       },
+       {
+        "kind": "plain",
+        "headline": "Shares of companies in the broader metals sector are trading higher amid a drop in the US dollar following weak jobs data.",
+        "source": "Benzinga (Finnhub)",
+        "hours_ago": 26.4,
+        "time_et": "11-24 09:14"
+       },
+       {
+        "kind": "plain",
+        "headline": "Cobalt Miners News For The Month Of November 2026",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 30.0,
+        "time_et": "11-24 05:35"
+       },
+       {
+        "kind": "bull",
+        "headline": "Deutsche Bank cuts price targets on 13 miners and upgrades Norsk Hydro to 'buy'",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 30.9,
+        "time_et": "11-24 04:45"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 58.0,
+     "line": "86% متفائلين (6 مقابل 1) والكلام عنه هادي — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "VALE",
+      "bullish": 6,
+      "bearish": 1,
+      "messages": 30,
+      "messages_last_hour": 1,
+      "watchers": 19229,
+      "bullish_pct": 86,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 95.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.6×، RSI 59.1. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $9.62. دخول فوق $9.62، ستوب $9.47، هدف $9.92.",
+     "facts": {
+      "symbol": "VALE",
+      "close": 9.54,
+      "vwap": 9.48,
+      "ema9": 9.53,
+      "ema20": 9.51,
+      "rsi": 59.1,
+      "atr": 0.0315,
+      "rvol": 1.61,
+      "trend_up": true,
+      "extension_atr": 1.87,
+      "setup": "pullback_breakout",
+      "bar_time_et": "11:30",
+      "day_high": 9.62,
+      "day_low": 9.26,
+      "day_open": 9.32,
+      "prev_high": 9.75,
+      "prev_low": 9.3,
+      "prev_close": 9.37,
+      "entry": 9.62,
+      "stop": 9.47,
+      "target": 9.92,
+      "risk_per_share": 0.15,
+      "rr": 2.0,
+      "next_resistance": 9.75
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. فيه مقاومة عند $9.75 قبل الهدف — العائد الحقيقي للمخاطرة 0.9 إلى 1 بس.",
+     "facts": {
+      "symbol": "VALE",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (4.8× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "minor",
+        "text": "ستوبك $9.47 عند رقم دائري — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "فيه مقاومة عند $9.75 قبل الهدف — العائد الحقيقي للمخاطرة 0.9 إلى 1 بس."
+       },
+       {
+        "severity": "minor",
+        "text": "86% متفائلين — لما الكل يشتري، مين بقي يشتري بعدك؟"
+       },
+       {
+        "severity": "major",
+        "text": "السوق العام (SPY و QQQ) تحت VWAP — الموجة ضد الشراء."
+       }
+      ],
+      "veto": true,
+      "penalty": 40
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 31.3,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "VALE",
+      "decision": "SKIP",
+      "base_score": 71.3,
+      "penalty": 40,
+      "parts": {
+       "charts": 95.0,
+       "scout": 45.0,
+       "news": 75.0,
+       "sentiment": 58.0,
+       "market": 25
+      },
+      "ticket": {
+       "entry": 9.62,
+       "stop": 9.47,
+       "target": 9.92,
+       "qty": 333,
+       "risk_usd": 49.95,
+       "reward_usd": 99.9,
+       "rr": 2.0,
+       "position_usd": 3203.46
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "VALE عند $9.53 (+1.7% اليوم) وحجمه يمشي بوتيرة 1.0× أمس. ✅ Finnhub: $9.54 (فرق -0.10%، قبل 0 ث).",
+    "news": "فيه محفّز: «Deutsche Bank cuts price targets on 13 miners and upgrades Norsk Hydro to 'buy'» (Yahoo (Finnhub)).",
+    "sentiment": "86% متفائلين (6 مقابل 1) والكلام عنه هادي — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.6×، RSI 59.1. الإعداد: ارتداد من EMA9/VWAP، والدخول عند اختراق قمة اليوم $9.62. دخول فوق $9.62، ستوب $9.47، هدف $9.92.",
+    "skeptic": "ضد. فيه مقاومة عند $9.75 قبل الهدف — العائد الحقيقي للمخاطرة 0.9 إلى 1 بس.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -6131,13 +6728,74 @@
    "idea_id": "11251025NVD",
    "symbol": "NVD",
    "owner": "blocked",
-   "status": "pending",
+   "status": "won",
    "entry": 5.0,
-   "stop": 4.94,
+   "stop": 5.0175,
    "target": 5.12,
    "qty": 833,
    "created_utc": "2026-11-25T15:25:31.517404+00:00",
    "valid_until_utc": "2026-11-25T16:25:31.517404+00:00",
+   "fill_px": 5.0175,
+   "fill_utc": "2026-11-25T15:30:00+00:00",
+   "exit_px": 5.1174,
+   "exit_utc": "2026-11-25T16:10:00+00:00",
+   "r": 1.67,
+   "pnl": 83.25,
+   "triggered": true,
+   "stop0": 4.94,
+   "checked_utc": "2026-11-25T16:30:00+00:00",
+   "be": true
+  },
+  {
+   "id": "11251136HPQ-blocked",
+   "idea_id": "11251136HPQ",
+   "symbol": "HPQ",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 31.2,
+   "stop": 30.85,
+   "target": 31.9,
+   "qty": 142,
+   "created_utc": "2026-11-25T16:36:24.895186+00:00",
+   "valid_until_utc": "2026-11-25T17:36:24.895186+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11251136SPDN-blocked",
+   "idea_id": "11251136SPDN",
+   "symbol": "SPDN",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 9.27,
+   "stop": 9.25,
+   "target": 9.31,
+   "qty": 539,
+   "created_utc": "2026-11-25T16:36:24.895186+00:00",
+   "valid_until_utc": "2026-11-25T17:36:24.895186+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11251136VALE-blocked",
+   "idea_id": "11251136VALE",
+   "symbol": "VALE",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 9.62,
+   "stop": 9.47,
+   "target": 9.92,
+   "qty": 333,
+   "created_utc": "2026-11-25T16:36:24.895186+00:00",
+   "valid_until_utc": "2026-11-25T17:36:24.895186+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -6681,6 +7339,38 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-25T16:36:24.895186+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 99,
+   "candidates": 8,
+   "ideas": [
+    "HPQ:SKIP/blocked",
+    "SPDN:SKIP/blocked",
+    "VALE:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 25,
+    "spy_below_vwap": true,
+    "qqq_below_vwap": true,
+    "detail": {
+     "SPY": {
+      "close": 698.59,
+      "vwap": 700.08,
+      "chg_open_pct": -0.65
+     },
+     "QQQ": {
+      "close": 610.12,
+      "vwap": 612.3,
+      "chg_open_pct": -1.13
+     }
+    }
+   },
+   "api_calls": 13
   }
  ],
  "daily": {
@@ -6769,22 +7459,76 @@
  },
  "board": [
   {
+   "symbol": "HPQ",
+   "decision": "SKIP",
+   "score": 59.7,
+   "blocked": true,
+   "price": 31.015,
+   "change_pct": 11.05,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+  },
+  {
    "symbol": "SPDN",
    "decision": "SKIP",
-   "score": 33.4,
-   "blocked": false,
+   "score": 53.1,
+   "blocked": true,
    "price": 9.28,
    "change_pct": 2.83,
-   "skeptic": "ضد. الستوب بعيد (3.6× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   },
   {
    "symbol": "NVD",
    "decision": "SKIP",
-   "score": 20.1,
+   "score": 15.4,
+   "blocked": false,
+   "price": 5.11,
+   "change_pct": 17.61,
+   "skeptic": "ضد. RVOL 0.43× بس — ما فيه اهتمام كافي يدفع السعر."
+  },
+  {
+   "symbol": "TLT",
+   "decision": "SKIP",
+   "score": 50.9,
    "blocked": true,
-   "price": 5.0,
-   "change_pct": 15.07,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "price": 82.615,
+   "change_pct": 1.39,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "KO",
+   "decision": "SKIP",
+   "score": 45.6,
+   "blocked": true,
+   "price": 98.01,
+   "change_pct": 0.29,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "SNDQ",
+   "decision": "SKIP",
+   "score": 0,
+   "blocked": false,
+   "price": 58.18,
+   "change_pct": 27.36,
+   "skeptic": "ضد. الستوب بعيد (4.4× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+  },
+  {
+   "symbol": "HYG",
+   "decision": "SKIP",
+   "score": 39.1,
+   "blocked": true,
+   "price": 76.28,
+   "change_pct": -0.21,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "VALE",
+   "decision": "SKIP",
+   "score": 31.3,
+   "blocked": true,
+   "price": 9.53,
+   "change_pct": 1.71,
+   "skeptic": "ضد. فيه مقاومة عند $9.75 قبل الهدف — العائد الحقيقي للمخاطرة 0.9 إلى 1 بس."
   }
  ],
  "market": {
@@ -6793,24 +7537,24 @@
   "qqq_below_vwap": true,
   "detail": {
    "SPY": {
-    "close": 698.43,
-    "vwap": 700.46,
-    "chg_open_pct": -0.67
+    "close": 698.59,
+    "vwap": 700.08,
+    "chg_open_pct": -0.65
    },
    "QQQ": {
-    "close": 610.24,
-    "vwap": 612.87,
-    "chg_open_pct": -1.11
+    "close": 610.12,
+    "vwap": 612.3,
+    "chg_open_pct": -1.13
    }
   }
  },
- "last_run": "2026-11-25T15:25:31.517404+00:00",
+ "last_run": "2026-11-25T16:36:24.895186+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-25T15:25:38.746932+00:00",
+  "utc": "2026-11-25T16:36:46.327292+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 698.47",
+  "finnhub": "ok SPY 698.18",
   "sec": "missing",
   "gemini": "set"
  }
