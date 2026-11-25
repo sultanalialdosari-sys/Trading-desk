@@ -6377,6 +6377,418 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11251316RIG",
+   "symbol": "RIG",
+   "created_utc": "2026-11-25T18:16:48.505011+00:00",
+   "time_et": "13:16",
+   "decision": "SKIP",
+   "score": 36.4,
+   "blocked": true,
+   "ticket": {
+    "entry": 5.0,
+    "stop": 4.92,
+    "target": 5.16,
+    "qty": 624,
+    "risk_usd": 49.92,
+    "reward_usd": 99.84,
+    "rr": 2.0,
+    "position_usd": 3120.0
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 48.3,
+     "line": "RIG عند $5.00 (+3.5% اليوم) وحجمه يمشي بوتيرة 0.8× أمس. ✅ Finnhub: $4.99 (فرق +0.30%، قبل 3 ث).",
+     "facts": {
+      "symbol": "RIG",
+      "price": 5.005,
+      "prev_close": 4.835,
+      "change_pct": 3.52,
+      "volume_pace_x": 0.81,
+      "iex_dollar_volume": 12738765,
+      "in_gainers": false,
+      "last_trade_age_sec": 11,
+      "day_high": 4.995,
+      "finnhub_price": 4.99,
+      "finnhub_age_sec": 3,
+      "price_diff_pct": 0.3,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «SharkNinja to join S&P 500» (Yahoo (Finnhub)).",
+     "facts": {
+      "symbol": "RIG",
+      "count": 6,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Transocean Ltd. Reports Voting Results from Extraordinary General Meeting",
+        "source": "Fintel (Finnhub)",
+        "hours_ago": 13.1,
+        "time_et": "11-25 00:08"
+       },
+       {
+        "kind": "plain",
+        "headline": "Valaris (VAL) Stock Looks Reasonable Despite Pending Index Exit",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 16.1,
+        "time_et": "11-24 21:11"
+       },
+       {
+        "kind": "bull",
+        "headline": "SharkNinja to join S&P 500",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 24.5,
+        "time_et": "11-24 12:44"
+       },
+       {
+        "kind": "plain",
+        "headline": "Transocean (RIG) Stock Looks Overvalued Even Below Industry Earnings Levels",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 33.1,
+        "time_et": "11-24 04:09"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 65.0,
+     "line": "71% متفائلين (5 مقابل 2) والكلام عنه هادي. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "RIG",
+      "bullish": 5,
+      "bearish": 2,
+      "messages": 30,
+      "messages_last_hour": 0,
+      "watchers": 25124,
+      "bullish_pct": 71,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 70.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.5×، RSI 71.2. الإعداد: اختراق قمة اليوم $4.99. دخول فوق $5.00، ستوب $4.92، هدف $5.16.",
+     "facts": {
+      "symbol": "RIG",
+      "close": 4.99,
+      "vwap": 4.86,
+      "ema9": 4.96,
+      "ema20": 4.92,
+      "rsi": 71.2,
+      "atr": 0.0217,
+      "rvol": 1.53,
+      "trend_up": true,
+      "extension_atr": 5.81,
+      "setup": "breakout",
+      "bar_time_et": "13:10",
+      "day_high": 4.99,
+      "day_low": 4.71,
+      "day_open": 4.76,
+      "prev_high": 5.03,
+      "prev_low": 4.71,
+      "prev_close": 4.83,
+      "entry": 5.0,
+      "stop": 4.92,
+      "target": 5.16,
+      "risk_per_share": 0.08,
+      "rr": 2.0,
+      "next_resistance": 5.03
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. فيه مقاومة عند $5.03 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس.",
+     "facts": {
+      "symbol": "RIG",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (3.7× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "veto",
+        "text": "فيه مقاومة عند $5.03 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس."
+       },
+       {
+        "severity": "major",
+        "text": "السعر بعيد عن VWAP بـ5.8× ATR — هذي مطاردة، مو دخول."
+       }
+      ],
+      "veto": true,
+      "penalty": 30
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 36.4,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "RIG",
+      "decision": "SKIP",
+      "base_score": 66.4,
+      "penalty": 30,
+      "parts": {
+       "charts": 70.0,
+       "scout": 48.3,
+       "news": 75.0,
+       "sentiment": 65.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 5.0,
+       "stop": 4.92,
+       "target": 5.16,
+       "qty": 624,
+       "risk_usd": 49.92,
+       "reward_usd": 99.84,
+       "rr": 2.0,
+       "position_usd": 3120.0
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "RIG عند $5.00 (+3.5% اليوم) وحجمه يمشي بوتيرة 0.8× أمس. ✅ Finnhub: $4.99 (فرق +0.30%، قبل 3 ث).",
+    "news": "فيه محفّز: «SharkNinja to join S&P 500» (Yahoo (Finnhub)).",
+    "sentiment": "71% متفائلين (5 مقابل 2) والكلام عنه هادي. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.5×، RSI 71.2. الإعداد: اختراق قمة اليوم $4.99. دخول فوق $5.00، ستوب $4.92، هدف $5.16.",
+    "skeptic": "ضد. فيه مقاومة عند $5.03 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11251316ANT",
+   "symbol": "ANT",
+   "created_utc": "2026-11-25T18:16:48.505011+00:00",
+   "time_et": "13:16",
+   "decision": "SKIP",
+   "score": 4.2,
+   "blocked": true,
+   "ticket": {
+    "entry": 84.94,
+    "stop": 79.55,
+    "target": 95.72,
+    "qty": 9,
+    "risk_usd": 48.51,
+    "reward_usd": 97.02,
+    "rr": 2.0,
+    "position_usd": 764.46
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "ANT عند $84.91 (+3.7% اليوم) وحجمه يمشي بوتيرة 0.9× أمس. ✅ Finnhub: $84.90 (فرق +0.01%، قبل 3 ث).",
+     "facts": {
+      "symbol": "ANT",
+      "price": 84.905,
+      "prev_close": 81.905,
+      "change_pct": 3.66,
+      "volume_pace_x": 0.92,
+      "iex_dollar_volume": 627752204,
+      "in_gainers": false,
+      "last_trade_age_sec": 1,
+      "day_high": 84.9,
+      "finnhub_price": 84.9,
+      "finnhub_age_sec": 3,
+      "price_diff_pct": 0.01,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Ark Invest Purchases $62 Million in Anthropic Stock» (fiscal.ai).",
+     "facts": {
+      "symbol": "ANT",
+      "count": 25,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "Ark Invest Purchases $62 Million in Anthropic Stock",
+        "source": "fiscal.ai",
+        "hours_ago": 3.7,
+        "time_et": "11-25 09:32"
+       },
+       {
+        "kind": "plain",
+        "headline": "The $2.9T Roller Coaster: Nvidia's Moat, Anthropic's Balance Sheet, And More",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 5.8,
+        "time_et": "11-25 07:29"
+       },
+       {
+        "kind": "plain",
+        "headline": "Anthropic Secures New Office Space in Zurich",
+        "source": "fiscal.ai",
+        "hours_ago": 6.8,
+        "time_et": "11-25 06:31"
+       },
+       {
+        "kind": "plain",
+        "headline": "AI Angst Undercuts Asian Stock Markets",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 7.6,
+        "time_et": "11-25 05:42"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "negative",
+     "score": 35.0,
+     "line": "المزاج سلبي: 38% فقط متفائلين (3 مقابل 5). Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "ANT",
+      "bullish": 3,
+      "bearish": 5,
+      "messages": 30,
+      "messages_last_hour": 30,
+      "watchers": 45624,
+      "bullish_pct": 38,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 60.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.6×، RSI 69.2. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $84.94، ستوب $79.55، هدف $95.72.",
+     "facts": {
+      "symbol": "ANT",
+      "close": 84.63,
+      "vwap": 79.63,
+      "ema9": 83.93,
+      "ema20": 82.78,
+      "rsi": 69.2,
+      "atr": 0.8461,
+      "rvol": 0.58,
+      "trend_up": true,
+      "extension_atr": 5.91,
+      "setup": "pullback",
+      "bar_time_et": "13:10",
+      "day_high": 84.9,
+      "day_low": 73.86,
+      "day_open": 77.93,
+      "prev_high": 83.48,
+      "prev_low": 75.66,
+      "prev_close": 81.91,
+      "entry": 84.94,
+      "stop": 79.55,
+      "target": 95.72,
+      "risk_per_share": 5.39,
+      "rr": 2.0,
+      "next_resistance": null
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "ANT",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "الستوب بعيد (6.4× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+       },
+       {
+        "severity": "minor",
+        "text": "ستوبك $79.55 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "السعر بعيد عن VWAP بـ5.9× ATR — هذي مطاردة، مو دخول."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 0.58× بس — ما فيه اهتمام كافي يدفع السعر."
+       },
+       {
+        "severity": "minor",
+        "text": "المزاج العام سلبي."
+       }
+      ],
+      "veto": true,
+      "penalty": 55
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 4.2,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "ANT",
+      "decision": "SKIP",
+      "base_score": 59.2,
+      "penalty": 55,
+      "parts": {
+       "charts": 60.0,
+       "scout": 50.0,
+       "news": 75.0,
+       "sentiment": 35.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 84.94,
+       "stop": 79.55,
+       "target": 95.72,
+       "qty": 9,
+       "risk_usd": 48.51,
+       "reward_usd": 97.02,
+       "rr": 2.0,
+       "position_usd": 764.46
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "ANT عند $84.91 (+3.7% اليوم) وحجمه يمشي بوتيرة 0.9× أمس. ✅ Finnhub: $84.90 (فرق +0.01%، قبل 3 ث).",
+    "news": "فيه محفّز: «Ark Invest Purchases $62 Million in Anthropic Stock» (fiscal.ai).",
+    "sentiment": "المزاج سلبي: 38% فقط متفائلين (3 مقابل 5). Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.6×، RSI 69.2. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $84.94، ستوب $79.55، هدف $95.72.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -6962,20 +7374,22 @@
    "idea_id": "11251136HPQ",
    "symbol": "HPQ",
    "owner": "blocked",
-   "status": "pending",
+   "status": "lost",
    "entry": 31.2,
    "stop": 30.85,
    "target": 31.9,
    "qty": 142,
    "created_utc": "2026-11-25T16:36:24.895186+00:00",
    "valid_until_utc": "2026-11-25T17:36:24.895186+00:00",
-   "fill_px": null,
-   "fill_utc": null,
-   "exit_px": null,
-   "exit_utc": null,
-   "r": null,
-   "pnl": null,
-   "checked_utc": "2026-11-25T17:20:00+00:00"
+   "fill_px": 31.2156,
+   "fill_utc": "2026-11-25T17:35:00+00:00",
+   "exit_px": 30.8346,
+   "exit_utc": "2026-11-25T17:50:00+00:00",
+   "r": -1.09,
+   "pnl": -54.11,
+   "checked_utc": "2026-11-25T18:10:00+00:00",
+   "triggered": true,
+   "stop0": 30.85
   },
   {
    "id": "11251136SPDN-blocked",
@@ -7006,7 +7420,7 @@
    "owner": "blocked",
    "status": "open",
    "entry": 9.62,
-   "stop": 9.47,
+   "stop": 9.6248,
    "target": 9.92,
    "qty": 333,
    "created_utc": "2026-11-25T16:36:24.895186+00:00",
@@ -7017,22 +7431,64 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-25T17:20:00+00:00",
+   "checked_utc": "2026-11-25T18:10:00+00:00",
    "triggered": true,
-   "stop0": 9.47
+   "stop0": 9.47,
+   "be": true
   },
   {
    "id": "11251229KO-blocked",
    "idea_id": "11251229KO",
    "symbol": "KO",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 98.35,
    "stop": 97.93,
    "target": 99.19,
    "qty": 50,
    "created_utc": "2026-11-25T17:29:40.294986+00:00",
    "valid_until_utc": "2026-11-25T18:29:40.294986+00:00",
+   "fill_px": 98.3992,
+   "fill_utc": "2026-11-25T17:30:00+00:00",
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "triggered": true,
+   "stop0": 97.93,
+   "checked_utc": "2026-11-25T18:10:00+00:00"
+  },
+  {
+   "id": "11251316RIG-blocked",
+   "idea_id": "11251316RIG",
+   "symbol": "RIG",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 5.0,
+   "stop": 4.92,
+   "target": 5.16,
+   "qty": 624,
+   "created_utc": "2026-11-25T18:16:48.505011+00:00",
+   "valid_until_utc": "2026-11-25T19:16:48.505011+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11251316ANT-blocked",
+   "idea_id": "11251316ANT",
+   "symbol": "ANT",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 84.94,
+   "stop": 79.55,
+   "target": 95.72,
+   "qty": 9,
+   "created_utc": "2026-11-25T18:16:48.505011+00:00",
+   "valid_until_utc": "2026-11-25T19:16:48.505011+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -7638,6 +8094,37 @@
     }
    },
    "api_calls": 14
+  },
+  {
+   "utc": "2026-11-25T18:16:48.505011+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 103,
+   "candidates": 8,
+   "ideas": [
+    "RIG:SKIP/blocked",
+    "ANT:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 711.41,
+      "vwap": 702.22,
+      "chg_open_pct": 1.17
+     },
+     "QQQ": {
+      "close": 624.88,
+      "vwap": 614.53,
+      "chg_open_pct": 1.26
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {
@@ -7726,76 +8213,76 @@
  },
  "board": [
   {
-   "symbol": "HPQ",
+   "symbol": "GDX",
    "decision": "SKIP",
-   "score": 81.0,
+   "score": 23.2,
    "blocked": true,
-   "price": 30.96,
-   "change_pct": 10.85,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+   "price": 72.79,
+   "change_pct": 1.96,
+   "skeptic": "ضد. فيه مقاومة عند $73.41 قبل الهدف — العائد الحقيقي للمخاطرة 0.8 إلى 1 بس."
   },
   {
-   "symbol": "META",
+   "symbol": "MSTR",
    "decision": "SKIP",
-   "score": 64.1,
-   "blocked": true,
-   "price": 594.64,
-   "change_pct": 0.8,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+   "score": 47.2,
+   "blocked": false,
+   "price": 77.49,
+   "change_pct": -0.14,
+   "skeptic": "ضد. السعر بعيد عن VWAP بـ6.1× ATR — هذي مطاردة، مو دخول."
   },
   {
    "symbol": "AAPL",
    "decision": "SKIP",
-   "score": 59.2,
+   "score": 68.1,
    "blocked": true,
-   "price": 351.39,
-   "change_pct": -0.8,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "KO",
-   "decision": "SKIP",
-   "score": 12.7,
-   "blocked": true,
-   "price": 98.31,
-   "change_pct": 0.59,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "HYG",
-   "decision": "SKIP",
-   "score": 56.6,
-   "blocked": true,
-   "price": 76.42,
-   "change_pct": -0.03,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
-  },
-  {
-   "symbol": "AMZN",
-   "decision": "SKIP",
-   "score": 56.8,
-   "blocked": true,
-   "price": 242.93,
-   "change_pct": -3.69,
+   "price": 353.73,
+   "change_pct": -0.14,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "HOOD",
    "decision": "SKIP",
-   "score": 67.5,
+   "score": 38.3,
+   "blocked": false,
+   "price": 64.85,
+   "change_pct": -1.23,
+   "skeptic": "ضد. فيه مقاومة عند $66.25 قبل الهدف — العائد الحقيقي للمخاطرة 1.7 إلى 1 بس."
+  },
+  {
+   "symbol": "COIN",
+   "decision": "SKIP",
+   "score": 62.8,
    "blocked": true,
-   "price": 62.985,
-   "change_pct": -4.07,
+   "price": 102.24,
+   "change_pct": -0.07,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "MSTR",
+   "symbol": "ANT",
    "decision": "SKIP",
-   "score": 59.7,
+   "score": 4.2,
    "blocked": true,
-   "price": 74.36,
-   "change_pct": -4.18,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+   "price": 84.905,
+   "change_pct": 3.66,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+  },
+  {
+   "symbol": "IONQ",
+   "decision": "SKIP",
+   "score": 0,
+   "blocked": true,
+   "price": 23.09,
+   "change_pct": 3.06,
+   "skeptic": "ضد. فيه مقاومة عند $23.36 قبل الهدف — العائد الحقيقي للمخاطرة 0.5 إلى 1 بس."
+  },
+  {
+   "symbol": "RIG",
+   "decision": "SKIP",
+   "score": 36.4,
+   "blocked": true,
+   "price": 5.005,
+   "change_pct": 3.52,
+   "skeptic": "ضد. فيه مقاومة عند $5.03 قبل الهدف — العائد الحقيقي للمخاطرة 0.4 إلى 1 بس."
   }
  ],
  "market": {
@@ -7804,24 +8291,24 @@
   "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 707.04,
-    "vwap": 700.89,
-    "chg_open_pct": 0.55
+    "close": 711.41,
+    "vwap": 702.22,
+    "chg_open_pct": 1.17
    },
    "QQQ": {
-    "close": 619.86,
-    "vwap": 613.2,
-    "chg_open_pct": 0.45
+    "close": 624.88,
+    "vwap": 614.53,
+    "chg_open_pct": 1.26
    }
   }
  },
- "last_run": "2026-11-25T17:29:40.294986+00:00",
+ "last_run": "2026-11-25T18:16:48.505011+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-25T17:30:01.894314+00:00",
+  "utc": "2026-11-25T18:17:09.476845+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 707.24",
+  "finnhub": "ok SPY 712.88",
   "sec": "missing",
   "gemini": "set"
  }
