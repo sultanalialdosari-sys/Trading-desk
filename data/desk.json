@@ -9677,6 +9677,17 @@
    "sent": 0,
    "errors": [],
    "api_calls": 1
+  },
+  {
+   "utc": "2026-11-26T22:38:52.111155+00:00",
+   "market_open": false,
+   "final": true,
+   "scanned": 0,
+   "candidates": 0,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "api_calls": 1
   }
  ],
  "daily": {
@@ -9802,17 +9813,58 @@
      "expired": 3
     }
    }
+  },
+  "2026-11-26": {
+   "ideas": 0,
+   "buy": 0,
+   "wait": 0,
+   "blocked": 0,
+   "stats": {
+    "desk": {
+     "owner": "desk",
+     "closed": 0,
+     "wins": 0,
+     "win_rate": null,
+     "total_r": 0,
+     "avg_r": null,
+     "pnl": 0,
+     "open": 0,
+     "expired": 0
+    },
+    "you": {
+     "owner": "you",
+     "closed": 0,
+     "wins": 0,
+     "win_rate": null,
+     "total_r": 0,
+     "avg_r": null,
+     "pnl": 0,
+     "open": 0,
+     "expired": 0
+    },
+    "blocked": {
+     "owner": "blocked",
+     "closed": 0,
+     "wins": 0,
+     "win_rate": null,
+     "total_r": 0,
+     "avg_r": null,
+     "pnl": 0,
+     "open": 0,
+     "expired": 0
+    }
+   }
   }
  },
  "board": [],
  "market": null,
- "last_run": "2026-11-26T20:47:18.958286+00:00",
+ "last_run": "2026-11-26T22:38:52.111155+00:00",
  "last_open": false,
  "setup": {
-  "utc": "2026-11-26T20:47:19.018079+00:00",
+  "utc": "2026-11-26T22:38:52.263287+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 716.74",
+  "finnhub": "ok SPY 716.7",
   "sec": "missing",
   "gemini": "set"
  }
