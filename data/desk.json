@@ -9611,6 +9611,17 @@
    "sent": 0,
    "errors": [],
    "api_calls": 1
+  },
+  {
+   "utc": "2026-11-26T15:18:45.941148+00:00",
+   "market_open": false,
+   "final": false,
+   "scanned": 0,
+   "candidates": 0,
+   "ideas": [],
+   "sent": 0,
+   "errors": [],
+   "api_calls": 1
   }
  ],
  "daily": {
@@ -9740,13 +9751,13 @@
  },
  "board": [],
  "market": null,
- "last_run": "2026-11-26T14:13:41.476970+00:00",
+ "last_run": "2026-11-26T15:18:45.941148+00:00",
  "last_open": false,
  "setup": {
-  "utc": "2026-11-26T14:13:41.683137+00:00",
+  "utc": "2026-11-26T15:18:46.103437+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 716.7",
+  "finnhub": "ok SPY 716.74",
   "sec": "missing",
   "gemini": "set"
  }
