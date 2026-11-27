@@ -9252,6 +9252,188 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11271237KORU",
+   "symbol": "KORU",
+   "created_utc": "2026-11-27T17:37:14.516809+00:00",
+   "time_et": "12:37",
+   "decision": "SKIP",
+   "score": 21.7,
+   "blocked": true,
+   "ticket": {
+    "entry": 5.95,
+    "stop": 5.89,
+    "target": 6.07,
+    "qty": 833,
+    "risk_usd": 49.98,
+    "reward_usd": 99.96,
+    "rr": 2.0,
+    "position_usd": 4956.35
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 60.7,
+     "line": "KORU عند $5.98 (+13.7% اليوم) وحجمه يمشي بوتيرة 0.6× أمس. ✅ Finnhub: $5.96 (فرق +0.34%، قبل 2 ث).",
+     "facts": {
+      "symbol": "KORU",
+      "price": 5.98,
+      "prev_close": 5.26,
+      "change_pct": 13.69,
+      "volume_pace_x": 0.64,
+      "iex_dollar_volume": 2714236,
+      "in_gainers": false,
+      "last_trade_age_sec": 126,
+      "day_high": 6.03,
+      "finnhub_price": 5.96,
+      "finnhub_age_sec": 2,
+      "price_diff_pct": 0.34,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "ما فيه أي خبر خلال 24 ساعة — الحركة بدون محفّز معروف.",
+     "facts": {
+      "symbol": "KORU",
+      "count": 0
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 58.0,
+     "line": "100% متفائلين (10 مقابل 0) والكلام عنه هادي — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "KORU",
+      "bullish": 10,
+      "bearish": 0,
+      "messages": 30,
+      "messages_last_hour": 0,
+      "watchers": 3895,
+      "bullish_pct": 100,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.8×، RSI 61.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $5.95، ستوب $5.89، هدف $6.07.",
+     "facts": {
+      "symbol": "KORU",
+      "close": 5.95,
+      "vwap": 5.89,
+      "ema9": 5.94,
+      "ema20": 5.91,
+      "rsi": 61.7,
+      "atr": 0.0364,
+      "rvol": 0.77,
+      "trend_up": true,
+      "extension_atr": 1.68,
+      "setup": "pullback",
+      "bar_time_et": "12:30",
+      "day_high": 6.03,
+      "day_low": 5.66,
+      "day_open": 5.82,
+      "prev_high": 5.29,
+      "prev_low": 4.41,
+      "prev_close": 5.26,
+      "entry": 5.95,
+      "stop": 5.89,
+      "target": 6.07,
+      "risk_per_share": 0.06,
+      "rr": 2.0,
+      "next_resistance": 6.03
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "KORU",
+      "objections": [
+       {
+        "severity": "minor",
+        "text": "ستوبك $5.89 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "major",
+        "text": "فيه مقاومة عند $6.03 قبل الهدف — العائد الحقيقي للمخاطرة 1.3 إلى 1 بس."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 0.77× بس — ما فيه اهتمام كافي يدفع السعر."
+       },
+       {
+        "severity": "minor",
+        "text": "طالع أكثر من 8% بدون أي خبر — ممكن ضخ مؤقت."
+       },
+       {
+        "severity": "minor",
+        "text": "100% متفائلين — لما الكل يشتري، مين بقي يشتري بعدك؟"
+       }
+      ],
+      "veto": true,
+      "penalty": 45
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 21.7,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "KORU",
+      "decision": "SKIP",
+      "base_score": 66.7,
+      "penalty": 45,
+      "parts": {
+       "charts": 75.0,
+       "scout": 60.7,
+       "news": 50.0,
+       "sentiment": 58.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 5.95,
+       "stop": 5.89,
+       "target": 6.07,
+       "qty": 833,
+       "risk_usd": 49.98,
+       "reward_usd": 99.96,
+       "rr": 2.0,
+       "position_usd": 4956.35
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "KORU عند $5.98 (+13.7% اليوم) وحجمه يمشي بوتيرة 0.6× أمس. ✅ Finnhub: $5.96 (فرق +0.34%، قبل 2 ث).",
+    "news": "ما فيه أي خبر خلال 24 ساعة — الحركة بدون محفّز معروف.",
+    "sentiment": "100% متفائلين (10 مقابل 0) والكلام عنه هادي — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 0.8×، RSI 61.7. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $5.95، ستوب $5.89، هدف $6.07.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -10111,7 +10293,7 @@
    "pnl": null,
    "triggered": true,
    "stop0": 24.24,
-   "checked_utc": "2026-11-27T16:25:00+00:00"
+   "checked_utc": "2026-11-27T17:30:00+00:00"
   },
   {
    "id": "11271017ANT-blocked",
@@ -10120,7 +10302,7 @@
    "owner": "blocked",
    "status": "open",
    "entry": 88.38,
-   "stop": 84.54,
+   "stop": 89.2696,
    "target": 96.06,
    "qty": 13,
    "created_utc": "2026-11-27T15:17:53.453339+00:00",
@@ -10133,7 +10315,8 @@
    "pnl": null,
    "triggered": true,
    "stop0": 84.54,
-   "checked_utc": "2026-11-27T16:25:00+00:00"
+   "checked_utc": "2026-11-27T17:30:00+00:00",
+   "be": true
   },
   {
    "id": "11271017SNDK-blocked",
@@ -10153,7 +10336,7 @@
    "exit_utc": null,
    "r": null,
    "pnl": null,
-   "checked_utc": "2026-11-27T16:25:00+00:00",
+   "checked_utc": "2026-11-27T17:30:00+00:00",
    "triggered": true,
    "stop0": 78.55,
    "be": true
@@ -10163,51 +10346,79 @@
    "idea_id": "11271133VALE",
    "symbol": "VALE",
    "owner": "blocked",
-   "status": "pending",
+   "status": "lost",
    "entry": 10.39,
    "stop": 10.34,
    "target": 10.49,
    "qty": 481,
    "created_utc": "2026-11-27T16:33:20.011592+00:00",
    "valid_until_utc": "2026-11-27T17:33:20.011592+00:00",
-   "fill_px": null,
-   "fill_utc": null,
-   "exit_px": null,
-   "exit_utc": null,
-   "r": null,
-   "pnl": null
+   "fill_px": 10.3952,
+   "fill_utc": "2026-11-27T16:35:00+00:00",
+   "exit_px": 10.3348,
+   "exit_utc": "2026-11-27T17:00:00+00:00",
+   "r": -1.21,
+   "pnl": -29.04,
+   "triggered": true,
+   "stop0": 10.34,
+   "checked_utc": "2026-11-27T17:30:00+00:00"
   },
   {
    "id": "11271133SHOP-blocked",
    "idea_id": "11271133SHOP",
    "symbol": "SHOP",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 141.84,
    "stop": 141.12,
    "target": 143.28,
    "qty": 35,
    "created_utc": "2026-11-27T16:33:20.011592+00:00",
    "valid_until_utc": "2026-11-27T17:33:20.011592+00:00",
-   "fill_px": null,
-   "fill_utc": null,
+   "fill_px": 142.091,
+   "fill_utc": "2026-11-27T16:35:00+00:00",
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "triggered": true,
+   "stop0": 141.12,
+   "checked_utc": "2026-11-27T17:30:00+00:00"
   },
   {
    "id": "11271133SOXX-blocked",
    "idea_id": "11271133SOXX",
    "symbol": "SOXX",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 132.37,
    "stop": 130.28,
    "target": 136.55,
    "qty": 23,
    "created_utc": "2026-11-27T16:33:20.011592+00:00",
    "valid_until_utc": "2026-11-27T17:33:20.011592+00:00",
+   "fill_px": 132.8014,
+   "fill_utc": "2026-11-27T16:35:00+00:00",
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "triggered": true,
+   "stop0": 130.28,
+   "checked_utc": "2026-11-27T17:30:00+00:00"
+  },
+  {
+   "id": "11271237KORU-blocked",
+   "idea_id": "11271237KORU",
+   "symbol": "KORU",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 5.95,
+   "stop": 5.89,
+   "target": 6.07,
+   "qty": 833,
+   "created_utc": "2026-11-27T17:37:14.516809+00:00",
+   "valid_until_utc": "2026-11-27T18:37:14.516809+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -11093,6 +11304,36 @@
     }
    },
    "api_calls": 13
+  },
+  {
+   "utc": "2026-11-27T17:37:14.516809+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 101,
+   "candidates": 8,
+   "ideas": [
+    "KORU:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 727.04,
+      "vwap": 724.39,
+      "chg_open_pct": 0.16
+     },
+     "QQQ": {
+      "close": 646.88,
+      "vwap": 642.85,
+      "chg_open_pct": 0.18
+     }
+    }
+   },
+   "api_calls": 14
   }
  ],
  "daily": {
@@ -11267,8 +11508,8 @@
    "decision": "SKIP",
    "score": 64.5,
    "blocked": true,
-   "price": 33.3,
-   "change_pct": 10.41,
+   "price": 33.175,
+   "change_pct": 10.0,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
@@ -11276,62 +11517,62 @@
    "decision": "SKIP",
    "score": 61.1,
    "blocked": true,
-   "price": 7.735,
-   "change_pct": 12.35,
+   "price": 7.7,
+   "change_pct": 11.84,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "VALE",
+   "symbol": "COHR",
    "decision": "SKIP",
-   "score": 73.0,
-   "blocked": true,
-   "price": 10.385,
-   "change_pct": 5.92,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "score": 14.4,
+   "blocked": false,
+   "price": 219.25,
+   "change_pct": 11.8,
+   "skeptic": "ضد. الستوب بعيد (4.0× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
   },
   {
    "symbol": "SHOP",
    "decision": "SKIP",
-   "score": 43.4,
-   "blocked": true,
-   "price": 141.84,
-   "change_pct": 6.36,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "score": 53.0,
+   "blocked": false,
+   "price": 141.58,
+   "change_pct": 6.17,
+   "skeptic": "ضد. الأخبار ضدنا: الأخبار سلبية: «PacSun CEO talks brand resurgence, holiday shopping season boom» (قبل 1.9 ساعة)."
   },
   {
    "symbol": "SNDK",
    "decision": "SKIP",
-   "score": 46.6,
-   "blocked": false,
-   "price": 82.91,
-   "change_pct": 12.71,
-   "skeptic": "ضد. الستوب بعيد (3.9× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
-  },
-  {
-   "symbol": "ANT",
-   "decision": "SKIP",
-   "score": 10.4,
-   "blocked": false,
-   "price": 89.935,
-   "change_pct": 8.55,
-   "skeptic": "ضد. الستوب بعيد (4.0× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+   "score": 59.4,
+   "blocked": true,
+   "price": 83.26,
+   "change_pct": 13.19,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
    "symbol": "MUU",
    "decision": "SKIP",
-   "score": 35.2,
-   "blocked": false,
-   "price": 10.62,
-   "change_pct": 12.92,
-   "skeptic": "ضد. السعر بعيد عن VWAP بـ2.4× ATR — هذي مطاردة، مو دخول."
+   "score": 61.8,
+   "blocked": true,
+   "price": 10.56,
+   "change_pct": 12.28,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
   },
   {
-   "symbol": "SOXX",
+   "symbol": "ANT",
    "decision": "SKIP",
-   "score": 34.8,
+   "score": 5.8,
+   "blocked": false,
+   "price": 91.765,
+   "change_pct": 10.76,
+   "skeptic": "ضد. الستوب بعيد (7.1× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
+  },
+  {
+   "symbol": "KORU",
+   "decision": "SKIP",
+   "score": 21.7,
    "blocked": true,
-   "price": 132.29,
-   "change_pct": 3.4,
+   "price": 5.98,
+   "change_pct": 13.69,
    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   }
  ],
@@ -11341,24 +11582,24 @@
   "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 725.35,
-    "vwap": 723.38,
-    "chg_open_pct": -0.07
+    "close": 727.04,
+    "vwap": 724.39,
+    "chg_open_pct": 0.16
    },
    "QQQ": {
-    "close": 645.29,
-    "vwap": 641.4,
-    "chg_open_pct": -0.07
+    "close": 646.88,
+    "vwap": 642.85,
+    "chg_open_pct": 0.18
    }
   }
  },
- "last_run": "2026-11-27T16:33:20.011592+00:00",
+ "last_run": "2026-11-27T17:37:14.516809+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-27T16:33:41.842762+00:00",
+  "utc": "2026-11-27T17:37:36.539675+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 725.68",
+  "finnhub": "ok SPY 726.89",
   "sec": "missing",
   "gemini": "set"
  }
