@@ -8649,6 +8649,609 @@
    "user_choice": null,
    "msg_id": null,
    "narrated_by": null
+  },
+  {
+   "id": "11271133VALE",
+   "symbol": "VALE",
+   "created_utc": "2026-11-27T16:33:20.011592+00:00",
+   "time_et": "11:33",
+   "decision": "SKIP",
+   "score": 73.0,
+   "blocked": true,
+   "ticket": {
+    "entry": 10.39,
+    "stop": 10.34,
+    "target": 10.49,
+    "qty": 481,
+    "risk_usd": 24.05,
+    "reward_usd": 48.1,
+    "rr": 2.0,
+    "position_usd": 4997.59
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 76.1,
+     "line": "VALE عند $10.38 (+5.9% اليوم) وحجمه يمشي بوتيرة 2.5× أمس. ✅ Finnhub: $10.40 (فرق -0.14%، قبل 16 ث).",
+     "facts": {
+      "symbol": "VALE",
+      "price": 10.385,
+      "prev_close": 9.805,
+      "change_pct": 5.92,
+      "volume_pace_x": 2.53,
+      "iex_dollar_volume": 31946887,
+      "in_gainers": false,
+      "last_trade_age_sec": 5,
+      "day_high": 10.55,
+      "finnhub_price": 10.4,
+      "finnhub_age_sec": 16,
+      "price_diff_pct": -0.14,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «Vale: When Everyone Sells, I Start Looking (Upgrade)» (SeekingAlpha (Finnhub)).",
+     "facts": {
+      "symbol": "VALE",
+      "count": 4,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "Beijing Calls in the 'National Team,' Silver Answers: 10 Metal Stocks To Watch Friday",
+        "source": "Benzinga (Finnhub)",
+        "hours_ago": 7.4,
+        "time_et": "11-27 04:08"
+       },
+       {
+        "kind": "plain",
+        "headline": "Shares of integrated oil and gas companies are trading lower amid energy price declines after Iran's foreign minister said that the government has agreed to an ",
+        "source": "Benzinga (Finnhub)",
+        "hours_ago": 9.3,
+        "time_et": "11-27 02:13"
+       },
+       {
+        "kind": "bull",
+        "headline": "Vale: When Everyone Sells, I Start Looking (Upgrade)",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 45.2,
+        "time_et": "11-25 14:19"
+       },
+       {
+        "kind": "plain",
+        "headline": "Vale S.A. informs about Vale Day 2026",
+        "source": "Fintel (Finnhub)",
+        "hours_ago": 60.6,
+        "time_et": "11-24 22:58"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 58.0,
+     "line": "86% متفائلين (6 مقابل 1) والكلام عنه هادي — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "VALE",
+      "bullish": 6,
+      "bearish": 1,
+      "messages": 30,
+      "messages_last_hour": 0,
+      "watchers": 19228,
+      "bullish_pct": 86,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 85.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 2.1×، RSI 72.6. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $10.39، ستوب $10.34، هدف $10.49.",
+     "facts": {
+      "symbol": "VALE",
+      "close": 10.38,
+      "vwap": 10.35,
+      "ema9": 10.35,
+      "ema20": 10.29,
+      "rsi": 72.6,
+      "atr": 0.0397,
+      "rvol": 2.11,
+      "trend_up": true,
+      "extension_atr": 1.0,
+      "setup": "pullback",
+      "bar_time_et": "11:25",
+      "day_high": 10.55,
+      "day_low": 10.26,
+      "day_open": 10.54,
+      "prev_high": 9.86,
+      "prev_low": 9.26,
+      "prev_close": 9.8,
+      "entry": 10.39,
+      "stop": 10.34,
+      "target": 10.49,
+      "risk_per_share": 0.05,
+      "rr": 2.0,
+      "next_resistance": 10.55
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "VALE",
+      "objections": [
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "minor",
+        "text": "86% متفائلين — لما الكل يشتري، مين بقي يشتري بعدك؟"
+       }
+      ],
+      "veto": true,
+      "penalty": 5
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 73.0,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "VALE",
+      "decision": "SKIP",
+      "base_score": 78.0,
+      "penalty": 5,
+      "parts": {
+       "charts": 85.0,
+       "scout": 76.1,
+       "news": 75.0,
+       "sentiment": 58.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 10.39,
+       "stop": 10.34,
+       "target": 10.49,
+       "qty": 481,
+       "risk_usd": 24.05,
+       "reward_usd": 48.1,
+       "rr": 2.0,
+       "position_usd": 4997.59
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "VALE عند $10.38 (+5.9% اليوم) وحجمه يمشي بوتيرة 2.5× أمس. ✅ Finnhub: $10.40 (فرق -0.14%، قبل 16 ث).",
+    "news": "فيه محفّز: «Vale: When Everyone Sells, I Start Looking (Upgrade)» (SeekingAlpha (Finnhub)).",
+    "sentiment": "86% متفائلين (6 مقابل 1) والكلام عنه هادي — تفاؤل زايد، يعني الصفقة مزدحمة. Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 2.1×، RSI 72.6. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $10.39، ستوب $10.34، هدف $10.49.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11271133SHOP",
+   "symbol": "SHOP",
+   "created_utc": "2026-11-27T16:33:20.011592+00:00",
+   "time_et": "11:33",
+   "decision": "SKIP",
+   "score": 43.4,
+   "blocked": true,
+   "ticket": {
+    "entry": 141.84,
+    "stop": 141.12,
+    "target": 143.28,
+    "qty": 35,
+    "risk_usd": 25.2,
+    "reward_usd": 50.4,
+    "rr": 2.0,
+    "position_usd": 4964.4
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 68.3,
+     "line": "SHOP عند $141.84 (+6.4% اليوم) وحجمه يمشي بوتيرة 1.8× أمس. ✅ Finnhub: $141.78 (فرق +0.04%، قبل 17 ث).",
+     "facts": {
+      "symbol": "SHOP",
+      "price": 141.84,
+      "prev_close": 133.355,
+      "change_pct": 6.36,
+      "volume_pace_x": 1.76,
+      "iex_dollar_volume": 32154034,
+      "in_gainers": false,
+      "last_trade_age_sec": 8,
+      "day_high": 142.59,
+      "finnhub_price": 141.78,
+      "finnhub_age_sec": 17,
+      "price_diff_pct": 0.04,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "negative",
+     "score": 30.0,
+     "line": "الأخبار سلبية: «PacSun CEO talks brand resurgence, holiday shopping season boom» (قبل 0.8 ساعة).",
+     "facts": {
+      "symbol": "SHOP",
+      "count": 18,
+      "items": [
+       {
+        "kind": "plain",
+        "headline": "PacSun CEO talks brand resurgence, holiday shopping season boom",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 0.8,
+        "time_et": "11-27 10:43"
+       },
+       {
+        "kind": "plain",
+        "headline": "EverCommerce (EVCM) Stock Is Up 9.1% Today Without Company News",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 1.1,
+        "time_et": "11-27 10:30"
+       },
+       {
+        "kind": "bear",
+        "headline": "HubSpot, AST SpaceMobile downgraded: Wall Street's top analyst calls",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 2.0,
+        "time_et": "11-27 09:35"
+       },
+       {
+        "kind": "plain",
+        "headline": "Amazon Blocked Meta’s Muse Two Months Ago. Now It’s in Talks to Let It Shop, and Walmart Already Did",
+        "source": "Yahoo (Finnhub)",
+        "hours_ago": 4.7,
+        "time_et": "11-27 06:52"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "neutral",
+     "score": 50.0,
+     "line": "المزاج منقسم: 42% متفائلين (5 مقابل 7). Reddit: ما انذكر.",
+     "facts": {
+      "symbol": "SHOP",
+      "bullish": 5,
+      "bearish": 7,
+      "messages": 30,
+      "messages_last_hour": 3,
+      "watchers": 139311,
+      "bullish_pct": 42,
+      "reddit": {
+       "mentions": 0
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 95.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.7×، RSI 66.8. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $141.84، ستوب $141.12، هدف $143.28.",
+     "facts": {
+      "symbol": "SHOP",
+      "close": 141.76,
+      "vwap": 141.23,
+      "ema9": 141.75,
+      "ema20": 140.91,
+      "rsi": 66.8,
+      "atr": 0.6164,
+      "rvol": 1.68,
+      "trend_up": true,
+      "extension_atr": 0.86,
+      "setup": "pullback",
+      "bar_time_et": "11:25",
+      "day_high": 142.59,
+      "day_low": 139.04,
+      "day_open": 139.04,
+      "prev_high": 134.72,
+      "prev_low": 123.86,
+      "prev_close": 133.35,
+      "entry": 141.84,
+      "stop": 141.12,
+      "target": 143.28,
+      "risk_per_share": 0.72,
+      "rr": 2.0,
+      "next_resistance": 142.59
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "SHOP",
+      "objections": [
+       {
+        "severity": "major",
+        "text": "فيه مقاومة عند $142.59 قبل الهدف — العائد الحقيقي للمخاطرة 1.0 إلى 1 بس."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "الأخبار ضدنا: الأخبار سلبية: «PacSun CEO talks brand resurgence, holiday shopping season boom» (قبل 0.8 ساعة)."
+       }
+      ],
+      "veto": true,
+      "penalty": 30
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 43.4,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "SHOP",
+      "decision": "SKIP",
+      "base_score": 73.4,
+      "penalty": 30,
+      "parts": {
+       "charts": 95.0,
+       "scout": 68.3,
+       "news": 30.0,
+       "sentiment": 50.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 141.84,
+       "stop": 141.12,
+       "target": 143.28,
+       "qty": 35,
+       "risk_usd": 25.2,
+       "reward_usd": 50.4,
+       "rr": 2.0,
+       "position_usd": 4964.4
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "SHOP عند $141.84 (+6.4% اليوم) وحجمه يمشي بوتيرة 1.8× أمس. ✅ Finnhub: $141.78 (فرق +0.04%، قبل 17 ث).",
+    "news": "الأخبار سلبية: «PacSun CEO talks brand resurgence, holiday shopping season boom» (قبل 0.8 ساعة).",
+    "sentiment": "المزاج منقسم: 42% متفائلين (5 مقابل 7). Reddit: ما انذكر.",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.7×، RSI 66.8. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $141.84، ستوب $141.12، هدف $143.28.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
+  },
+  {
+   "id": "11271133SOXX",
+   "symbol": "SOXX",
+   "created_utc": "2026-11-27T16:33:20.011592+00:00",
+   "time_et": "11:33",
+   "decision": "SKIP",
+   "score": 34.8,
+   "blocked": true,
+   "ticket": {
+    "entry": 132.37,
+    "stop": 130.28,
+    "target": 136.55,
+    "qty": 23,
+    "risk_usd": 48.07,
+    "reward_usd": 96.14,
+    "rr": 2.0,
+    "position_usd": 3044.51
+   },
+   "data_note": "أسعار IEX لحظية (بورصة واحدة) — الأحجام جزئية لكن النِّسب متّسقة",
+   "opinions": {
+    "scout": {
+     "bot": "scout",
+     "stance": "positive",
+     "score": 63.9,
+     "line": "SOXX عند $132.29 (+3.4% اليوم) وحجمه يمشي بوتيرة 2.1× أمس. ✅ Finnhub: $132.38 (فرق -0.07%، قبل 0 ث).",
+     "facts": {
+      "symbol": "SOXX",
+      "price": 132.29,
+      "prev_close": 127.935,
+      "change_pct": 3.4,
+      "volume_pace_x": 2.14,
+      "iex_dollar_volume": 153381452,
+      "in_gainers": false,
+      "last_trade_age_sec": -1,
+      "day_high": 132.41,
+      "finnhub_price": 132.38,
+      "finnhub_age_sec": 0,
+      "price_diff_pct": -0.07,
+      "second_source": "Finnhub"
+     }
+    },
+    "news": {
+     "bot": "news",
+     "stance": "positive",
+     "score": 75.0,
+     "line": "فيه محفّز: «December Might Bring More Pain Than Gain» (SeekingAlpha (Finnhub)).",
+     "facts": {
+      "symbol": "SOXX",
+      "count": 20,
+      "items": [
+       {
+        "kind": "bull",
+        "headline": "December Might Bring More Pain Than Gain",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 5.4,
+        "time_et": "11-27 06:08"
+       },
+       {
+        "kind": "plain",
+        "headline": "Why Is Micron Stock Jumping Today?",
+        "source": "Benzinga (Finnhub)",
+        "hours_ago": 6.5,
+        "time_et": "11-27 05:01"
+       },
+       {
+        "kind": "plain",
+        "headline": "As Paranoia Hits The Market, Here Are 5 Stocks I'm Buying This Holiday Season",
+        "source": "SeekingAlpha (Finnhub)",
+        "hours_ago": 8.3,
+        "time_et": "11-27 03:15"
+       },
+       {
+        "kind": "plain",
+        "headline": "'Nvidia Blackwell Chips Turn Up at China Site Tied to Alice Huang' - Bloomberg Exclusive",
+        "source": "Benzinga (Finnhub)",
+        "hours_ago": 8.6,
+        "time_et": "11-27 02:59"
+       }
+      ]
+     }
+    },
+    "sentiment": {
+     "bot": "sentiment",
+     "stance": "positive",
+     "score": 68.0,
+     "line": "80% متفائلين (8 مقابل 2) والكلام عنه هادي. Reddit: 8 ذكر (المركز 41، 0.5× أمس).",
+     "facts": {
+      "symbol": "SOXX",
+      "bullish": 8,
+      "bearish": 2,
+      "messages": 30,
+      "messages_last_hour": 9,
+      "watchers": 12334,
+      "bullish_pct": 80,
+      "reddit": {
+       "mentions": 8,
+       "mentions_24h_ago": 16,
+       "rank": 41,
+       "rank_24h_ago": 32
+      },
+      "reddit_surge": false
+     }
+    },
+    "charts": {
+     "bot": "charts",
+     "stance": "positive",
+     "score": 70.0,
+     "line": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.1×، RSI 69.5. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $132.37، ستوب $130.28، هدف $136.55.",
+     "facts": {
+      "symbol": "SOXX",
+      "close": 132.19,
+      "vwap": 130.36,
+      "ema9": 131.66,
+      "ema20": 130.81,
+      "rsi": 69.5,
+      "atr": 0.7671,
+      "rvol": 1.09,
+      "trend_up": true,
+      "extension_atr": 2.38,
+      "setup": "pullback",
+      "bar_time_et": "11:25",
+      "day_high": 132.33,
+      "day_low": 128.05,
+      "day_open": 132.25,
+      "prev_high": 128.06,
+      "prev_low": 118.19,
+      "prev_close": 127.94,
+      "entry": 132.37,
+      "stop": 130.28,
+      "target": 136.55,
+      "risk_per_share": 2.09,
+      "rr": 2.0,
+      "next_resistance": null
+     }
+    },
+    "skeptic": {
+     "bot": "skeptic",
+     "stance": "negative",
+     "score": null,
+     "line": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+     "facts": {
+      "symbol": "SOXX",
+      "objections": [
+       {
+        "severity": "minor",
+        "text": "ستوبك $130.28 تحت VWAP مباشرة — نفس المكان اللي يحط فيه الكل ستوباتهم، وغالباً ينضرب قبل الصعود."
+       },
+       {
+        "severity": "veto",
+        "text": "ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+       },
+       {
+        "severity": "major",
+        "text": "السعر بعيد عن VWAP بـ2.4× ATR — هذي مطاردة، مو دخول."
+       },
+       {
+        "severity": "major",
+        "text": "RVOL 1.09× بس — ما فيه اهتمام كافي يدفع السعر."
+       }
+      ],
+      "veto": true,
+      "penalty": 35
+     }
+    },
+    "chief": {
+     "bot": "chief",
+     "stance": "negative",
+     "score": 34.8,
+     "line": "القرار: تخطّي — Skeptic أوقفها.",
+     "facts": {
+      "symbol": "SOXX",
+      "decision": "SKIP",
+      "base_score": 69.8,
+      "penalty": 35,
+      "parts": {
+       "charts": 70.0,
+       "scout": 63.9,
+       "news": 75.0,
+       "sentiment": 68.0,
+       "market": 75
+      },
+      "ticket": {
+       "entry": 132.37,
+       "stop": 130.28,
+       "target": 136.55,
+       "qty": 23,
+       "risk_usd": 48.07,
+       "reward_usd": 96.14,
+       "rr": 2.0,
+       "position_usd": 3044.51
+      },
+      "blocked": true
+     }
+    }
+   },
+   "text": {
+    "scout": "SOXX عند $132.29 (+3.4% اليوم) وحجمه يمشي بوتيرة 2.1× أمس. ✅ Finnhub: $132.38 (فرق -0.07%، قبل 0 ث).",
+    "news": "فيه محفّز: «December Might Bring More Pain Than Gain» (SeekingAlpha (Finnhub)).",
+    "sentiment": "80% متفائلين (8 مقابل 2) والكلام عنه هادي. Reddit: 8 ذكر (المركز 41، 0.5× أمس).",
+    "charts": "الاتجاه صاعد (فوق VWAP و EMA9 فوق EMA20)، RVOL 1.1×، RSI 69.5. الإعداد: ارتداد من EMA9/VWAP. دخول فوق $132.37، ستوب $130.28، هدف $136.55.",
+    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم.",
+    "chief": "القرار: تخطّي — Skeptic أوقفها."
+   },
+   "user_choice": null,
+   "msg_id": null,
+   "narrated_by": null
   }
  ],
  "trades": [
@@ -9493,32 +10096,80 @@
    "idea_id": "11271017IONQ",
    "symbol": "IONQ",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 25.09,
    "stop": 24.24,
    "target": 26.79,
    "qty": 58,
    "created_utc": "2026-11-27T15:17:53.453339+00:00",
    "valid_until_utc": "2026-11-27T16:17:53.453339+00:00",
-   "fill_px": null,
-   "fill_utc": null,
+   "fill_px": 25.1025,
+   "fill_utc": "2026-11-27T15:20:00+00:00",
    "exit_px": null,
    "exit_utc": null,
    "r": null,
-   "pnl": null
+   "pnl": null,
+   "triggered": true,
+   "stop0": 24.24,
+   "checked_utc": "2026-11-27T16:25:00+00:00"
   },
   {
    "id": "11271017ANT-blocked",
    "idea_id": "11271017ANT",
    "symbol": "ANT",
    "owner": "blocked",
-   "status": "pending",
+   "status": "open",
    "entry": 88.38,
    "stop": 84.54,
    "target": 96.06,
    "qty": 13,
    "created_utc": "2026-11-27T15:17:53.453339+00:00",
    "valid_until_utc": "2026-11-27T16:17:53.453339+00:00",
+   "fill_px": 89.2696,
+   "fill_utc": "2026-11-27T15:20:00+00:00",
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "triggered": true,
+   "stop0": 84.54,
+   "checked_utc": "2026-11-27T16:25:00+00:00"
+  },
+  {
+   "id": "11271017SNDK-blocked",
+   "idea_id": "11271017SNDK",
+   "symbol": "SNDK",
+   "owner": "blocked",
+   "status": "open",
+   "entry": 81.46,
+   "stop": 81.5007,
+   "target": 87.28,
+   "qty": 17,
+   "created_utc": "2026-11-27T15:17:53.453339+00:00",
+   "valid_until_utc": "2026-11-27T16:17:53.453339+00:00",
+   "fill_px": 81.5007,
+   "fill_utc": "2026-11-27T15:25:00+00:00",
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null,
+   "checked_utc": "2026-11-27T16:25:00+00:00",
+   "triggered": true,
+   "stop0": 78.55,
+   "be": true
+  },
+  {
+   "id": "11271133VALE-blocked",
+   "idea_id": "11271133VALE",
+   "symbol": "VALE",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 10.39,
+   "stop": 10.34,
+   "target": 10.49,
+   "qty": 481,
+   "created_utc": "2026-11-27T16:33:20.011592+00:00",
+   "valid_until_utc": "2026-11-27T17:33:20.011592+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -9527,17 +10178,36 @@
    "pnl": null
   },
   {
-   "id": "11271017SNDK-blocked",
-   "idea_id": "11271017SNDK",
-   "symbol": "SNDK",
+   "id": "11271133SHOP-blocked",
+   "idea_id": "11271133SHOP",
+   "symbol": "SHOP",
    "owner": "blocked",
    "status": "pending",
-   "entry": 81.46,
-   "stop": 78.55,
-   "target": 87.28,
-   "qty": 17,
-   "created_utc": "2026-11-27T15:17:53.453339+00:00",
-   "valid_until_utc": "2026-11-27T16:17:53.453339+00:00",
+   "entry": 141.84,
+   "stop": 141.12,
+   "target": 143.28,
+   "qty": 35,
+   "created_utc": "2026-11-27T16:33:20.011592+00:00",
+   "valid_until_utc": "2026-11-27T17:33:20.011592+00:00",
+   "fill_px": null,
+   "fill_utc": null,
+   "exit_px": null,
+   "exit_utc": null,
+   "r": null,
+   "pnl": null
+  },
+  {
+   "id": "11271133SOXX-blocked",
+   "idea_id": "11271133SOXX",
+   "symbol": "SOXX",
+   "owner": "blocked",
+   "status": "pending",
+   "entry": 132.37,
+   "stop": 130.28,
+   "target": 136.55,
+   "qty": 23,
+   "created_utc": "2026-11-27T16:33:20.011592+00:00",
+   "valid_until_utc": "2026-11-27T17:33:20.011592+00:00",
    "fill_px": null,
    "fill_utc": null,
    "exit_px": null,
@@ -10391,6 +11061,38 @@
     }
    },
    "api_calls": 13
+  },
+  {
+   "utc": "2026-11-27T16:33:20.011592+00:00",
+   "market_open": true,
+   "final": false,
+   "scanned": 99,
+   "candidates": 8,
+   "ideas": [
+    "VALE:SKIP/blocked",
+    "SHOP:SKIP/blocked",
+    "SOXX:SKIP/blocked"
+   ],
+   "sent": 0,
+   "errors": [],
+   "market": {
+    "score": 75,
+    "spy_below_vwap": false,
+    "qqq_below_vwap": false,
+    "detail": {
+     "SPY": {
+      "close": 725.35,
+      "vwap": 723.38,
+      "chg_open_pct": -0.07
+     },
+     "QQQ": {
+      "close": 645.29,
+      "vwap": 641.4,
+      "chg_open_pct": -0.07
+     }
+    }
+   },
+   "api_calls": 13
   }
  ],
  "daily": {
@@ -10561,76 +11263,76 @@
  },
  "board": [
   {
-   "symbol": "PBR",
+   "symbol": "EWZ",
    "decision": "SKIP",
-   "score": 64.9,
+   "score": 64.5,
    "blocked": true,
-   "price": 16.87,
-   "change_pct": 5.11,
+   "price": 33.3,
+   "change_pct": 10.41,
    "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "ITUB",
+   "decision": "SKIP",
+   "score": 61.1,
+   "blocked": true,
+   "price": 7.735,
+   "change_pct": 12.35,
+   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+  },
+  {
+   "symbol": "VALE",
+   "decision": "SKIP",
+   "score": 73.0,
+   "blocked": true,
+   "price": 10.385,
+   "change_pct": 5.92,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+  },
+  {
+   "symbol": "SHOP",
+   "decision": "SKIP",
+   "score": 43.4,
+   "blocked": true,
+   "price": 141.84,
+   "change_pct": 6.36,
+   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
   },
   {
    "symbol": "SNDK",
    "decision": "SKIP",
-   "score": 34.6,
-   "blocked": true,
-   "price": 80.69,
-   "change_pct": 9.69,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
+   "score": 46.6,
+   "blocked": false,
+   "price": 82.91,
+   "change_pct": 12.71,
+   "skeptic": "ضد. الستوب بعيد (3.9× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
   },
   {
    "symbol": "ANT",
    "decision": "SKIP",
-   "score": 37.5,
-   "blocked": true,
-   "price": 88.65,
-   "change_pct": 7.0,
-   "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "DRAM",
-   "decision": "SKIP",
-   "score": 38.2,
+   "score": 10.4,
    "blocked": false,
-   "price": 36.535,
-   "change_pct": 4.88,
-   "skeptic": "ضد. RVOL 0.5× بس — ما فيه اهتمام كافي يدفع السعر."
+   "price": 89.935,
+   "change_pct": 8.55,
+   "skeptic": "ضد. الستوب بعيد (4.0× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
   },
   {
-   "symbol": "TSLA",
+   "symbol": "MUU",
    "decision": "SKIP",
-   "score": 68.2,
-   "blocked": true,
-   "price": 394.35,
-   "change_pct": 3.72,
-   "skeptic": "ضد. ما فيه خطة دخول أصلاً — ما نشتري بدون نقطة دخول وستوب."
+   "score": 35.2,
+   "blocked": false,
+   "price": 10.62,
+   "change_pct": 12.92,
+   "skeptic": "ضد. السعر بعيد عن VWAP بـ2.4× ATR — هذي مطاردة، مو دخول."
   },
   {
    "symbol": "SOXX",
    "decision": "SKIP",
-   "score": 38.4,
-   "blocked": false,
-   "price": 130.31,
-   "change_pct": 1.86,
-   "skeptic": "ضد. الستوب بعيد (3.7× ATR) — الخسارة لو غلطنا كبيرة على الحركة المعتادة."
-  },
-  {
-   "symbol": "IONQ",
-   "decision": "SKIP",
-   "score": 46.0,
+   "score": 34.8,
    "blocked": true,
-   "price": 25.02,
-   "change_pct": 6.33,
+   "price": 132.29,
+   "change_pct": 3.4,
    "skeptic": "ضد. ارتداد بدون اختراق — في الاختبار التاريخي هذا أكثر إعداد خسّر. ننتظر يخترق قمة اليوم."
-  },
-  {
-   "symbol": "EWY",
-   "decision": "SKIP",
-   "score": 27.2,
-   "blocked": false,
-   "price": 133.85,
-   "change_pct": 3.66,
-   "skeptic": "ضد. RSI 75.1 — تشبّع شرائي."
   }
  ],
  "market": {
@@ -10639,24 +11341,24 @@
   "qqq_below_vwap": false,
   "detail": {
    "SPY": {
-    "close": 722.24,
-    "vwap": 721.8,
-    "chg_open_pct": -0.5
+    "close": 725.35,
+    "vwap": 723.38,
+    "chg_open_pct": -0.07
    },
    "QQQ": {
-    "close": 640.84,
-    "vwap": 639.6,
-    "chg_open_pct": -0.76
+    "close": 645.29,
+    "vwap": 641.4,
+    "chg_open_pct": -0.07
    }
   }
  },
- "last_run": "2026-11-27T15:17:53.453339+00:00",
+ "last_run": "2026-11-27T16:33:20.011592+00:00",
  "last_open": true,
  "setup": {
-  "utc": "2026-11-27T15:18:14.197461+00:00",
+  "utc": "2026-11-27T16:33:41.842762+00:00",
   "alpaca": "ok",
   "telegram": "missing",
-  "finnhub": "ok SPY 722.31",
+  "finnhub": "ok SPY 725.68",
   "sec": "missing",
   "gemini": "set"
  }
